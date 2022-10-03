@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Us</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container container__header">
+				<div class="nav__container">
+					<div class="logo">
+						<a href="../../FIRST-SITE/index.html">
+							<img src="../assets/image/LOGO.png" alt="logo">
+						</a>
+					</div>
+					<nav class="nav">
+						<ul class="list list__header">
+							<li class="item item__header"><a href="#" class="link link__header">blog</a></li>
+							<li class="item item__header"><a href="#" class="link link__header">catalog</a></li>
+							<li class="item item__header"><a href="#" class="link link__header">about us</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="search-contact-us">
+					<div class="search">
+						<input type="text" class="search-field" placeholder="Введите поисковой запрос">
+						<img src="../assets/icon/search.svg" alt="search-image" class="search-icon">
+					</div>
+					<a href="#" class="link link__contact-us">contact us</a>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="section section__title-and-breadcrumb"> <!--эта секия на всех страницах кроме главной повторяется-->
+				<div class="container container__title-and-breadcrumb">
+					<h2 class="title-category">Category Products</h2>
+					<ul class="breadcrumb"> <!--хлебным крошкам значек-стрелку добавим как псевдоэлемент через css с помощью li::before-->
+						<li><a href="../../FIRST-SITE/index.html">Home</a></li>
+						<li>Contact Us</li>
+					</ul>
+				</div>
+			</section>
+			<section class="section section__category">
+				<div class="container container__category"></div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container container__footer">
+				<div class="nuv-cus-con">
+					<div class="navigation">
+						<p class="text-footer text__navigation">Navigation</p>
+						<div class="line"></div> <!--здесь будет линия футера отчерчивающая navigation от ссылок ниже-->
+						<ul class="list list__footer-nav">
+							<li class="item item__footer"><a href="#" class="link link__footer">About Us</a></li>
+							<li class="item item__footer"><a href="#" class="link link__footer">Blog</a></li>
+							<li class="item item__footer"><a href="#" class="link link__footer">Design Services</a></li>
+							<li class="item item__footer"><a href="#" class="link link__footer">Featured On</a></li>
+							<li class="item item__footer"><a href="#" class="link link__footer">2018 Holiday Catalog</a></li>
+							<li class="item item__footer"><a href="#" class="link link__footer">Shop By Designer</a></li>
+						</ul>
+					</div>
+					<div class="customer-info">
+						<p class="text-footer text__customer-info">Contact Us</p>
+						<div class="line"></div> <!--здесь будет линия футера отчерчивающая customer-info от ссылок ниже-->
+						<ul class="list list__footer-cus">
+							<li class="item item__footer"><a href="#" class="link link__footer">Contact Us</a></li>
+							<li class="item item__footer"><a href="#" class="link link__footer">Sale Exclusions</a></li>
+							<li class="item item__footer"><a href="#" class="link link__footer">Shipping & Returns</a></li>
+							<li class="item item__footer"><a href="#" class="link link__footer">Terms & Conditions</a></li>
+							<li class="item item__footer"><a href="#" class="link link__footer">Privacy Policy</a></li>
+							<li class="item item__footer"><a href="#" class="link link__footer">Search</a></li>
+						</ul>
+					</div>
+					<article class="connect">
+						<p class="text-footer text__connect">Connect</p>
+						<div class="line"></div> <!--здесь будет линия футера отчерчивающая connect от формы поиска-->
+						<form action="#" method="POST">
+							<input type= "text" name="email" placeholder="email"> 
+							<input type="submit">
+							<div class="social"> <!--так же загрузил бы через стили-->
+								<a href="#"><img src="../assets/icon/Facebook.svg" alt="facebook"></a>
+								<a href="#"><img src="../assets/icon/Twitter.svg" alt="twitter"></a>
+								<a href="#"><img src="../assets/icon/Pinterest.svg" alt="pinterest"></a>
+								<a href="#"><img src="../assets/icon/Instagram.svg" alt="inst"></a> 
+							</div>
+							</form>  
+					</article>
+				</div>
+				<div class="line-allwidth"></div> <!--здесь будет линия футера отчерчивающая всю ширину контейнера под предыдущим блоком-->
+				<div class="com-cop-des">
+					<div class="company-rating">
+						<p class="text-footer text__company-rating">Company Rating</p>
+						<div class="rating-area">
+							<input type="radio" id="star-5" name="rating" value="5">
+							<label for="star-5" title="«5»"></label>	
+							<input type="radio" id="star-4" name="rating" value="4">
+							<label for="star-4" title="«4»"></label>    
+							<input type="radio" id="star-3" name="rating" value="3">
+							<label for="star-3" title="«3»"></label>  
+							<input type="radio" id="star-2" name="rating" value="2">
+							<label for="star-2" title="«2»"></label>    
+							<input type="radio" id="star-1" name="rating" value="1">
+							<label for="star-1" title="«1»"></label>
+						</div>
+					</div>
+						<p class="text-footer text__copyright">Copyright © 2018 Dlk • Design Life Kids</p>
+						<a href="#" class="web-design">Web Design — Direct Line Development</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

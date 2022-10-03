@@ -4,28 +4,32 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Main</title>
 </head>
 <body>
 	<div class="wrapper"> <!--прокрутка-->
 		<header class="header">
 			<div class="container container__header">
 				<div class="nav__container">
-					<h1 class="title-logo">DLK</h1>
+					<div class="logo">
+						<a href="./index.html">
+							<img src="./assets/image/LOGO.png" alt="logo">
+						</a>
+					</div>
 					<nav class="nav">
 						<ul class="list list__header">
-							<li class="item item__header"><a href="#" class="link link__header"></a>blog</li>
-							<li class="item item__header"><a href="#" class="link link__header"></a>catalog</li>
-							<li class="item item__header"><a href="#" class="link link__header"></a>about us</li>
+							<li class="item item__header"><a href="#" class="link link__header">blog</a></li>
+							<li class="item item__header"><a href="../FIRST-SITE/catalog/catalog.html" class="link link__header">catalog</a></li>
+							<li class="item item__header"><a href="#" class="link link__header">about us</a></li>
 						</ul>
 					</nav>
 				</div>
 				<div class="search-contact-us">
 					<div class="search">
 						<input type="text" class="search-field" placeholder="Введите поисковой запрос">
-						<img src="#" alt="search-image" class="search-icon">
+						<img src="./assets/icon/search.svg" alt="search-image" class="search-icon">
 					</div>
-					<a href="#" class="link link__contact-us">contact us</a>
+					<a href="../../FIRST-SITE/contact-us/contact-us.html" class="link link__contact-us">contact us</a>
 				</div>
 			</div>
 		</header>
@@ -47,7 +51,9 @@
 						<p>Designed in Slovenia</p>
 						<button type="button" name="Explore-now" class="button button__explore">Explore now</button>
 					</div>
-					<div class="explore-image"></div> <!--таким образом я бы загрузил картинку фоном уже в файле со стилями-->
+					<div class="explore-image">
+						<img src="./assets/image/thoohnoo-image.png" alt="explore-image">
+					</div>
 					<p class="bottom-text">Free (continental) USA shipping on all orders of $100 USD or more!</p>
 				</div>
 			</section>
@@ -56,65 +62,61 @@
 					<h2 class="title-category">Category Products</h2>
 					<div class="category-products">
 						<div class="cards">
-							<img src="#" alt="APPAREL KIDS">
+							<img src="./assets/image/apparel-kids.png" alt="APPAREL KIDS">
 							<a href="#" class="cards-link">APPAREL KIDS</a>
 						</div>
 						<div class="cards">
-							<img src="#" alt="HOLIDAY SHOP">
+							<img src="./assets/image/holiday-shop.png" alt="HOLIDAY SHOP">
 							<a href="#" class="cards-link">HOLIDAY SHOP</a>
 						</div>
 						<div class="cards">
-							<img src="#" alt="TOYS">
+							<img src="./assets/image/toys.png" alt="TOYS">
 							<a href="#" class="cards-link">TOYS</a>
 						</div>
 						<div class="cards">
-							<img src="#" alt="ACCESSORIES">
+							<img src="./assets/image/accessories.png" alt="ACCESSORIES">
 							<a href="#" class="cards-link">ACCESSORIES</a>
 						</div>
 						<div class="cards">
-							<img src="#" alt="SALE">
+							<img src="./assets/image/sale.png" alt="SALE">
 							<a href="#" class="cards-link">SALE</a>
 						</div>
 						<div class="cards">
-							<img src="#" alt="APPAREL ADULTS">
+							<img src="./assets/image/apparel-adults.png" alt="APPAREL ADULTS">
 							<a href="#" class="cards-link">APPAREL ADULTS</a>
 						</div>
 					</div>
 					<div class="bottom-switch">
-						<button type="button" class="category-button-left"><img src="#" alt="icon-button-left"></button>
-						<button type="button" class="category-button-right"><img src="#" alt="icon-button-right"></button>
+						<button type="button" class="category-button-left"><img src="./assets/icon/left-arrow-button.png" alt="icon-button-left"></button>
+						<button type="button" class="category-button-right"><img src="./assets/icon/right-arrow-button.png" alt="icon-button-right"></button>
 						<p class="text text__bottom-switch">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
 					</div>
 				</div>
 			</section>
 			<section class="section section__delivery">
 				<div class="container container__delivery">
-					<div class="delivery-image"></div> <!--сюда я бы опять же картинку вложил через стили бэкграунд-имейджем-->
+					<div class="delivery-image">
+						<img src="./assets/image/woman.jpg" alt="woman">
+					</div>
 					<div class="delivery__content">
 						<h2 class="title-delivery">Delivery</h2>
-							<h3 class="title-inscription">Delivery</h3>
+							<p class="title-inscription">Delivery</p>
 							<p class="inscr-guarantee">Guarantee</p>
 							<p class="inscr-credit">Credit</p>
 							<p class="text text__some-days-i-feel">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
 							<p class="text text__what-started-as-an">What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
 						<a href="#" class="button button__learn-more">Learn More</a>
-						<!--если я правильно понял то в данном случае это будет ссылка но на всякий помечу если будет кнопка
-							<button type="button" name="LEARN MORE" class="button button__learn-more">Learn More</button>
-						-->
 					</div>
 				</div>
 			</section>
-			<section class="section section__workwith">
 				<div class="container container__workwith">
-					<!--здесь я думаю в будушем тоже будет лучше немного переделать и добавить картинки через стили, но пока просто сделаю в блоке внутри контейнера-->
 					<div class="workwith__images">
-						<a href="#"><img src="#" alt="mail-ru group"></a>
-						<a href="#"><img src="#" alt="apple"></a>
-						<a href="#"><img src="#" alt="eltex"></a>
-						<a href="#"><img src="#" alt="owox"></a> 
+						<a href="#"><img src="./assets/image/mail-group.png" alt="mail-ru group"></a>
+						<a href=""><img src="./assets/image/apple.png" alt="apple"></a>
+						<a href=""><img src="./assets/image/eltex.png" alt="eltex"></a>
+						<a href=""><img src="./assets/image/owox.png" alt="owox"></a> 
 					</div>
 				</div>
-			</section>
 			<section class="section section__buy-now">
 				<div class="container container__buy-now">
 					<div class="design-life-kids">
@@ -165,10 +167,10 @@
 							<input type= "text" name="email" placeholder="email"> 
 							<input type="submit">
 							<div class="social"> <!--так же загрузил бы через стили-->
-								<a href="#"><img src="#" alt="facebook"></a>
-								<a href="#"><img src="#" alt="twitter"></a>
-								<a href="#"><img src="#" alt="pinterest"></a>
-								<a href="#"><img src="#" alt="inst"></a> 
+								<a href="#"><img src="./assets/icon/Facebook.svg" alt="facebook"></a>
+								<a href="#"><img src="./assets/icon/Twitter.svg" alt="twitter"></a>
+								<a href="#"><img src="./assets/icon/Pinterest.svg" alt="pinterest"></a>
+								<a href="#"><img src="./assets/icon/Instagram.svg" alt="inst"></a> 
 							</div>
 							</form>  
 					</article>
@@ -195,6 +197,28 @@
 				</div>
 			</div>
 		</footer>
+		<div class="container__form"> <!--так как позиционирование отличается от основного контента сделал отдельный контейнер-->
+			<form action="#" method="post"> <!--если я правильно понял то метод будет post так как мы отправляем данные-->
+				<div>
+					<p class="enter">Name</p>
+					<input tabindex="1" placeholder="Ivan Ivanov" type="text" name="name" value="">
+				</div>
+				<div>
+					<p class="enter">Phone</p>
+					<input tabindex="2" placeholder="x-xxx-xxx-xx-xx" type="tel" name="phone">
+					<p class="enter">Email</p>
+					<input tabindex="3" placeholder="example@mail" type="email" name="email">
+				</div>
+				<div>
+					<p class="enter">Message</p>
+					<textarea tabindex="4" placeholder="Message..." name="message" id="message"></textarea> <!--размер полей убрал так как его будем настраивать с помощью css-->
+				</div>
+				<div>
+					<p class="enter"><input type="checkbox" name="consent" value="">By clicking on the button, you consent to the processing of your personal data</p>
+				</div>
+				<button class="button button-submit" type="submit">SUBMIT</button>
+			</form>
+		</div>
 	</div>
 </body>
 </html>
