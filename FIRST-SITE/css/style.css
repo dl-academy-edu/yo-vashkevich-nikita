@@ -1,0 +1,269 @@
+/*--------------------------------------------------------------------------EXPLORE-----------------------------------------------------------------------------*/
+.number-page {
+	width: 61px;
+	height: 74px;
+	font-family: 'Montserrat';
+	font-weight: 200;
+	font-size: 60px;
+	line-height: 73px;
+	color: rgba(30, 6, 6, 0.05);
+}
+
+.container__explore {
+	background: #EEE4DB;
+}
+
+.item__rectangle {
+	border-top: 31px;
+	background-color: #D6CAC2;
+}
+
+.title-explore {
+	width: 307px;
+	height: 88px;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 110%;
+	color: #1E0606;
+}
+
+.italic {
+	width: 151.12px;
+	height: 26px;
+	font-family: 'Crimson Text';
+	font-style: italic;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 26px;
+}
+
+.bottom-text {
+	height: 39px;
+	font-family: 'Open Sans';
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 16px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: #C29974;
+	padding: 11px;
+}
+
+/*--------------------------------------------------------------------------EXPLORE-----------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------CATEGORY----------------------------------------------------------------------------*/
+
+.title-category {
+	width: 454px;
+	height: 47px;
+	font-weight: 700;
+	font-size: 38px;
+	line-height: 46px;
+}
+
+.cards {
+	display: flex;
+	position: relative;
+	width: 280px;
+	height: 270px;
+	align-items: center;
+	justify-content: center;
+}
+
+.cards-link {
+	position: absolute;
+	color: #FFFFFF;
+	font-family: 'Montserrat';
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 32px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+	.cards__apparel {
+		background-color: #DBE4DB;
+	}
+
+	.cards__holiday {
+		background-color: #EADDD3;
+	}
+
+	.cards__toys {
+		background-color: #F8F2DA;
+	}
+
+	.cards__accessories {
+		background-color: #D5D4E1;
+	}
+
+	.cards__sale {
+		background-color: #F3D0DB;
+	}
+
+	.cards__adults {
+		background-color: #E5EAF8;
+	}
+
+
+	.text__bottom-switch {
+		width: 580px;
+		height: 44px;
+		font-family: 'Open Sans';
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+/*--------------------------------------------------------------------------CATEGORY----------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------DELIVERY----------------------------------------------------------------------------*/
+
+	.delivery-image {
+		width: 480px;
+		height: 559px;
+	}
+
+	.title-delivery {
+		width: 199px;
+		height: 47px;
+		font-family: 'Montserrat';
+		font-weight: 700;
+		font-size: 38px;
+		line-height: 46px;
+		text-transform: uppercase;
+	}
+
+	.inscr {
+		width: 326px;
+		height: 55px;
+		background: rgba(112, 187, 220, 0.2);
+	}
+
+	.title-inscription {
+		width: 88px;
+		height: 34px;
+		font-family: 'Crimson Text';
+		font-style: italic;
+		font-weight: 700;
+		font-size: 26px;
+		line-height: 34px;
+	}
+
+	.inscr-guarantee{ 
+		width: 98px;
+		height: 34px;
+		font-family: 'Crimson Text';
+		font-style: italic;
+		font-weight: 400;
+		font-size: 26px;
+		line-height: 34px;
+	}
+
+	.inscr-credit {
+		width: 58px;
+		height: 34px;
+		font-family: 'Crimson Text';
+		font-style: italic;
+		font-weight: 400;
+		font-size: 26px;
+		line-height: 34px;
+	}
+
+	.text__some-days {
+		width: 480px;
+		height: 66px;
+		font-family: 'Open Sans';
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	.text__what-started {
+		width: 480px;
+		height: 88px;
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	.button__learn-more{
+		width: 149px;
+		height: 40px;
+	}
+
+/*--------------------------------------------------------------------------DELIVERY----------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------WORK-WITH----------------------------------------------------------------------------*/
+
+	.section__work-with {
+		font-size: 0;
+	}
+/*--------------------------------------------------------------------------WORK-WITH----------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------BUY-NOW-----AND-MAP------------------------------------------------------------------*/
+
+	.design-life-kids {
+		width: 543px;
+		height: 228px;
+		background: #E1F0F7;
+	}
+
+	.title-design-life-kids {
+		width: 357px;
+		height: 47px;
+		font-weight: 700;
+		font-size: 38px;
+		line-height: 46px;
+	}
+
+	.about-us {
+		width: 86px;
+		height: 34px;
+		font-family: 'Crimson Text';
+		font-style: italic;
+		font-weight: 400;
+		font-size: 26px;
+		line-height: 34px;
+		color: #1E0606;
+	}
+
+	.text__buy-now {
+		width: 483px;
+		height: 67px;
+		font-family: 'Open Sans';
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	.button__buy-now {
+		width: 123px;
+		height: 40px;
+	}
+
+	.contacts {
+		width: 543px;
+		height: 209px;
+		background: #E1F0F7;
+	}
+
+	.title-contacts {
+		width: 217px;
+		height: 47px;
+		left: 740px;
+		top: 2043px;
+		font-weight: 700;
+		font-size: 38px;
+		line-height: 46px;
+	}
+
+	.text__contacts {
+		width: 483px;
+		height: 66px;
+		font-family: 'Open Sans';
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+/*--------------------------------------------------------------------------BUY-NOW-----AND-MAP------------------------------------------------------------------*/

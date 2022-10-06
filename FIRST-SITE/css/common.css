@@ -1,0 +1,212 @@
+/*--------------------------------------------------------------------------ОБНУЛЕНИЕ------------------------------------------------------------------------*/
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,*:before,:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header {
+	display: block;
+}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family: inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Montserrat';
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #1E0606;
+}
+
+p {
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-size: 16px;
+	color: #1E0606;
+}
+
+
+body {
+	/*font-family: 'Archivo', sans-serif;
+	font-family: 'Crimson Text', serif;
+	font-family: 'Lato', sans-serif;*/
+	font-family: 'Montserrat', sans-serif;
+	/*font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;*/
+	font-weight: 400;
+	font-size: 16px;
+	align-items: 21px;
+	color: #FFFFFF;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.container {
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+/*.undotted {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}  не помню для чего на занятиях мы создавали такой класс */ 
+
+/*--------------------------------------------------------------------------ОБНУЛЕНИЕ------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------HEADER------------------------------------------------------------------------*/
+
+.logo-img {
+	width: 100.08px;
+	height: 52px;
+}
+
+.link {
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+	align-items: center;
+	text-transform: uppercase;
+	color: #1E0606;
+}
+
+.search-icon {
+	width: 24.02px;
+	height: 24px;
+}
+
+.link__contact-us {
+	font-weight: 700;
+}
+
+.button {
+	font-family: 'Open Sans';
+	display: block;
+	text-transform: uppercase;
+	border: none;
+	width: 161px;
+	height: 40px;
+	color: #FFFFFF;
+	background: black;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 22px;
+	text-align: center;
+	padding: 9px;
+}
+
+/*--------------------------------------------------------------------------HEADER------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------FOOTER------------------------------------------------------------------------*/
+
+.footer {
+	margin-top: 150px; /*временно поставил чтобы не накладывалась карта*/
+	background-color: #434343;
+}
+
+.ft {
+	width: 380px;
+	height: 281px;
+}
+
+.text-footer {
+	font-family: 'Open Sans';
+	font-weight: 400;
+	line-height: 22px;
+	color: #AAAAAA;
+}
+
+.link__footer {
+	font-family: 'Open Sans';
+	font-weight: 400;
+	line-height: 22px;
+	color: #FFFFFF;
+}
+
+.line {
+	border-bottom: solid 1px #666666;
+	width: 380px;
+}
+
+.line-allwidth {
+	border-bottom: solid 1px #666666;
+	max-width: 100%;
+}
+
+.button__join {
+	width: 81px;
+	height: 40px;
+}
+
+.enter-email {
+	width: 299px;
+	height: 40px;
+	background: #666666;
+	color: #ffffff;
+}
+
+.enter-email, ::placeholder {
+	color: #ffffff;
+}
+
+.enter-email, :placeholder-shown {
+	font-family: 'Open Sans';
+	font-weight: 400;
+	line-height: 16px;
+	color: #ffffff;
+
+}
+
+.social {
+	width: 150px;
+	height: 30px;
+}
+
+.text-buttom {
+	display: flex;
+	align-items: center;
+	color: #FFFFFF;
+}
+
+.text__company-rating, .text__copyright {
+	color: #ffffff;
+}
+
+.web-design {
+	color: #A2A2A2;
+}
+
+/*--------------------------------------------------------------------------FOOTER------------------------------------------------------------------------*/

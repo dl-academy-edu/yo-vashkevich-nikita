@@ -4,32 +4,37 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Crimson+Text:ital,wght@1,400;1,700&family=Lato:wght@700&family=Montserrat:wght@200;300;600;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/style.css">
 	<title>Main</title>
 </head>
 <body>
-	<div class="wrapper"> <!--прокрутка-->
+	<div class="wrapper"> <!--сюда можно применить стили которые не стоит вешать на body-->
 		<header class="header">
 			<div class="container container__header">
 				<div class="nav__container">
 					<div class="logo">
 						<a href="./index.html">
-							<img src="./assets/image/LOGO.png" alt="logo">
+							<img class="logo-img" src="./assets/image/LOGO.svg" alt="logo">
 						</a>
 					</div>
 					<nav class="nav">
 						<ul class="list list__header">
 							<li class="item item__header"><a href="#" class="link link__header">blog</a></li>
-							<li class="item item__header"><a href="../FIRST-SITE/catalog/catalog.html" class="link link__header">catalog</a></li>
+							<li class="item item__header"><a href="./pages/catalog.html" class="link link__header">catalog</a></li>
 							<li class="item item__header"><a href="#" class="link link__header">about us</a></li>
 						</ul>
 					</nav>
 				</div>
 				<div class="search-contact-us">
 					<div class="search">
-						<input type="text" class="search-field" placeholder="Введите поисковой запрос">
+						<!--<input type="text" class="search-field" placeholder="Введите поисковой запрос">--> <!--пока не понял как мы подключим к картинке поиск поэтому оставлю пока только img-->
 						<img src="./assets/icon/search.svg" alt="search-image" class="search-icon">
 					</div>
-					<a href="../../FIRST-SITE/contact-us/contact-us.html" class="link link__contact-us">contact us</a>
+					<a href="./pages/contact-us.html" class="link link__contact-us">contact us</a>
 				</div>
 			</div>
 		</header>
@@ -48,7 +53,7 @@
 					</div>
 					<div class="theoohnoo">
 						<h2 class="title-explore">The ooh noo collection</h2>
-						<p>Designed in Slovenia</p>
+						<p class="italic">Designed in Slovenia</p>
 						<button type="button" name="Explore-now" class="button button__explore">Explore now</button>
 					</div>
 					<div class="explore-image">
@@ -61,27 +66,27 @@
 				<div class="container container__category">
 					<h2 class="title-category">Category Products</h2>
 					<div class="category-products">
-						<div class="cards">
-							<img src="./assets/image/apparel-kids.png" alt="APPAREL KIDS">
+						<div class="cards cards__apparel">
+							<img class="img-apparel" src="./assets/image/apparel-kids.png" alt="APPAREL KIDS">
 							<a href="#" class="cards-link">APPAREL KIDS</a>
 						</div>
-						<div class="cards">
+						<div class="cards cards__holiday">
 							<img src="./assets/image/holiday-shop.png" alt="HOLIDAY SHOP">
 							<a href="#" class="cards-link">HOLIDAY SHOP</a>
 						</div>
-						<div class="cards">
+						<div class="cards cards__toys">
 							<img src="./assets/image/toys.png" alt="TOYS">
 							<a href="#" class="cards-link">TOYS</a>
 						</div>
-						<div class="cards">
+						<div class="cards cards__accessories">
 							<img src="./assets/image/accessories.png" alt="ACCESSORIES">
 							<a href="#" class="cards-link">ACCESSORIES</a>
 						</div>
-						<div class="cards">
+						<div class="cards cards__sale">
 							<img src="./assets/image/sale.png" alt="SALE">
 							<a href="#" class="cards-link">SALE</a>
 						</div>
-						<div class="cards">
+						<div class="cards cards__adults">
 							<img src="./assets/image/apparel-adults.png" alt="APPAREL ADULTS">
 							<a href="#" class="cards-link">APPAREL ADULTS</a>
 						</div>
@@ -100,23 +105,28 @@
 					</div>
 					<div class="delivery__content">
 						<h2 class="title-delivery">Delivery</h2>
+						<div class="inscr">
 							<p class="title-inscription">Delivery</p>
+						</div>
 							<p class="inscr-guarantee">Guarantee</p>
 							<p class="inscr-credit">Credit</p>
-							<p class="text text__some-days-i-feel">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-							<p class="text text__what-started-as-an">What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
+							<p class="text text__some-days">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+							<p class="text text__what-started">What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
 						<a href="#" class="button button__learn-more">Learn More</a>
 					</div>
 				</div>
 			</section>
-				<div class="container container__workwith">
-					<div class="workwith__images">
-						<a href="#"><img src="./assets/image/mail-group.png" alt="mail-ru group"></a>
-						<a href=""><img src="./assets/image/apple.png" alt="apple"></a>
-						<a href=""><img src="./assets/image/eltex.png" alt="eltex"></a>
-						<a href=""><img src="./assets/image/owox.png" alt="owox"></a> 
+			<section class="section section__work-with">
+				<h2>work with</h2>
+				<div class="container container__work-with">
+					<div class="work-with__images">
+						<a class="img-mail" href="#"><img src="./assets/image/mail-group.png" alt="mail-ru group"></a>
+						<a class="img-apple" href=""><img src="./assets/image/apple.png" alt="apple"></a>
+						<a class="img-eltex" href=""><img src="./assets/image/eltex.png" alt="eltex"></a>
+						<a class="img-owox" href=""><img src="./assets/image/owox.png" alt="owox"></a> 
 					</div>
 				</div>
+			</section>
 			<section class="section section__buy-now">
 				<div class="container container__buy-now">
 					<div class="design-life-kids">
@@ -128,7 +138,7 @@
 					<article class="contacts">
 						<h2 class="title-contacts">Contacts</h2>
 						<p class="text text__contacts">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.5510575195844!2d49.28803825162973!3d53.512214679916106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x416879ed1ada6fbd%3A0x751234490b1ca980!2sDirect%20Line%20Digital!5e0!3m2!1sru!2sru!4v1663870506192!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.5510575195844!2d49.28803825162973!3d53.512214679916106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x416879ed1ada6fbd%3A0x751234490b1ca980!2sDirect%20Line%20Digital!5e0!3m2!1sru!2sru!4v1663870506192!5m2!1sru!2sru" width="483" height="196" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</article>
 				</div>
 			</section>
@@ -136,7 +146,7 @@
 		<footer class="footer">
 			<div class="container container__footer">
 				<div class="nuv-cus-con">
-					<div class="navigation">
+					<div class="ft navigation">
 						<p class="text-footer text__navigation">Navigation</p>
 						<div class="line"></div> <!--здесь будет линия футера отчерчивающая navigation от ссылок ниже-->
 						<ul class="list list__footer-nav">
@@ -148,8 +158,8 @@
 							<li class="item item__footer"><a href="#" class="link link__footer">Shop By Designer</a></li>
 						</ul>
 					</div>
-					<div class="customer-info">
-						<p class="text-footer text__customer-info">Contact Us</p>
+					<div class="ft customer-info">
+						<p class="text-footer text__customer-info">Customer Information</p>
 						<div class="line"></div> <!--здесь будет линия футера отчерчивающая customer-info от ссылок ниже-->
 						<ul class="list list__footer-cus">
 							<li class="item item__footer"><a href="#" class="link link__footer">Contact Us</a></li>
@@ -160,12 +170,12 @@
 							<li class="item item__footer"><a href="#" class="link link__footer">Search</a></li>
 						</ul>
 					</div>
-					<article class="connect">
+					<article class="ft connect">
 						<p class="text-footer text__connect">Connect</p>
 						<div class="line"></div> <!--здесь будет линия футера отчерчивающая connect от формы поиска-->
-						<form action="#" method="POST">
-							<input type= "text" name="email" placeholder="email"> 
-							<input type="submit">
+						<form class="form-email" action="#" method="POST">
+							<input class="enter-email" type= "text" name="email" placeholder="Email"> 
+							<input class="button button__join" type="submit" value="Join">
 							<div class="social"> <!--так же загрузил бы через стили-->
 								<a href="#"><img src="./assets/icon/Facebook.svg" alt="facebook"></a>
 								<a href="#"><img src="./assets/icon/Twitter.svg" alt="twitter"></a>
@@ -178,7 +188,7 @@
 				<div class="line-allwidth"></div> <!--здесь будет линия футера отчерчивающая всю ширину контейнера под предыдущим блоком-->
 				<div class="com-cop-des">
 					<div class="company-rating">
-						<p class="text-footer text__company-rating">Company Rating</p>
+						<p class="text-buttom text__company-rating">Company Rating</p>
 						<div class="rating-area">
 							<input type="radio" id="star-5" name="rating" value="5">
 							<label for="star-5" title="«5»"></label>	
@@ -192,29 +202,30 @@
 							<label for="star-1" title="«1»"></label>
 						</div>
 					</div>
-						<p class="text-footer text__copyright">Copyright © 2018 Dlk • Design Life Kids</p>
+						<p class="text-buttom text__copyright">Copyright © 2018 Dlk • Design Life Kids</p>
 						<a href="#" class="web-design">Web Design — Direct Line Development</a>
 				</div>
 			</div>
 		</footer>
-		<div class="container__form"> <!--так как позиционирование отличается от основного контента сделал отдельный контейнер-->
+		<div class="popup__form"> 
 			<form action="#" method="post"> <!--если я правильно понял то метод будет post так как мы отправляем данные-->
 				<div>
-					<p class="enter">Name</p>
-					<input tabindex="1" placeholder="Ivan Ivanov" type="text" name="name" value="">
+					<label for="name">Name</label>
+					<input type="text" id="name" name="user-name">
 				</div>
 				<div>
-					<p class="enter">Phone</p>
-					<input tabindex="2" placeholder="x-xxx-xxx-xx-xx" type="tel" name="phone">
-					<p class="enter">Email</p>
-					<input tabindex="3" placeholder="example@mail" type="email" name="email">
+					<label for="phone">Phone</label>
+					<input type="tel" id="phone" name="user-phone">
+					<label for="email">Email</label>
+					<input type="email" id="email" name="user-email">
 				</div>
 				<div>
-					<p class="enter">Message</p>
-					<textarea tabindex="4" placeholder="Message..." name="message" id="message"></textarea> <!--размер полей убрал так как его будем настраивать с помощью css-->
+					<label for="message">Message</label>
+					<textarea id="message" name="user-message"></textarea> <!--размер полей убрал так как его будем настраивать с помощью css-->
 				</div>
 				<div>
-					<p class="enter"><input type="checkbox" name="consent" value="">By clicking on the button, you consent to the processing of your personal data</p>
+					<input type="checkbox" id="consent" name="consent">
+					<label for="consent">By clicking on the button, you consent to the processing of your personal data</label>
 				</div>
 				<button class="button button-submit" type="submit">SUBMIT</button>
 			</form>
