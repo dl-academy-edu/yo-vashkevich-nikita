@@ -12,10 +12,9 @@
 	<title>Main</title>
 </head>
 <body>
-	<div class="wrapper"> <!--сюда можно применить стили которые не стоит вешать на body-->
+	<div class="wrapper"> 
 		<header class="header">
 			<div class="container container__header">
-				<div class="nav__container">
 					<div class="logo">
 						<a href="./index.html">
 							<img class="logo-img" src="./assets/image/LOGO.svg" alt="logo">
@@ -28,10 +27,9 @@
 							<li class="item item__header"><a href="#" class="link link__header">about us</a></li>
 						</ul>
 					</nav>
-				</div>
 				<div class="search-contact-us">
 					<div class="search">
-						<!--<input type="text" class="search-field" placeholder="Введите поисковой запрос">--> <!--пока не понял как мы подключим к картинке поиск поэтому оставлю пока только img-->
+						<!--<input type="text" class="search-field" placeholder="Введите поисковой запрос">--> 
 						<img src="./assets/icon/search.svg" alt="search-image" class="search-icon">
 					</div>
 					<a href="./pages/contact-us.html" class="link link__contact-us">contact us</a>
@@ -41,56 +39,65 @@
 		<main class="main">
 			<section class="section section__explore">
 				<div class="container container__explore">
-					<!--блок из цифры и четырех полосок это вроде не бургер меню + на других страницах нет цифры как здесь "01", поэтому, честно говоря вообще не понимаю зачем здесь этот блок, но думаю можно реализовать через стили бордером интересно что вы скажете-->
-					<div class="number-rectangle">
-						<p class="number-page">01</p>
-						<ul class="rectangle rectangle__container"> 
-							<li class="item item__rectangle"><a href="#" class="link link__rectangle"></a></li>
-							<li class="item item__rectangle"><a href="#" class="link link__rectangle"></a></li>
-							<li class="item item__rectangle"><a href="#" class="link link__rectangle"></a></li>
-							<li class="item item__rectangle"><a href="#" class="link link__rectangle"></a></li>
-						</ul>
-					</div>
-					<div class="theoohnoo">
-						<h2 class="title-explore">The ooh noo collection</h2>
-						<p class="italic">Designed in Slovenia</p>
-						<button type="button" name="Explore-now" class="button button__explore">Explore now</button>
-					</div>
-					<div class="explore-image">
-						<img src="./assets/image/thoohnoo-image.png" alt="explore-image">
-					</div>
-					<p class="bottom-text">Free (continental) USA shipping on all orders of $100 USD or more!</p>
+					<ul class="explore-ul">
+						<li class="num">
+							<div class="number-rectangle">
+								<p class="number-page">01</p>
+								<ul class="rectangle rectangle__container"> 
+									<li class="item item__rectangle"><a href="#" class="link link__rectangle"></a></li>
+									<li class="item item__rectangle"><a href="#" class="link link__rectangle"></a></li>
+									<li class="item item__rectangle"><a href="#" class="link link__rectangle"></a></li>
+									<li class="item item__rectangle"><a href="#" class="link link__rectangle"></a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="num">
+							<div class="theoohnoo">
+								<h2 class="title-explore">The ooh noo collection</h2>
+								<p class="italic">Designed in Slovenia</p>
+								<button type="button" name="Explore-now" class="button button__explore">Explore now</button>
+							</div>
+						</li>
+						<li class="num">
+							<div class="explore-image">
+								<img src="./assets/image/thoohnoo-image.png" alt="explore-image">
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="container bottom-text">
+					<p>Free (continental) USA shipping on all orders of $100 USD or more!</p>
 				</div>
 			</section>
 			<section class="section section__category">
 				<div class="container container__category">
 					<h2 class="title-category">Category Products</h2>
-					<div class="category-products">
-						<div class="cards cards__apparel">
+					<ul class="category-products">
+						<li class="cards cards__apparel">
 							<img class="img-apparel" src="./assets/image/apparel-kids.png" alt="APPAREL KIDS">
 							<a href="#" class="cards-link">APPAREL KIDS</a>
-						</div>
-						<div class="cards cards__holiday">
+						</li>
+						<li class="cards cards__holiday">
 							<img src="./assets/image/holiday-shop.png" alt="HOLIDAY SHOP">
 							<a href="#" class="cards-link">HOLIDAY SHOP</a>
-						</div>
-						<div class="cards cards__toys">
+						</li>
+						<li class="cards cards__toys">
 							<img src="./assets/image/toys.png" alt="TOYS">
 							<a href="#" class="cards-link">TOYS</a>
-						</div>
-						<div class="cards cards__accessories">
+						</li>
+						<li class="cards cards__accessories">
 							<img src="./assets/image/accessories.png" alt="ACCESSORIES">
 							<a href="#" class="cards-link">ACCESSORIES</a>
-						</div>
-						<div class="cards cards__sale">
+						</li>
+						<!--li-- class="cards cards__sale">
 							<img src="./assets/image/sale.png" alt="SALE">
 							<a href="#" class="cards-link">SALE</a>
-						</div>
-						<div class="cards cards__adults">
+						</!--li-->
+						<!--li-- class="cards cards__adults">
 							<img src="./assets/image/apparel-adults.png" alt="APPAREL ADULTS">
 							<a href="#" class="cards-link">APPAREL ADULTS</a>
-						</div>
-					</div>
+						</!--li-->
+					</ul>
 					<div class="bottom-switch">
 						<button type="button" class="category-button-left"><img src="./assets/icon/left-arrow-button.png" alt="icon-button-left"></button>
 						<button type="button" class="category-button-right"><img src="./assets/icon/right-arrow-button.png" alt="icon-button-right"></button>
@@ -119,12 +126,20 @@
 			<section class="section section__work-with">
 				<h2>work with</h2>
 				<div class="container container__work-with">
-					<div class="work-with__images">
-						<a class="img-mail" href="#"><img src="./assets/image/mail-group.png" alt="mail-ru group"></a>
-						<a class="img-apple" href=""><img src="./assets/image/apple.png" alt="apple"></a>
-						<a class="img-eltex" href=""><img src="./assets/image/eltex.png" alt="eltex"></a>
-						<a class="img-owox" href=""><img src="./assets/image/owox.png" alt="owox"></a> 
-					</div>
+					<ul class="work-with__images">
+						<li class="item__work-with">
+							<a class="img-mail" href="#"><img src="./assets/image/mail-group.svg" alt="mail-ru group"></a>
+						</li>
+						<li class="item__work-with">
+							<a class="img-apple" href=""><img src="./assets/image/apple.svg" alt="apple"></a>
+						</li>
+						<li class="item__work-with">
+							<a class="img-eltex" href=""><img src="./assets/image/eltex.svg" alt="eltex"></a>
+						</li>
+						<li class="item__work-with">
+							<a class="img-owox" href=""><img src="./assets/image/owox.svg" alt="owox"></a> 
+						</li>
+					</ul>
 				</div>
 			</section>
 			<section class="section section__buy-now">
@@ -138,7 +153,9 @@
 					<article class="contacts">
 						<h2 class="title-contacts">Contacts</h2>
 						<p class="text text__contacts">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.5510575195844!2d49.28803825162973!3d53.512214679916106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x416879ed1ada6fbd%3A0x751234490b1ca980!2sDirect%20Line%20Digital!5e0!3m2!1sru!2sru!4v1663870506192!5m2!1sru!2sru" width="483" height="196" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						<div class="map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.5510575195844!2d49.28803825162973!3d53.512214679916106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x416879ed1ada6fbd%3A0x751234490b1ca980!2sDirect%20Line%20Digital!5e0!3m2!1sru!2sru!4v1663870506192!5m2!1sru!2sru" width="483" height="196" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
 					</article>
 				</div>
 			</section>
@@ -176,13 +193,13 @@
 						<form class="form-email" action="#" method="POST">
 							<input class="enter-email" type= "text" name="email" placeholder="Email"> 
 							<input class="button button__join" type="submit" value="Join">
+							</form>
 							<div class="social"> <!--так же загрузил бы через стили-->
-								<a href="#"><img src="./assets/icon/Facebook.svg" alt="facebook"></a>
-								<a href="#"><img src="./assets/icon/Twitter.svg" alt="twitter"></a>
-								<a href="#"><img src="./assets/icon/Pinterest.svg" alt="pinterest"></a>
-								<a href="#"><img src="./assets/icon/Instagram.svg" alt="inst"></a> 
-							</div>
-							</form>  
+								<a class="social-img" href="#"><img src="./assets/icon/Facebook.svg" alt="facebook"></a>
+								<a class="social-img" href="#"><img src="./assets/icon/Twitter.svg" alt="twitter"></a>
+								<a class="social-img" href="#"><img src="./assets/icon/Pinterest.svg" alt="pinterest"></a>
+								<a class="social-img" href="#"><img src="./assets/icon/Instagram.svg" alt="inst"></a> 
+							</div>  
 					</article>
 				</div>
 				<div class="line-allwidth"></div> <!--здесь будет линия футера отчерчивающая всю ширину контейнера под предыдущим блоком-->
@@ -190,16 +207,26 @@
 					<div class="company-rating">
 						<p class="text-buttom text__company-rating">Company Rating</p>
 						<div class="rating-area">
-							<input type="radio" id="star-5" name="rating" value="5">
-							<label for="star-5" title="«5»"></label>	
-							<input type="radio" id="star-4" name="rating" value="4">
-							<label for="star-4" title="«4»"></label>    
-							<input type="radio" id="star-3" name="rating" value="3">
-							<label for="star-3" title="«3»"></label>  
-							<input type="radio" id="star-2" name="rating" value="2">
-							<label for="star-2" title="«2»"></label>    
-							<input type="radio" id="star-1" name="rating" value="1">
-							<label for="star-1" title="«1»"></label>
+							<div class="rating__items">
+								<input type="radio" id="star-5" name="rating" value="5">
+								<label class="star" for="star-5" title="«5»"></label>	
+							</div>
+							<div class="rating__items">
+								<input type="radio" id="star-4" name="rating" value="4">
+								<label class="star" for="star-4" title="«4»"></label> 
+							</div>
+							<div class="rating__items">
+								<input type="radio" id="star-3" name="rating" value="3">
+								<label class="star" for="star-3" title="«3»"></label> 
+							</div>
+							<div class="rating__items">
+								<input type="radio" id="star-2" name="rating" value="2">
+								<label class="star" for="star-2" title="«2»"></label> 
+							</div>
+							<div class="rating__items">
+								<input type="radio" id="star-1" name="rating" value="1">
+								<label class="star" for="star-1" title="«1»"></label>
+							</div>       
 						</div>
 					</div>
 						<p class="text-buttom text__copyright">Copyright © 2018 Dlk • Design Life Kids</p>

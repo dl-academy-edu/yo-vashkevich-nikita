@@ -89,9 +89,33 @@ li {
 /*--------------------------------------------------------------------------ОБНУЛЕНИЕ------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------HEADER------------------------------------------------------------------------*/
 
+.container__header {
+	display: flex;
+	align-items: center;
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+
+.nav {
+	margin-right: auto;
+}
+
+.list__header {
+	display:flex;
+}
+
+.search-contact-us {
+	display: flex;
+}
+
+.link__contact-us {
+	margin-left: 20.02px;
+}
+
 .logo-img {
 	width: 100.08px;
 	height: 52px;
+	margin-right: 60.06px;
 }
 
 .link {
@@ -102,6 +126,7 @@ li {
 	align-items: center;
 	text-transform: uppercase;
 	color: #1E0606;
+	margin-right: 20.02px;
 }
 
 .search-icon {
@@ -137,9 +162,22 @@ li {
 	background-color: #434343;
 }
 
+.container__footer {
+	
+}
+
+.nuv-cus-con {
+	display: flex;
+}
+
 .ft {
+	margin-top: 100px;
 	width: 380px;
 	height: 281px;
+}
+
+.ft:not(:last-child) {
+	margin-right: 20px;
 }
 
 .text-footer {
@@ -147,6 +185,11 @@ li {
 	font-weight: 400;
 	line-height: 22px;
 	color: #AAAAAA;
+	margin-bottom: 23px;
+}
+
+.item__footer:not(:last-child) {
+	margin-bottom: 15px;
 }
 
 .link__footer {
@@ -159,16 +202,22 @@ li {
 .line {
 	border-bottom: solid 1px #666666;
 	width: 380px;
+	margin-bottom: 28px;
 }
 
 .line-allwidth {
 	border-bottom: solid 1px #666666;
 	max-width: 100%;
+	margin: 28px 0 23px 0;
 }
 
 .button__join {
 	width: 81px;
 	height: 40px;
+}
+
+.form-email {
+	display: flex;
 }
 
 .enter-email {
@@ -182,6 +231,8 @@ li {
 	color: #ffffff;
 }
 
+
+
 .enter-email, :placeholder-shown {
 	font-family: 'Open Sans';
 	font-weight: 400;
@@ -193,20 +244,75 @@ li {
 .social {
 	width: 150px;
 	height: 30px;
+	display: flex;
+	margin-top: 25.02px;
+}
+
+.social-img {
+	margin-right: 10px;
 }
 
 .text-buttom {
 	display: flex;
 	align-items: center;
 	color: #FFFFFF;
+	margin-bottom: 100px;
 }
 
-.text__company-rating, .text__copyright {
-	color: #ffffff;
+.text__company-rating {
+	margin-right: 20.02px;
+}
+
+
+
+.text__copyright{
+	margin-right: 109px;
 }
 
 .web-design {
 	color: #A2A2A2;
 }
 
+.com-cop-des {
+	display: flex;
+}
+
+.company-rating {
+	display: flex;
+	margin-right: 154.88px;
+}
+
+.rating-area {
+	display: flex;
+	margin-left: 25.02px;
+}
+
+.rating__items:not(:last-child) {
+	margin-right: 2.88px;
+}
+
+
 /*--------------------------------------------------------------------------FOOTER------------------------------------------------------------------------*/
+
+/*--------rating--------*/
+/*
+.rating-area {
+	display: inline-block;
+	font-size: 16px;
+	position: relative;
+}
+
+.rating-area::before{
+	content: "⭐⭐⭐⭐⭐";
+	display: block;
+}
+
+.star {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: row-reverse;
+} */
