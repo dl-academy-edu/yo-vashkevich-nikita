@@ -1,0 +1,382 @@
+/*--------------------------------------------------------------------------EXPLORE-----------------------------------------------------------------------------*/
+
+/*.container__explore {
+	display: flex;
+}*/
+
+.explore-ul {
+	display: flex;
+	background: #EEE4DB;
+	margin-top: 89px;
+}
+
+/*-----------------цифра-и-переключалки-4-полоски-------*/
+
+.number-rectangle{
+	margin-left: 31.02px;
+	margin-right: 72.02px;
+}
+
+
+.rectangle__container {
+	background: #EEE4DB;
+}
+
+.number-page {
+	width: 61px;
+	height: 74px;
+	font-family: 'Montserrat';
+	font-weight: 200;
+	font-size: 60px;
+	line-height: 73px;
+	color: rgba(30, 6, 6, 0.05);
+	margin-top: 17px;
+}
+
+.rectangle {
+margin-top: 10px;
+}
+
+.item__rectangle {
+	border: 1px solid #D6CAC2;
+	width: 31px;
+	height: 3px;
+	background-color: #D6CAC2;
+	margin-bottom: 11px;
+}
+
+.item__rectangle:checked{
+	background-color: #725F5B;
+}
+
+.item__rectangle:active{
+	background-color: #725F5B;
+}
+
+.item__rectangle:hover{
+	background-color: #725F5B;
+}
+/*-----------------цифра-и-переключалки-4-полоски-------*/
+/*-----------------theoohnoo----------------------------*/
+
+.theoohnoo{
+	margin-top: 89px;
+}
+
+.title-explore {
+	width: 307px;
+	height: 88px;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 110%;
+	color: #1E0606;
+	margin-bottom:  20px;
+}
+
+.italic {
+	width: 151.12px;
+	height: 26px;
+	font-family: 'Crimson Text';
+	font-style: italic;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 26px;
+	margin-bottom:  20px;
+}
+
+.explore-image{
+	padding-top: -89px;
+	margin-top: auto;
+}
+
+.bottom-text {
+	font-family: 'Open Sans';
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 16px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: #C29974;
+	margin-bottom: 90px;
+	padding: 11px;
+}
+
+/*--------------------------------------------------------------------------EXPLORE-----------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------CATEGORY----------------------------------------------------------------------------*/
+
+.title-category {
+	width: 454px;
+	height: 47px;
+	font-weight: 700;
+	font-size: 38px;
+	line-height: 46px;
+	margin-bottom: 30px;
+}
+
+.category-products {
+	display: flex;
+}
+
+.cards {
+	display: flex;
+	position: relative;
+	width: 280px;
+	height: 270px;
+	align-items: center;
+	justify-content: center;
+}
+
+.cards-link {
+	position: absolute;
+	color: #FFFFFF;
+	font-family: 'Montserrat';
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 32px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+	.cards__apparel {
+		background-color: #DBE4DB;
+		margin-right: 20px;
+	}
+
+	.cards__holiday {
+		background-color: #EADDD3;
+		margin-right: 20px;
+	}
+
+	.cards__toys {
+		background-color: #F8F2DA;
+		margin-right: 20px;
+	}
+
+	.cards__accessories {
+		background-color: #D5D4E1;
+	}
+
+	.cards__sale {
+		background-color: #F3D0DB;
+	}
+
+	.cards__adults {
+		background-color: #E5EAF8;
+	}
+
+	.bottom-switch {
+		display: flex;
+		margin: 30px 0 90px 0px;
+	}
+
+	.category-button-left{
+		margin-right: 6px;
+	}
+
+	.category-button-right{
+		margin-right: 20px;
+	}
+
+	.text__bottom-switch {
+		width: 580px;
+		height: 44px;
+		font-family: 'Open Sans';
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+/*--------------------------------------------------------------------------CATEGORY----------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------DELIVERY----------------------------------------------------------------------------*/
+
+.container__delivery {
+	display: flex;
+}
+
+	.delivery-image {
+		width: 480px;
+		height: 559px;
+		margin-right: 60px;
+	}
+
+.delivery__content {
+	margin-top: 30px;
+}
+
+	.title-delivery {
+		width: 199px;
+		font-family: 'Montserrat';
+		font-weight: 700;
+		font-size: 38px;
+		line-height: 46px;
+		text-transform: uppercase;
+		margin: 0 0 6px 60px;
+	}
+
+	.inscr {
+		display: flex;
+		align-items: center;
+		width: 326px;
+		height: 55px;
+		background: rgba(112, 187, 220, 0.2);
+		margin-bottom: 11px;
+	}
+
+	.title-inscription {
+		width: 88px;
+		font-family: 'Crimson Text';
+		font-style: italic;
+		font-weight: 700;
+		font-size: 26px;
+		line-height: 34px;
+		margin-left: 60px;
+	}
+
+	.inscr-guarantee{ 
+		width: 98px;
+		font-family: 'Crimson Text';
+		font-style: italic;
+		font-weight: 400;
+		font-size: 26px;
+		line-height: 34px;
+		margin: 0 0 22px 60px;
+	}
+
+	.inscr-credit {
+		width: 58px;
+		font-family: 'Crimson Text';
+		font-style: italic;
+		font-weight: 400;
+		font-size: 26px;
+		line-height: 34px;
+		margin: 0 0 30px 60px;
+	}
+
+	.text__some-days {
+		width: 480px;
+		font-family: 'Open Sans';
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 22px;
+		margin: 0 0 15.2px 60px;
+	}
+
+	.text__what-started {
+		width: 480px;
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 22px;
+		margin: 0 0 26px 60px;
+	}
+
+	.button__learn-more{
+		width: 149px;
+		height: 40px;
+		margin-left: 60px;
+	}
+
+/*--------------------------------------------------------------------------DELIVERY----------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------WORK-WITH----------------------------------------------------------------------------*/
+
+	.section__work-with {
+		margin-top: 90px;
+		margin-bottom: 90px;
+		font-size: 0;
+	}
+
+	.work-with__images {
+		display: flex;
+	}
+
+	.item__work-with:not(:last-child) {
+		margin-right: 127px;
+	}
+/*--------------------------------------------------------------------------WORK-WITH----------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------BUY-NOW-----AND-MAP------------------------------------------------------------------*/
+
+.section__buy-now {
+
+}
+
+.container__buy-now {
+	display: flex;
+}
+
+	.design-life-kids {
+		width: 543px;
+		background: #E1F0F7;
+		margin-right: 57px;
+	}
+
+	.title-design-life-kids {
+		width: 357px;
+		font-weight: 700;
+		font-size: 38px;
+		line-height: 46px;
+		margin: 0 0 10px 30px;
+	}
+
+	.about-us {
+		width: 86px;
+		height: 34px;
+		font-family: 'Crimson Text';
+		font-style: italic;
+		font-weight: 400;
+		font-size: 26px;
+		line-height: 34px;
+		color: #1E0606;
+		margin: 0 0 9.02px 30px;
+	}
+
+	.text__buy-now {
+		width: 483px;
+		height: 67px;
+		font-family: 'Open Sans';
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 22px;
+		margin: 0 0 20px 30px;
+	}
+
+	.button__buy-now {
+		width: 123px;
+		height: 40px;
+		margin-left: 30px;
+		margin-bottom: 27.02px;
+	}
+
+	.contacts {
+		width: 543px;
+		height: 209px;
+		background: #E1F0F7;
+	}
+
+	.title-contacts {
+		width: 217px;
+		height: 47px;
+		left: 740px;
+		top: 2043px;
+		font-weight: 700;
+		font-size: 38px;
+		line-height: 46px;
+		margin: 0 0 20px 30px;
+	}
+
+	.text__contacts {
+		width: 483px;
+		height: 66px;
+		font-family: 'Open Sans';
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 22px;
+		margin: 0 0 30px 30px;
+	}
+
+	.map {
+		margin-left: 30px;
+	}
+
+/*--------------------------------------------------------------------------BUY-NOW-----AND-MAP------------------------------------------------------------------*/

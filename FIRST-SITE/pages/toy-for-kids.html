@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Crimson+Text:ital,wght@1,400;1,700&family=Lato:wght@700&family=Montserrat:wght@200;300;600;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Toy for kids</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container container__header">
+				<div class="nav__container">
+					<div class="logo">
+						<a href="../index.html">
+							<img src="../assets/image/LOGO.png" alt="logo">
+						</a>
+					</div>
+					<nav class="nav">
+						<ul class="list list__header">
+							<li class="item item__header"><a href="#" class="link link__header">blog</a></li>
+							<li class="item item__header"><a href="./pages/catalog.html" class="link link__header">catalog</a></li>
+							<li class="item item__header"><a href="#" class="link link__header">about us</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="search-contact-us">
+					<div class="search">
+						<input type="text" class="search-field" placeholder="Введите поисковой запрос">
+						<button class="search" type="button"><img src="../assets/icon/search.svg" alt="search-image" class="search-icon"></button>
+					</div>
+					<a href="./pages/contact-us.html" class="link link__contact-us">contact us</a>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="section section__title-and-breadcrumb"> <!--эта секия на всех страницах кроме главной повторяется-->
+				<div class="container container__title-and-breadcrumb">
+					<h2 class="title-category">Category Products</h2>
+					<ul class="breadcrumb"> <!--хлебным крошкам значек-стрелку добавим как псевдоэлемент через css с помощью li::before-->
+						<li><a href="../../FIRST-SITE/index.html">Home</a></li>
+						<li><a href="../pages/catalog.html">Catalog</a></li>
+						<li><a href="../pages/toy-for-kids.html">Toys</a></li>
+					</ul>
+				</div>
+			</section>
+			<section class="section section__parameters">
+				<div class="container container__parameters">
+					<form class="form-parameters "action="">
+						<fieldset class="parameters-const">
+							<legend>Const</legend>
+							<input type="range" id="const" name="const" min="0" max="500">
+							<div class="const">0</div>
+							<div class="const">500</div>
+						</fieldset>
+							<fieldset class="parameters-colors">
+								<legend>Color</legend>
+								<div class="check">
+									<input type="checkbox" id="black" name="colors">
+									<label for="black">Black</label>
+								</div>
+								<div class="check">
+									<input type="checkbox" id="blue" name="colors">
+									<label for="blue">Blue</label>
+								</div>
+								<div class="check">
+									<input type="checkbox" id="green" name="colors">
+									<label for="green">Green</label>
+								</div>
+								<div class="check">
+									<input type="checkbox" id="white" name="colors">
+									<label for="white">White</label>
+								</div>
+							</fieldset>
+							<fieldset class="parameters-delivery">
+								<legend>Delivery</legend>
+								<div class="radio">
+									<input type="radio" id="delivery-free" name="shipping">
+									<label for="delivery-free">Free shipping</label>
+								</div>
+								<div class="radio">
+									<input type="radio" id="delivery-fast" name="shipping">
+									<label for="delivery-fast">Fast shipping</label>
+								</div>
+							</fieldset>
+							<fieldset class="parameters-amount">
+								<legend>Amount</legend>
+								<div class="button-amount">
+									<input type="button" value="0-5">
+								</div>
+								<div class="button-amount">
+									<input type="button" value="10-20">
+								</div>
+								<div class="button-amount">
+									<input type="button" value="20-50">
+								</div>
+							</fieldset>
+							<button type="button" name="apply" class="button button__apply">Apply</button>
+					</form>
+				</div>
+			</section>
+			<section class="section section__products">
+				<div class="container container__products">
+					<div class="products">
+						<div class="sharky">
+							<img src="../assets/image/SHARKY.png" alt="Shark">
+							<p class="signature">SHARKY BEAN BAG CHAIR COVER</p>
+							<p class="price">$60.00 USD</p>
+						</div>
+						<div class="brass">
+							<img src="../assets/image/BRASS.png" alt="Brass">
+							<p class="signature">BRASS DECO FRAMES</p>
+							<p class="price">$66.00 USD</p>
+						</div>
+						<div class="cibo">
+							<img src="../assets/image/CIBO.png" alt="Cibo">
+							<p class="signature">CIBO FULL APRON</p>
+							<p class="price">$60.00 USD</p>
+						</div>
+						<div class="gatcha">
+							<img src="../assets/image/GATCHA.png" alt="Gatcha">
+							<p class="signature">GATCHA GATCHA GUMBALL MACHINE</p>
+							<p class="price">$56.00 USD</p>
+						</div>
+						<div class="candle">
+							<img src="../assets/image/CANDLE.png" alt="Candle">
+							<p class="signature">CHRISTMAS ADVENT SCENTED CANDLE</p>
+							<p class="price">$29.00 USD</p>
+						</div>
+						<div class="tangle">
+							<img src="../assets/image/TANGLE.png" alt="Tangle">
+							<p class="signature">TANGLE SPINNING TEA LIGHT</p>
+							<p class="price">$56.00 USD</p>
+						</div>
+					</div>
+					<div class="switch">
+						<button type="button"><img src="../assets/icon/arrow-products-left.svg" alt="arrow"></button>
+						<ul class="list-pages-product">
+							<li class="item-prod activ__item-prod">1</li>
+							<li class="item-prod">2</li>
+							<li class="item-prod">3</li>
+							<li class="item-prod">4</li>
+						</ul>
+						<button type="button"><img src="../assets/icon/arrow-products-right.svg" alt="arrow"></button>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container container__footer">
+				<div class="nuv-cus-con">
+					<div class="ft navigation">
+						<p class="text-footer text__navigation">Navigation</p>
+						<div class="line"></div> <!--здесь будет линия футера отчерчивающая navigation от ссылок ниже-->
+						<ul class="list list__footer-nav">
+							<li class="item item__footer"><a href="#" class="link link__footer">About Us</a></li>
+							<li class="item item__footer"><a href="#" class="link link__footer">Blog</a></li>
+							<li class="item item__footer"><a href="#" class="link link__footer">Design Services</a></li>
+							<li class="item item__footer"><a href="#" class="link link__footer">Featured On</a></li>
+							<li class="item item__footer"><a href="#" class="link link__footer">2018 Holiday Catalog</a></li>
+							<li class="item item__footer"><a href="#" class="link link__footer">Shop By Designer</a></li>
+						</ul>
+					</div>
+					<div class="ft customer-info">
+						<p class="text-footer text__customer-info">Customer Information</p>
+						<div class="line"></div> <!--здесь будет линия футера отчерчивающая customer-info от ссылок ниже-->
+						<ul class="list list__footer-cus">
+							<li class="item item__footer"><a href="#" class="link link__footer">Contact Us</a></li>
+							<li class="item item__footer"><a href="#" class="link link__footer">Sale Exclusions</a></li>
+							<li class="item item__footer"><a href="#" class="link link__footer">Shipping & Returns</a></li>
+							<li class="item item__footer"><a href="#" class="link link__footer">Terms & Conditions</a></li>
+							<li class="item item__footer"><a href="#" class="link link__footer">Privacy Policy</a></li>
+							<li class="item item__footer"><a href="#" class="link link__footer">Search</a></li>
+						</ul>
+					</div>
+					<article class="ft connect">
+						<p class="text-footer text__connect">Connect</p>
+						<div class="line"></div> <!--здесь будет линия футера отчерчивающая connect от формы поиска-->
+						<form class="form-email" action="#" method="POST">
+							<input class="enter-email" type= "text" name="email" placeholder="Email"> 
+							<input class="button button__join" type="submit" value="Join">
+							<div class="social"> <!--так же загрузил бы через стили-->
+								<a href="#"><img src="../assets/icon/Facebook.svg" alt="facebook"></a>
+								<a href="#"><img src="../assets/icon/Twitter.svg" alt="twitter"></a>
+								<a href="#"><img src="../assets/icon/Pinterest.svg" alt="pinterest"></a>
+								<a href="#"><img src="../assets/icon/Instagram.svg" alt="inst"></a> 
+							</div>
+							</form>  
+					</article>
+				</div>
+				<div class="line-allwidth"></div> <!--здесь будет линия футера отчерчивающая всю ширину контейнера под предыдущим блоком-->
+				<div class="com-cop-des">
+					<div class="company-rating">
+						<p class="text-buttom text__company-rating">Company Rating</p>
+						<div class="rating-area">
+							<input type="radio" id="star-5" name="rating" value="5">
+							<label for="star-5" title="«5»"></label>	
+							<input type="radio" id="star-4" name="rating" value="4">
+							<label for="star-4" title="«4»"></label>    
+							<input type="radio" id="star-3" name="rating" value="3">
+							<label for="star-3" title="«3»"></label>  
+							<input type="radio" id="star-2" name="rating" value="2">
+							<label for="star-2" title="«2»"></label>    
+							<input type="radio" id="star-1" name="rating" value="1">
+							<label for="star-1" title="«1»"></label>
+						</div>
+					</div>
+						<p class="text-buttom text__copyright">Copyright © 2018 Dlk • Design Life Kids</p>
+						<a href="#" class="web-design">Web Design — Direct Line Development</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

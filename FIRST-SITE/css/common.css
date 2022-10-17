@@ -1,0 +1,318 @@
+/*--------------------------------------------------------------------------ОБНУЛЕНИЕ------------------------------------------------------------------------*/
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,*:before,:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header {
+	display: block;
+}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family: inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Montserrat';
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #1E0606;
+}
+
+p {
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-size: 16px;
+	color: #1E0606;
+}
+
+
+body {
+	/*font-family: 'Archivo', sans-serif;
+	font-family: 'Crimson Text', serif;
+	font-family: 'Lato', sans-serif;*/
+	font-family: 'Montserrat', sans-serif;
+	/*font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;*/
+	font-weight: 400;
+	font-size: 16px;
+	align-items: 21px;
+	color: #FFFFFF;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.container {
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+/*.undotted {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}  не помню для чего на занятиях мы создавали такой класс */ 
+
+/*--------------------------------------------------------------------------ОБНУЛЕНИЕ------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------HEADER------------------------------------------------------------------------*/
+
+.container__header {
+	display: flex;
+	align-items: center;
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+
+.nav {
+	margin-right: auto;
+}
+
+.list__header {
+	display:flex;
+}
+
+.search-contact-us {
+	display: flex;
+}
+
+.link__contact-us {
+	margin-left: 20.02px;
+}
+
+.logo-img {
+	width: 100.08px;
+	height: 52px;
+	margin-right: 60.06px;
+}
+
+.link {
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+	align-items: center;
+	text-transform: uppercase;
+	color: #1E0606;
+	margin-right: 20.02px;
+}
+
+.search-icon {
+	width: 24.02px;
+	height: 24px;
+}
+
+.link__contact-us {
+	font-weight: 700;
+}
+
+.button {
+	font-family: 'Open Sans';
+	display: block;
+	text-transform: uppercase;
+	border: none;
+	width: 161px;
+	height: 40px;
+	color: #FFFFFF;
+	background: black;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 22px;
+	text-align: center;
+	padding: 9px;
+}
+
+/*--------------------------------------------------------------------------HEADER------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------FOOTER------------------------------------------------------------------------*/
+
+.footer {
+	margin-top: 150px; /*временно поставил чтобы не накладывалась карта*/
+	background-color: #434343;
+}
+
+.container__footer {
+	
+}
+
+.nuv-cus-con {
+	display: flex;
+}
+
+.ft {
+	margin-top: 100px;
+	width: 380px;
+	height: 281px;
+}
+
+.ft:not(:last-child) {
+	margin-right: 20px;
+}
+
+.text-footer {
+	font-family: 'Open Sans';
+	font-weight: 400;
+	line-height: 22px;
+	color: #AAAAAA;
+	margin-bottom: 23px;
+}
+
+.item__footer:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.link__footer {
+	font-family: 'Open Sans';
+	font-weight: 400;
+	line-height: 22px;
+	color: #FFFFFF;
+}
+
+.line {
+	border-bottom: solid 1px #666666;
+	width: 380px;
+	margin-bottom: 28px;
+}
+
+.line-allwidth {
+	border-bottom: solid 1px #666666;
+	max-width: 100%;
+	margin: 28px 0 23px 0;
+}
+
+.button__join {
+	width: 81px;
+	height: 40px;
+}
+
+.form-email {
+	display: flex;
+}
+
+.enter-email {
+	width: 299px;
+	height: 40px;
+	background: #666666;
+	color: #ffffff;
+}
+
+.enter-email, ::placeholder {
+	color: #ffffff;
+}
+
+
+
+.enter-email, :placeholder-shown {
+	font-family: 'Open Sans';
+	font-weight: 400;
+	line-height: 16px;
+	color: #ffffff;
+
+}
+
+.social {
+	width: 150px;
+	height: 30px;
+	display: flex;
+	margin-top: 25.02px;
+}
+
+.social-img {
+	margin-right: 10px;
+}
+
+.text-buttom {
+	display: flex;
+	align-items: center;
+	color: #FFFFFF;
+	margin-bottom: 100px;
+}
+
+.text__company-rating {
+	margin-right: 20.02px;
+}
+
+
+
+.text__copyright{
+	margin-right: 109px;
+}
+
+.web-design {
+	color: #A2A2A2;
+}
+
+.com-cop-des {
+	display: flex;
+}
+
+.company-rating {
+	display: flex;
+	margin-right: 154.88px;
+}
+
+.rating-area {
+	display: flex;
+	margin-left: 25.02px;
+}
+
+.rating__items:not(:last-child) {
+	margin-right: 2.88px;
+}
+
+
+/*--------------------------------------------------------------------------FOOTER------------------------------------------------------------------------*/
+
+/*--------rating--------*/
+/*
+.rating-area {
+	display: inline-block;
+	font-size: 16px;
+	position: relative;
+}
+
+.rating-area::before{
+	content: "⭐⭐⭐⭐⭐";
+	display: block;
+}
+
+.star {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: row-reverse;
+} */
