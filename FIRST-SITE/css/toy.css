@@ -1,0 +1,375 @@
+header {
+	margin-bottom: 60px;
+}
+
+/*-------------BREADCRUMBS-----------------------------------*/
+.section__title-and-breadcrumb {
+	margin-bottom: 50px;
+}
+
+h2 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 49px;
+	text-transform: uppercase;
+	color: #1E0606;
+	margin-bottom: 15px;
+}
+
+.breadcrumb {
+	display: flex;
+}
+
+.item-breadcrumb {
+	margin-right: 20px;
+}
+
+.item-breadcrumb:last-child {
+	opacity: 0.5;
+}
+
+.link-breadcrumb {
+	font-family: 'Crimson Text';
+	font-style: italic; 
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 26px;
+	color: #1E0606;
+}
+
+.item-breadcrumb:not(:last-child)::after {
+	display: inline-block;
+	content: "";
+	background-image: url(../assets/icon/arrow.svg);
+	width: 8px;
+	height: 12px;
+	
+	/* Black */
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	margin-left: 20px;
+	margin-right: 2opx;
+}
+
+/*-------------BREADCRUMBS-----------------------------------*/
+/*-------------PARAMETERS-------------------------------------*/
+
+.section__parameters {
+	background: rgba(125, 151, 218, 0.2);
+	margin-bottom: 60px;
+}
+
+.container__parameters {
+	display: flex;
+}
+
+.form-parameters {
+	display: flex;
+	margin-top: 42px;
+
+}
+
+legend {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 22px;
+	color: #1E0606;
+	margin-bottom: 15px;
+
+}
+
+/*-------0-500-------------------*/
+/*--обнуление-ползунка---*/
+input[type=range] {
+	-webkit-appearance: none; /* Скрывает слайдер, чтобы можно было создать свой */
+	width: 100%; /* Указание параметра ширины требуется для Firefox. */
+ }
+  
+ input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+ }
+  
+ input[type=range]:focus {
+	outline: none; /* Убирает голубую границу у элемента. Хотя, возможно, и стоит создавать некоторое оформления для состояния фокуса в целях обеспечения доступности. */
+ }
+  
+ input[type=range]::-ms-track {
+	width: 100%;
+	cursor: pointer;
+	background: transparent; /* Скрывает слайдер, чтобы можно было добавить собственные стили. */
+	border-color: transparent;
+	color: transparent;
+ }
+ /*--обнуление-ползунка---*/
+
+ input[type=range]  {
+	width: 188px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: none;
+	overflow: hidden;
+	height: 4px;
+ }
+
+ input[type=range]::-webkit-slider-runnable-track {
+	height: 4px;
+	background-color: #000000;
+	opacity: 0.5;
+ }
+
+ input[type=range]::-webkit-slider-thumb {
+	background: #ecf0f1;
+	box-sizing: border-box;
+	cursor: pointer;
+	width: 24px;
+	height: 24px;
+	-webkit-appearance: none;
+	margin-top: -4px;
+	box-shadow: -200px  0 0 200px  #C29974;;
+
+ }
+
+ input[type=range]::-moz-range-track {
+	height: 4px;
+	  background-color: #000000;
+	  opacity: 0.5;
+ }
+
+
+input[type=range]::-moz-range-thumb {
+	background: #ecf0f1;
+	cursor: pointer;
+	height: 4px;
+	border-radius:0px;
+	box-shadow: -200px  0px 0px 200px   #C29974;;
+	padding: 0px;
+	margin: 0px;
+ }
+
+.parameters-const {
+	padding: 0;
+	margin-right: 94px;
+}
+
+
+
+
+
+/*-------0-500-------------------*/
+/*-------colors-------------------*/
+
+.parameters-colors {
+	margin-right: 124px;
+}
+
+.input-colors:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.label-colors {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	color: #1E0606;
+	margin-left: 0;
+	margin-left: 6px;
+}
+
+/*-------colors-------------------*/
+/*-------delivery-------------------*/
+
+.parameters-delivery {
+	margin-right: 69.02px;
+}
+
+.radio {
+	margin-bottom: 10px;
+}
+
+.label-delivery {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	color: #1E0606;
+	margin-left: 6px;
+}
+
+/*-------delivery-------------------*/
+/*-------amount-------------------*/
+
+.parameters-amount {
+	margin-right: 60px;
+}
+
+.block-amount {
+	display: flex;
+}
+
+.button-amount {
+	background: #FFFFFF;
+}
+
+.input-amount {
+	width: 80px;
+	height: 35px;
+	background: #FFFFFF;
+}
+
+.input-amount:hover {
+	background: #EDDEEB;
+}
+
+.input-amount:active {
+	background: #F3D0DB;
+}
+
+
+/*
+.label-amount {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	color: #1E0606;
+}
+*/
+
+/*-------amount-------------------*/
+/*-------apply-------------------*/
+.button__apply {
+	margin-top: 37px;
+	width: 96px;
+}
+/*-------apply-------------------*/
+
+/*-------------PARAMETERS-------------------------------------------------*/
+/*-------------PRODUCTS-------------------------------------------------*/
+
+.section__products {
+	
+}
+
+.container__products {
+
+}
+
+.products {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.block {
+	width: 380px;
+	height: 497px;
+}
+
+/*
+.block:hover ::after {
+	content: "Learn more";
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}*/
+
+.signature {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+	text-align: center;
+	color: #1E0606;
+	margin: 30px 0 15px 0;
+}
+
+.price {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 22px;
+	text-align: center;
+	color: #1E0606;
+}
+
+.switch {
+	display: flex;
+	position: relative;
+	justify-content: center;
+	margin-bottom: 60px;
+	margin-top: 50px;
+}
+
+.list-pages-product {
+	display: flex;
+	align-content: center;
+}
+
+.button-prod {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	text-transform: uppercase;
+	color: #1E0606;
+	background-color: #FFFFFF;
+}
+
+.item-prod:not(:last-child) {
+	margin-right: 64px
+}
+
+.button-prod:hover {
+	color: #AAAAAA;
+}
+
+.button-prod:active {
+	color: #C29974;
+}
+
+.arrow {
+	display: block;
+	width: 13px;
+	height: 26px;
+}
+
+.arrow-left {
+	position: absolute;
+	left: 0;
+	background-image: url(../assets/icon/arrow-products-left.svg);
+	background-color: #FFFFFF;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 26px;
+}
+
+.arrow-right {
+	position: absolute;
+	right: 0;
+	background-image: url(../assets/icon/arrow-products-right.svg);
+	background-color: #FFFFFF;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 26px;
+}
+/*-------------PRODUCTS-------------------------------------------------*/
+
+.footer {
+	margin-top: 0;
+}

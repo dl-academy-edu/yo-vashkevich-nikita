@@ -93,7 +93,7 @@ li {
 	display: flex;
 	align-items: center;
 	margin-top: 50px;
-	margin-bottom: 40px;
+	
 }
 
 .nav {
@@ -138,6 +138,43 @@ li {
 	font-weight: 700;
 }
 
+
+/*---------interactive-header------*/
+.logo-img:hover {
+	opacity: 0.5;
+}
+
+.logo-img:active {
+	opacity: 0.2;
+}
+
+.item__header:hover {
+	opacity: 0.5;
+}
+
+.item__header:active {
+	opacity: 0.2;
+}
+
+.search-icon:hover {
+	opacity: 0.5;
+}
+
+.search-icon:active {
+	opacity: 0.2;
+}
+
+.link__contact-us:hover {
+	opacity: 0.5;
+}
+
+.link__contact-us:active {
+	opacity: 0.2;
+}
+
+/*--------------------------------------------------------------------------HEADER------------------------------------------------------------------------*/
+/*------------------------------------BUTTON------------------------------------*/
+
 .button {
 	font-family: 'Open Sans';
 	display: block;
@@ -154,7 +191,19 @@ li {
 	padding: 9px;
 }
 
-/*--------------------------------------------------------------------------HEADER------------------------------------------------------------------------*/
+.button:hover {
+	background: #C29974;
+}
+
+.button:active {
+	background: #CFAF91;
+}
+
+.button:disabled {
+	background: #C7C1C1;
+}
+
+/*------------------------------------BUTTON------------------------------------*/
 /*--------------------------------------------------------------------------FOOTER------------------------------------------------------------------------*/
 
 .footer {
@@ -199,6 +248,14 @@ li {
 	color: #FFFFFF;
 }
 
+.link__footer:hover {
+	opacity: 0.5;
+}
+
+.link__footer:active {
+	opacity: 0.2;
+}
+
 .line {
 	border-bottom: solid 1px #666666;
 	width: 380px;
@@ -221,24 +278,36 @@ li {
 }
 
 .enter-email {
-	width: 299px;
+	width: 380px;
 	height: 40px;
 	background: #666666;
 	color: #ffffff;
+	padding: 0;
+	padding-left: 15px;
 }
 
-.enter-email, ::placeholder {
+.enter-email::placeholder {
 	color: #ffffff;
+	/*padding-left: 15px;*/
 }
-
-
 
 .enter-email, :placeholder-shown {
 	font-family: 'Open Sans';
 	font-weight: 400;
 	line-height: 16px;
 	color: #ffffff;
+}
 
+.enter-email:hover {
+	box-sizing: border-box;
+	border: 1px solid #FFFDFD;
+	border-right: none;
+}
+
+.enter-email:active {
+	box-sizing: border-box;
+	border: 1px solid #FFFDFD;
+	border-right: none;
 }
 
 .social {
@@ -250,6 +319,14 @@ li {
 
 .social-img {
 	margin-right: 10px;
+}
+
+.social-img:hover {
+	opacity: 0.5;
+}
+
+.social-img:active {
+	opacity: 0.2;
 }
 
 .text-buttom {
@@ -273,6 +350,16 @@ li {
 	color: #A2A2A2;
 }
 
+.web-design:hover {
+	color: #FFFFFF;
+	text-decoration-line: underline;
+}
+
+.web-design:active {
+	color: #FFFFFF;
+	text-decoration-line: underline;
+}
+
 .com-cop-des {
 	display: flex;
 }
@@ -294,25 +381,3 @@ li {
 
 /*--------------------------------------------------------------------------FOOTER------------------------------------------------------------------------*/
 
-/*--------rating--------*/
-/*
-.rating-area {
-	display: inline-block;
-	font-size: 16px;
-	position: relative;
-}
-
-.rating-area::before{
-	content: "⭐⭐⭐⭐⭐";
-	display: block;
-}
-
-.star {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	display: flex;
-	flex-direction: row-reverse;
-} */

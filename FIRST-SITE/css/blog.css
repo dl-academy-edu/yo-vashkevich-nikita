@@ -1,0 +1,195 @@
+header {
+	margin-bottom: 60px;
+}
+
+/*--------------------------BRREADCRUMBS--------------------*/
+
+.section__title-and-breadcrumb {
+	margin-bottom: 50.02px;
+}
+
+h2 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 49px;
+	text-transform: uppercase;
+	color: #1E0606;
+	margin-bottom: 15px;
+}
+
+.breadcrumb {
+	display: flex;
+}
+
+.item-breadcrumb {
+	margin-right: 20px;
+}
+
+.item-breadcrumb:not(:first-child) {
+	opacity: 0.5;
+}
+
+.link-breadcrumb {
+	font-family: 'Crimson Text';
+	font-style: italic; 
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 26px;
+	color: #1E0606;
+}
+
+.item-breadcrumb:not(:last-child)::after {
+	display: inline-block;
+	content: "";
+	background-image: url(../assets/icon/arrow.svg);
+	width: 8px;
+	height: 12px;
+	
+	/* Black */
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	margin-left: 20px;
+	margin-right: 2opx;
+}
+
+/*--------------------------BRREADCRUMBS--------------------*/
+/*--------------------------CONTENT-------------------------*/
+.cards-tales{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.tales {
+	width: 380px;
+	height: 491px;
+}
+
+/*.tale-mr {
+	margin-right: 20px;
+}*/
+
+.tale-img {
+	margin-bottom: 20px;
+}
+
+.tale-date {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	color: #818181;
+	
+	mix-blend-mode: normal;
+
+	margin-bottom: 7px;
+}
+
+.tale-title {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 31px;
+	color: #1E0606;
+
+	margin-bottom: 15px;
+}
+
+.tale-title:hover {
+	text-decoration-line: underline;
+	color: #1E0606;
+	cursor: pointer;
+}
+
+.tale-title:active {
+	text-decoration-line: underline;
+	color: #1E0606;
+}
+
+.tale-text {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 25px;
+	color: #1E0606;
+}
+/*--------------------------CONTENT-------------------------*/
+/*--------------------------SWITCH-------------------------*/
+
+
+.switch {
+	display: flex;
+	position: relative;
+	justify-content: center;
+	margin-bottom: 60px;
+	margin-top: 50px;
+}
+
+.list-pages-product {
+	display: flex;
+	align-content: center;
+}
+
+.button-prod {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	text-transform: uppercase;
+	color: #1E0606;
+	background-color: #FFFFFF;
+}
+
+.item-prod:not(:last-child) {
+	margin-right: 64px
+}
+
+.button-prod:hover {
+	color: #AAAAAA;
+}
+
+.button-prod:active {
+	color: #C29974;
+}
+
+.arrow {
+	display: block;
+	width: 13px;
+	height: 26px;
+}
+
+.arrow-left {
+	position: absolute;
+	left: 0;
+	background-image: url(../assets/icon/arrow-products-left.svg);
+	background-color: #FFFFFF;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 26px;
+}
+
+.arrow-right {
+	position: absolute;
+	right: 0;
+	background-image: url(../assets/icon/arrow-products-right.svg);
+	background-color: #FFFFFF;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 26px;
+}
+
+/*--------------------------SWITCH-------------------------*/
+
+.footer {
+	margin-top: 0%;
+}

@@ -1,0 +1,176 @@
+.container__header {
+	margin-bottom: 60px;
+}
+
+/*-------------BREADCRUMBS-----------------------------------*/
+.section__title-and-breadcrumb {
+	margin-bottom: 49px;
+}
+
+h2 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 49px;
+	text-transform: uppercase;
+	color: #1E0606;
+	margin-bottom: 15px;
+}
+
+.breadcrumb {
+	display: flex;
+}
+
+.item-breadcrumb {
+	margin-right: 20px;
+}
+
+.item-breadcrumb:not(:first-child) {
+	opacity: 0.5;
+}
+
+.link-breadcrumb {
+	font-family: 'Crimson Text';
+	font-style: italic; 
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 26px;
+	color: #1E0606;
+}
+
+.item-breadcrumb:not(:last-child)::after {
+	display: inline-block;
+	content: "";
+	background-image: url(../assets/icon/arrow.svg);
+	width: 8px;
+	height: 12px;
+	
+	/* Black */
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	margin-left: 20px;
+	margin-right: 2opx;
+}
+
+/*-------------BREADCRUMBS-----------------------------------*/
+/*-------------CARDS-CATEGORY-----------------------------------*/
+.container__category {
+	width: 1080px;
+}
+
+.title-category {
+	width: 454px;
+	height: 47px;
+	font-weight: 700;
+	font-size: 38px;
+	line-height: 46px;
+	margin-bottom: 30px;
+}
+
+.category-products {
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+
+.cards {
+	display: flex;
+	position: relative;
+	width: 280px;
+	height: 270px;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 23px;
+}
+
+.cards:not(:last-child) {
+	margin-right: 20px;
+}
+
+.cards-link {
+	position: absolute;
+	color: #FFFFFF;
+	font-family: 'Montserrat';
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 32px;
+	text-transform: uppercase;
+	text-align: center;
+	width: 129px;
+}
+
+.cards-link:hover {
+	text-decoration-line: underline;
+}
+
+.cards-link:active {
+	text-decoration-line: underline;
+}
+
+.card-link-acc {
+	width: 192px;
+}
+
+	.cards__apparel {
+		background-color: #DBE4DB;
+	}
+
+	.cards__holiday {
+		background-color: #EADDD3;
+	}
+
+	.cards__toys {
+		background-color: #F8F2DA;
+	}
+
+	.cards__accessories {
+		background-color: #D5D4E1;
+		margin-left: 200px;
+	}
+
+	.cards__sale {
+		background-color: #F3D0DB;
+	}
+
+	.img-sale {
+		width: 248px;
+		height: 248px;
+	}
+
+	.cards__adults {
+		background-color: #E5EAF8;
+	}
+
+	.img-adults {
+		width: 271.16px;
+		height: 204.26px;
+	}
+
+	/*-------------CARDS-CATEGORY-----------------------------------*/
+	/*-------------Product-Description-----------------------------------*/
+
+	.section__text {
+		margin-bottom: 55px;
+	}
+
+	.title-description {
+		margin: 35px 0 25px 200px;
+	}
+	.description {
+		width: 680px;
+		margin-left: 200px;
+	}
+
+	.description:not(:last-child) {
+		margin-bottom: 15px;
+	}
+	
+	
+	/*-------------Product-Description-----------------------------------*/
+
+	.footer {
+		margin-top: 0;
+	}

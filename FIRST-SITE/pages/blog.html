@@ -7,31 +7,30 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Crimson+Text:ital,wght@1,400;1,700&family=Lato:wght@700&family=Montserrat:wght@200;300;600;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/normolize.css">
 	<link rel="stylesheet" href="../css/common.css">
-	<link rel="stylesheet" href="#">
+	<link rel="stylesheet" href="../css/blog.css">
 	<title>Blog</title>
 </head>
 <body>
 	<div class="wrapper">
 		<header class="header">
 			<div class="container container__header">
-				<div class="nav__container">
 					<div class="logo">
-						<a href="../../FIRST-SITE/index.html">
-							<img src="../../FIRST-SITE/assets/image/LOGO.png" alt="logo">
+						<a href="../index.html">
+							<img class="logo-img" src="../assets/image/LOGO.svg" alt="logo">
 						</a>
 					</div>
 					<nav class="nav">
 						<ul class="list list__header">
 							<li class="item item__header"><a href="#" class="link link__header">blog</a></li>
-							<li class="item item__header"><a href="../../FIRST-SITE/pages/catalog.html" class="link link__header">catalog</a></li>
+							<li class="item item__header"><a href="../pages/catalog.html" class="link link__header">catalog</a></li>
 							<li class="item item__header"><a href="#" class="link link__header">about us</a></li>
 						</ul>
 					</nav>
-				</div>
 				<div class="search-contact-us">
 					<div class="search">
-						<input type="text" class="search-field" placeholder="Введите поисковой запрос">
+						<!--<input type="text" class="search-field" placeholder="Введите поисковой запрос">--> 
 						<img src="../assets/icon/search.svg" alt="search-image" class="search-icon">
 					</div>
 					<a href="../pages/contact-us.html" class="link link__contact-us">contact us</a>
@@ -39,64 +38,64 @@
 			</div>
 		</header>
 		<main>
-			<section class="section section__title-and-breadcrumb"> <!--эта секия на всех страницах кроме главной повторяется-->
+			<section class="section section__title-and-breadcrumb"> 
 				<div class="container container__title-and-breadcrumb">
-					<h2 class="title-category">Blog</h2>
-					<ul class="breadcrumb"> <!--хлебным крошкам значек-стрелку добавим как псевдоэлемент через css с помощью li::before-->
-						<li><a href="../../FIRST-SITE/index.html">Home</a></li>
-						<li><a href="../pages/blog.html">Blog</a></li>
+					<h2 class="title-category">BLog</h2>
+					<ul class="breadcrumb"> <!--значек-стрелкa-->
+						<li class="item-breadcrumb"><a class="link-breadcrumb" href="../index.html">Home</a></li>
+						<li class="item-breadcrumb"><a class="link-breadcrumb" href="../pages/blog.html">Blog</a></li>
 					</ul>
 				</div>
 			</section>
 			<section class="section section__content">
 				<div class="container container__content">
 					<ul class="cards-tales">
-						<li class="tales">
+						<li class="tales tale-mr">
 							<img class="tale-img" src="../assets/image/tale1.jpg" alt="Top 5 fastest growing it service companies in philly">
 							<p class="tale-date">23rd August 2018</p>
-							<h3 class="tale-title">Top 5 fastest growing it service companies in philly</h3>
+							<a href="#" class="tale-title">Top 5 fastest growing it service companies in philly</a>
 							<p class="tale-text">Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.</p>
 						</li>
-						<li class="tales">
+						<li class="tales tale-mr">
 							<img class="tale-img" src="../assets/image/tale2.jpg" alt="Best financial">
 							<p class="tale-date">23rd August 2018</p>
-							<h3 class="tale-title">Best financial</h3>
+							<a href="#" class="tale-title">Best financial</a>
 							<p class="tale-text">Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p>
 						</li>
 						<li class="tales">
 							<img class="tale-img" src="../assets/image/tale3.jpg" alt="Company logo or brand identity: which one is more important? brand identity">
 							<p class="tale-date">23rd August 2018</p>
-							<h3 class="tale-title">Company logo or brand identity: which one is more important? brand identity</h3>
+							<a href="#" class="tale-title">Company logo or brand identity: which one is more important? brand identity</a>
 							<p>To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.</p>
 						</li>
-						<li class="tales">
+						<li class="tales tale-mr">
 							<img class="tale-img" src="../assets/image/tale4.jpg" alt="Best financial">
 							<p class="tale-date">23rd August 2018</p>
-							<h3 class="tale-title">Best financial</h3>
+							<p class="tale-title">Best financial</p>
 							<p class="tale-text">Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p>
 						</li>
-						<li class="tales">
+						<li class="tales tale-mr">
 							<img class="tale-img" src="../assets/image/tale5.jpg" alt="Company logo or brand identity: which one is more important? brand identity">
 							<p class="tale-date">23rd August 2018</p>
-							<h3 class="tale-title">Company logo or brand identity: which one is more important? brand identity</h3>
+							<a href="#" class="tale-title">Company logo or brand identity: which one is more important? brand identity</a>
 							<p>To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.</p>
 						</li>
 						<li class="tales">
 							<img class="tale-img" src="../assets/image/tale6.jpg" alt="Top 5 fastest growing it service companies in philly">
 							<p class="tale-date">23rd August 2018</p>
-							<h3 class="tale-title">Top 5 fastest growing it service companies in philly</h3>
+							<a href="#" class="tale-title">Top 5 fastest growing it service companies in philly</a>
 							<p class="tale-text">Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.</p>
 						</li>
 					</ul>
 					<div class="switch">
-						<button type="button"><img src="../assets/icon/arrow-products-left.svg" alt="arrow"></button>
+						<button class="arrow arrow-left" type="button"><!--img src="../assets/icon/arrow-products-left.svg" alt="arrow"--></button>
 						<ul class="list-pages-product">
-							<li class="item-prod activ__item-prod">1</li>
-							<li class="item-prod">2</li>
-							<li class="item-prod">3</li>
-							<li class="item-prod">4</li>
+							<li class="item-prod"><button class="button-prod" type="button">1</button></li>
+							<li class="item-prod"><button class="button-prod" type="button">2</button></li>
+							<li class="item-prod"><button class="button-prod" type="button">3</button></li>
+							<li class="item-prod"><button class="button-prod" type="button">4</button></li>
 						</ul>
-						<button type="button"><img src="../assets/icon/arrow-products-right.svg" alt="arrow"></button>
+						<button class="arrow arrow-right" type="button"><!--img src="../assets/icon/arrow-products-right.svg" alt="arrow"--></button>
 					</div>
 				</div>
 			</section>
@@ -106,7 +105,7 @@
 				<div class="nuv-cus-con">
 					<div class="ft navigation">
 						<p class="text-footer text__navigation">Navigation</p>
-						<div class="line"></div> <!--здесь будет линия футера отчерчивающая navigation от ссылок ниже-->
+						<div class="line"></div> <!--линия футера отчерчивающая navigation от ссылок ниже-->
 						<ul class="list list__footer-nav">
 							<li class="item item__footer"><a href="#" class="link link__footer">About Us</a></li>
 							<li class="item item__footer"><a href="#" class="link link__footer">Blog</a></li>
@@ -134,34 +133,44 @@
 						<form class="form-email" action="#" method="POST">
 							<input class="enter-email" type= "text" name="email" placeholder="Email"> 
 							<input class="button button__join" type="submit" value="Join">
-							<div class="social"> <!--так же загрузил бы через стили-->
-								<a href="#"><img src="../assets/icon/Facebook.svg" alt="facebook"></a>
-								<a href="#"><img src="../assets/icon/Twitter.svg" alt="twitter"></a>
-								<a href="#"><img src="../assets/icon/Pinterest.svg" alt="pinterest"></a>
-								<a href="#"><img src="../assets/icon/Instagram.svg" alt="inst"></a> 
-							</div>
-							</form>  
+							</form>
+							<div class="social"> 
+								<a class="social-img" href="#"><img src="../assets/icon/Facebook.svg" alt="facebook"></a>
+								<a class="social-img" href="#"><img src="../assets/icon/Twitter.svg" alt="twitter"></a>
+								<a class="social-img" href="#"><img src="../assets/icon/Pinterest.svg" alt="pinterest"></a>
+								<a class="social-img" href="#"><img src="../assets/icon/Instagram.svg" alt="inst"></a> 
+							</div>  
 					</article>
 				</div>
-				<div class="line-allwidth"></div> <!--здесь будет линия футера отчерчивающая всю ширину контейнера под предыдущим блоком-->
+				<div class="line-allwidth"></div> <!--линия футера отчерчивающая всю ширину контейнера под предыдущим блоком-->
 				<div class="com-cop-des">
 					<div class="company-rating">
 						<p class="text-buttom text__company-rating">Company Rating</p>
 						<div class="rating-area">
-							<input type="radio" id="star-5" name="rating" value="5">
-							<label for="star-5" title="«5»"></label>	
-							<input type="radio" id="star-4" name="rating" value="4">
-							<label for="star-4" title="«4»"></label>    
-							<input type="radio" id="star-3" name="rating" value="3">
-							<label for="star-3" title="«3»"></label>  
-							<input type="radio" id="star-2" name="rating" value="2">
-							<label for="star-2" title="«2»"></label>    
-							<input type="radio" id="star-1" name="rating" value="1">
-							<label for="star-1" title="«1»"></label>
+							<div class="rating__items">
+								<input type="radio" id="star-5" name="rating" value="5">
+								<label class="star" for="star-5" title="«5»"></label>	
+							</div>
+							<div class="rating__items">
+								<input type="radio" id="star-4" name="rating" value="4">
+								<label class="star" for="star-4" title="«4»"></label> 
+							</div>
+							<div class="rating__items">
+								<input type="radio" id="star-3" name="rating" value="3">
+								<label class="star" for="star-3" title="«3»"></label> 
+							</div>
+							<div class="rating__items">
+								<input type="radio" id="star-2" name="rating" value="2">
+								<label class="star" for="star-2" title="«2»"></label> 
+							</div>
+							<div class="rating__items">
+								<input class="star-one" type="radio" id="star-1" name="rating" value="1">
+								<label class="star" for="star-1" title="«1»"></label>
+							</div>       
 						</div>
 					</div>
 						<p class="text-buttom text__copyright">Copyright © 2018 Dlk • Design Life Kids</p>
-						<a href="#" class="web-design">Web Design — Direct Line Development</a>
+						<a href="#" class="web-design">Web Design — Direct Line Development</a>
 				</div>
 			</div>
 		</footer>

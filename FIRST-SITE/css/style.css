@@ -1,3 +1,7 @@
+.container__header {
+	margin-bottom: 40px;
+}
+
 /*--------------------------------------------------------------------------EXPLORE-----------------------------------------------------------------------------*/
 
 /*.container__explore {
@@ -5,6 +9,7 @@
 }*/
 
 .explore-ul {
+	position: relative;
 	display: flex;
 	background: #EEE4DB;
 	margin-top: 89px;
@@ -46,18 +51,21 @@ margin-top: 10px;
 }
 
 .item__rectangle:checked{
+	border: 1px solid #725F5B;
 	background-color: #725F5B;
 }
 
 .item__rectangle:active{
+	border: 1px solid #725F5B;
 	background-color: #725F5B;
 }
 
 .item__rectangle:hover{
+	border: 1px solid #725F5B;
 	background-color: #725F5B;
 }
 /*-----------------цифра-и-переключалки-4-полоски-------*/
-/*-----------------theoohnoo----------------------------*/
+/*-----------------theoohnoo-collection----------------------------*/
 
 .theoohnoo{
 	margin-top: 89px;
@@ -84,9 +92,16 @@ margin-top: 10px;
 	margin-bottom:  20px;
 }
 
+.button__explore {
+	margin-bottom: 89px;
+}
+
 .explore-image{
-	padding-top: -89px;
-	margin-top: auto;
+	position: absolute;
+	top: -89px;
+	z-index: 1;
+	/*padding-top: -89px;*/
+	/*margin-top: auto;*/
 }
 
 .bottom-text {
@@ -100,6 +115,7 @@ margin-top: 10px;
 	background-color: #C29974;
 	margin-bottom: 90px;
 	padding: 11px;
+	z-index: 10;
 }
 
 /*--------------------------------------------------------------------------EXPLORE-----------------------------------------------------------------------------*/
@@ -136,6 +152,19 @@ margin-top: 10px;
 	line-height: 32px;
 	text-transform: uppercase;
 	text-align: center;
+	width: 129px;
+}
+
+.cards-link:hover {
+	text-decoration-line: underline;
+}
+
+.cards-link:active {
+	text-decoration-line: underline;
+}
+
+.card-link-acc {
+	width: 192px;
 }
 
 	.cards__apparel {
@@ -168,15 +197,74 @@ margin-top: 10px;
 	.bottom-switch {
 		display: flex;
 		margin: 30px 0 90px 0px;
+		align-items: center;
 	}
-
+/* вариант1
 	.category-button-left{
 		margin-right: 6px;
+		background-color: #FFFFFF;
+	}
+
+	.category-button-right{
+		margin-right: 20px;
+		background-color: #FFFFFF;
+	}
+	*/
+
+	/* вариант кнопок 2 */
+
+	.arrow-btn-left {
+		position: relative;
+		display: flex;
+		width: 37px;
+		height: 37px;
+		background: rgba(112, 187, 220, 0.2);
+		margin-right: 6px;
+		align-items: center;
+		padding: 0;
+	}
+
+	.arrow-btn-right {
+		position: relative;
+		display: flex;
+		width: 37px;
+		height: 37px;
+		background: rgba(112, 187, 220, 0.2);
+		align-items: center;
+		padding: 0;
+	}
+
+	.category-button-left {
+		position: absolute;
+		display: flex;
+		left: 0;
+		background-image: url(../assets/icon/arrow-products-left.svg);
+		background-color: rgba(112, 187, 220, 0.0);
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 17px;
+		height: 29px;
+		margin-left: 9px;
+		
+	}
+	
+	.category-button-right {
+		position: absolute;
+		display: flex;
+		left: 0;
+		background-image: url(../assets/icon/arrow-products-right.svg);
+		background-color: rgba(112, 187, 220, 0.0);
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 17px;
+		height: 29px;
+		margin-left: 9px;
 	}
 
 	.category-button-right{
 		margin-right: 20px;
 	}
+	
 
 	.text__bottom-switch {
 		width: 580px;
@@ -185,6 +273,7 @@ margin-top: 10px;
 		font-weight: 400;
 		font-size: 16px;
 		line-height: 22px;
+		margin-left: 20px;
 	}
 
 /*--------------------------------------------------------------------------CATEGORY----------------------------------------------------------------------------*/
@@ -298,7 +387,7 @@ margin-top: 10px;
 /*--------------------------------------------------------------------------BUY-NOW-----AND-MAP------------------------------------------------------------------*/
 
 .section__buy-now {
-
+	/*margin-bottom: 50px;*/
 }
 
 .container__buy-now {
@@ -307,8 +396,14 @@ margin-top: 10px;
 
 	.design-life-kids {
 		width: 543px;
+		height: 228px;
 		background: #E1F0F7;
 		margin-right: 57px;
+	}
+
+	.by-now__content {
+		position: relative;
+		bottom: 26px;
 	}
 
 	.title-design-life-kids {
@@ -321,14 +416,13 @@ margin-top: 10px;
 
 	.about-us {
 		width: 86px;
-		height: 34px;
 		font-family: 'Crimson Text';
 		font-style: italic;
 		font-weight: 400;
 		font-size: 26px;
 		line-height: 34px;
 		color: #1E0606;
-		margin: 0 0 9.02px 30px;
+		margin-left: 30px;
 	}
 
 	.text__buy-now {
@@ -338,14 +432,14 @@ margin-top: 10px;
 		font-weight: 400;
 		font-size: 16px;
 		line-height: 22px;
-		margin: 0 0 20px 30px;
+		margin: 9.02px 0 20px 30px;
 	}
 
 	.button__buy-now {
 		width: 123px;
 		height: 40px;
 		margin-left: 30px;
-		margin-bottom: 27.02px;
+		/*margin-bottom: 27.02px;*/
 	}
 
 	.contacts {
@@ -380,3 +474,123 @@ margin-top: 10px;
 	}
 
 /*--------------------------------------------------------------------------BUY-NOW-----AND-MAP------------------------------------------------------------------*/
+
+
+
+/*--------------------------FORM--------------------------------------------*/
+
+.section__form {
+	background: rgba(125, 151, 218, 0.8);
+}
+
+.container__form {
+	display: flex;
+	justify-content: center;
+}
+
+.popup__form {
+	width: 680px;
+	padding: 40px 42px;
+	background: #E5EAF8;
+}
+
+label {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+	
+	/* Black */
+	
+	color: #1E0606;
+
+	margin-bottom: 3px;
+}
+
+input {
+
+	background: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 25px;
+	color: #1E0606;
+	padding: 14px 0 11px 20px;
+}
+
+.name, .tel, .email, .mess {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.tel-email {
+	display: flex;
+	justify-content: space-between;
+}
+
+.tel {
+	margin-right: 10px;
+}
+
+.email {
+	margin-left: 10px;
+}
+
+.textarea-mess {
+	height: 150px;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 25px;
+	color: #1E0606;
+
+	padding: 14px 0 11px 20px;
+}
+
+.check {
+	margin-bottom: 15px;
+}
+
+.input-check {
+	margin-right: 15px;
+
+	border: 2px solid #C29974;
+	border-radius: 3px;
+}
+
+.label-check {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+	color: #1E0606;
+}
+
+.button-submit {
+	background: #C1C1C1;
+}
+
+
+
+
+.button-close {
+	background: rgba(125, 151, 218, 0.0);
+	background-image: url(../assets/icon/CLOSE.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 15px;
+	height: 15px;
+	margin-left: 10px;
+}
+
+
+
+/*--------------------------FORM--------------------------------------------*/
