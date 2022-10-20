@@ -89,11 +89,17 @@ li {
 /*--------------------------------------------------------------------------ОБНУЛЕНИЕ------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------HEADER------------------------------------------------------------------------*/
 
+.header {
+	/*margin-bottom: 40px;*/
+}
+
 .container__header {
 	display: flex;
 	align-items: center;
 	margin-top: 50px;
-	
+	padding-right: 0;
+	/*margin-bottom: 40px;*/
+	justify-content: space-between;
 }
 
 .nav {
@@ -102,18 +108,19 @@ li {
 
 .list__header {
 	display:flex;
+	align-items: center;
 }
 
 .search-contact-us {
 	display: flex;
+	align-items: center;
 }
 
 .link__contact-us {
-	margin-left: 20.02px;
 }
 
 .logo-img {
-	width: 100.08px;
+	width: 100.2px;
 	height: 52px;
 	margin-right: 60.06px;
 }
@@ -129,13 +136,31 @@ li {
 	margin-right: 20.02px;
 }
 
+.search {
+	padding-left: 6x;
+}
+
 .search-icon {
 	width: 24.02px;
 	height: 24px;
+	
 }
 
 .link__contact-us {
+	font-family: 'Open Sans';
+	font-style: normal;
 	font-weight: 700;
+	font-size: 14px;
+	line-height: 19px;
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+	
+	/* Black */
+	
+	color: #1E0606;
+	margin: 0;
+	margin-left: 20.02px;
 }
 
 
@@ -207,7 +232,7 @@ li {
 /*--------------------------------------------------------------------------FOOTER------------------------------------------------------------------------*/
 
 .footer {
-	margin-top: 150px; /*временно поставил чтобы не накладывалась карта*/
+	margin-top: 150px;
 	background-color: #434343;
 }
 
@@ -246,6 +271,7 @@ li {
 	font-weight: 400;
 	line-height: 22px;
 	color: #FFFFFF;
+	text-transform: capitalize;
 }
 
 .link__footer:hover {
@@ -344,6 +370,7 @@ li {
 
 .text__copyright{
 	margin-right: 109px;
+	margin-left: 15px;
 }
 
 .web-design {
@@ -358,6 +385,7 @@ li {
 .web-design:active {
 	color: #FFFFFF;
 	text-decoration-line: underline;
+	opacity: 0.5;
 }
 
 .com-cop-des {
@@ -365,7 +393,7 @@ li {
 }
 
 .company-rating {
-	display: flex;
+	/*display: flex;*/
 	margin-right: 154.88px;
 }
 
@@ -375,9 +403,151 @@ li {
 }
 
 .rating__items:not(:last-child) {
+	position: relative;
 	margin-right: 2.88px;
 }
 
 
 /*--------------------------------------------------------------------------FOOTER------------------------------------------------------------------------*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*     ---------------------------      RATING        ----------------------  */
+
+
+.rating {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.rating-wrap {
+	display: flex;
+}
+
+
+.rating__caption {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	/* identical to box height */
+	
+	display: flex;
+	align-items: center;
+	
+	color: #FFFFFF;
+
+	/*margin-bottom: 0.5em;*/
+	margin-right: 25.02px;
+}
+
+
+.rating__group {
+	position: relative;
+	width: 5em;
+	height: 2em;
+	background-image: url(../assets/icon/off.svg);
+	background-size: 1em 1.9em;
+	background-repeat: repeat-x;
+
+}
+
+.rating__input {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+}
+
+
+/*   Рамка фокуса  */
+.rating__input:focus ~ .rating__focus {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	outline: solid 0.2em #836E5B;
+	outline-offset: 0.2em;
+}
+
+
+/*   Star   */
+.rating__star {
+	position: absolute;
+	top: 0;
+	left: 0%;
+	height: 2em;
+	margin: 0;
+	font-size: inherit;
+	-webkit-appearance: none;	
+	-moz-appearance: none;
+	appearance: none;
+	background-size: 1em 1.9em;
+	background-repeat: repeat-x;
+	margin-right: 2.88px;
+}
+
+.rating__star:focus {
+	outline: none;
+}
+
+.rating__star:hover {
+	background-image: url(../assets/icon/on.svg);
+}
+
+.rating__input:checked + .rating__star {
+	background-image: url(../assets/icon/Star-active.svg);
+}
+
+
+
+.rating__star:hover ~ .rating__star {
+	background-image: url(../assets/icon/off.svg);
+}
+
+
+/*   Options    */
+
+.rating__star:nth-of-type(1) {
+	z-index: 5;
+	width: 1em;
+}
+
+.rating__star:nth-of-type(2) {
+	z-index: 4;
+	width: 2em;
+}
+
+.rating__star:nth-of-type(3) {
+	z-index: 3;
+	width: 3em;
+}
+
+.rating__star:nth-of-type(4) {
+	z-index: 2;
+	width: 4em;
+}
+
+.rating__star:nth-of-type(5) {
+	z-index: 1;
+	width: 5em;
+}
+
+
+/*     ---------------------------      RATING        ----------------------  */

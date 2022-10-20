@@ -7,9 +7,9 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Crimson+Text:ital,wght@1,400;1,700&family=Lato:wght@700&family=Montserrat:wght@200;300;600;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/normolize.css">
 	<link rel="stylesheet" href="./css/common.css">
 	<link rel="stylesheet" href="./css/style.css">
-	<link rel="stylesheet" href="./css/normolize.css">
 	<title>Main</title>
 </head>
 <body>
@@ -30,7 +30,6 @@
 					</nav>
 				<div class="search-contact-us">
 					<div class="search">
-						<!--<input type="text" class="search-field" placeholder="Введите поисковой запрос">--> 
 						<img src="./assets/icon/search.svg" alt="search-image" class="search-icon">
 					</div>
 					<a href="./pages/contact-us.html" class="link link__contact-us">contact us</a>
@@ -45,10 +44,10 @@
 							<div class="number-rectangle">
 								<p class="number-page">01</p>
 								<ul class="rectangle rectangle__container"> 
-									<li class="item item__rectangle"><!--a-- href="#" class="link link__rectangle"></!--a--></li>
-									<li class="item item__rectangle"><!--a-- href="#" class="link link__rectangle"></!--a--></li>
-									<li class="item item__rectangle"><!--a-- href="#" class="link link__rectangle"></!--a--></li>
-									<li class="item item__rectangle"><!--a-- href="#" class="link link__rectangle"></!--a--></li>
+									<li class="item item__rectangle rec-one"></li>
+									<li class="item item__rectangle rec-two"></li>
+									<li class="item item__rectangle rec-tree"></li>
+									<li class="item item__rectangle rec-fourth"></li>
 								</ul>
 							</div>
 						</li>
@@ -56,7 +55,7 @@
 							<div class="theoohnoo">
 								<h2 class="title-explore">The ooh noo collection</h2>
 								<p class="italic">Designed in Slovenia</p>
-								<button type="button" name="Explore-now" class="button button__explore">Explore now</button>
+								<button type="button" name="Explore-now" class="button button__explore btn-js">Explore now</button>
 							</div>
 						</li>
 						<li class="num">
@@ -100,8 +99,6 @@
 						</!--li-->
 					</ul>
 					<div class="bottom-switch">
-						<!--<button type="button" class="category-button-left"><img src="./assets/icon/left-arrow-button.png" alt="icon-button-left"></button>
-						<button type="button" class="category-button-right"><img src="./assets/icon/right-arrow-button.png" alt="icon-button-right"></button>-->
 						<div class="arrow-btn-left">
 							<button type="button" class="category-button-left"></button>
 						</div>
@@ -216,29 +213,29 @@
 				<div class="line-allwidth"></div> <!--линия футера отчерчивающая всю ширину контейнера под предыдущим блоком-->
 				<div class="com-cop-des">
 					<div class="company-rating">
-						<p class="text-buttom text__company-rating">Company Rating</p>
-						<div class="rating-area">
-							<div class="rating__items">
-								<input type="radio" id="star-5" name="rating" value="5">
-								<label class="star" for="star-5" title="«5»"></label>	
+						<fieldset class="rating">
+							<div class="rating-wrap">
+								<legend class="rating__caption">Company Rating</legend>
+								<div class="rating__group">
+									<input class="rating__input" type="radio" name="star" id="star-1" value="1">
+									<label class="rating__star" for="star-1" aria-label="1"></label>
+						
+									<input class="rating__input" type="radio" name="star" id="star-2" value="2">
+									<label class="rating__star" for="star-2" aria-label="2"></label>
+						
+									<input class="rating__input" type="radio" name="star" id="star-3" value="3">
+									<label class="rating__star" for="star-3" aria-label="3"></label>
+						
+									<input class="rating__input" type="radio" name="star" id="star-4" value="4">
+									<label class="rating__star" for="star-4" aria-label="4"></label>
+						
+									<input class="rating__input" type="radio" name="star" id="star-5" value="5">
+									<label class="rating__star" for="star-5" aria-label="5"></label>
+						
+									<div class="raiting__focus"></div>
+								</div>
 							</div>
-							<div class="rating__items">
-								<input type="radio" id="star-4" name="rating" value="4">
-								<label class="star" for="star-4" title="«4»"></label> 
-							</div>
-							<div class="rating__items">
-								<input type="radio" id="star-3" name="rating" value="3">
-								<label class="star" for="star-3" title="«3»"></label> 
-							</div>
-							<div class="rating__items">
-								<input type="radio" id="star-2" name="rating" value="2">
-								<label class="star" for="star-2" title="«2»"></label> 
-							</div>
-							<div class="rating__items">
-								<input class="star-one" type="radio" id="star-1" name="rating" value="1">
-								<label class="star" for="star-1" title="«1»"></label>
-							</div>       
-						</div>
+						</fieldset>
 					</div>
 						<p class="text-buttom text__copyright">Copyright © 2018 Dlk • Design Life Kids</p>
 						<a href="#" class="web-design">Web Design — Direct Line Development</a>
@@ -249,7 +246,7 @@
 			<h2></h2>
 			<div class="container__form">
 				<div class="popup__form"> 
-					<form action="#" method="post">
+					<form class="popup-form" action="#" method="post">
 						<div class="name">
 							<label for="name">Name</label>
 							<input class="input-name" type="text" id="name" name="user-name">
@@ -269,16 +266,17 @@
 							<textarea class="textarea-mess" id="message" name="user-message"></textarea> 
 						</div>
 						<div class="check">
-							<input class="input-check" type="checkbox" checked id="consent" name="consent">
+							<input class="input-check" type="checkbox" id="consent" name="consent">
 							<label class="label-check" for="consent">By clicking on the button, you consent to the processing of your personal data</label>
 						</div>
 						<button class="button button-submit" type="button">SUBMIT</button>
 					</form>
 				</div>
-				<button class="button-close" type="button"></button>
+				<button class="popup-close" type="button"></button>
 			</div>
 		</section>
 	</div>
+	<script src="./js/script.js"></script>
 </body>
 </html>
 

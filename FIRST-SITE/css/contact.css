@@ -150,7 +150,30 @@ input {
 }
 
 
+/*          HOVER/ACTIVE          */
+input:hover {
+	border: 1px solid #C29974;
+}
 
+textarea:hover {
+	border: 1px solid #C29974;
+}
+
+input:active {
+	border: 1px solid #C29974;
+}
+
+textarea:active {
+	border: 1px solid #C29974;
+}
+
+input:disabled {
+	border: 1px solid #EBEBEB;
+}
+
+textarea:disabled {
+	border: 1px solid #EBEBEB;
+}
 
 /*--------------------------FORM--------------------------------------------*/
 /*--------------------------TEXT-RIGHT--------------------------------------------*/

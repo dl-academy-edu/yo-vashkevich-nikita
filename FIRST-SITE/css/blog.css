@@ -137,6 +137,8 @@ h2 {
 	align-content: center;
 }
 
+/*-------------button-browsing---------------*/
+/*-----button-number-----*/
 .button-prod {
 	font-family: 'Montserrat';
 	font-style: normal;
@@ -153,13 +155,14 @@ h2 {
 }
 
 .button-prod:hover {
-	color: #AAAAAA;
-}
-
-.button-prod:active {
 	color: #C29974;
 }
 
+.button-prod:active {
+	color: #AAAAAA;
+}
+/*-----button-number-----*/
+/*-----button-arrow--------*/
 .arrow {
 	display: block;
 	width: 13px;
@@ -169,7 +172,7 @@ h2 {
 .arrow-left {
 	position: absolute;
 	left: 0;
-	background-image: url(../assets/icon/arrow-products-left.svg);
+	background-image: url(../assets/icon/arrow-products-left-opacity.svg);
 	background-color: #FFFFFF;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -180,7 +183,19 @@ h2 {
 .arrow-right {
 	position: absolute;
 	right: 0;
-	background-image: url(../assets/icon/arrow-products-right.svg);
+	background-image: url(../assets/icon/arrow-products-right-opacity.svg);
+	background-color: #FFFFFF;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 26px;
+}
+/*-----button-arrow--------*/
+/*-----button-arrow-hover--------*/
+.arrow-left:hover {
+	position: absolute;
+	left: 0;
+	background-image: url(../assets/icon/arrow-products-left-hoover.svg);
 	background-color: #FFFFFF;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -188,6 +203,41 @@ h2 {
 	height: 26px;
 }
 
+.arrow-right:hover {
+	position: absolute;
+	right: 0;
+	background-image: url(../assets/icon/arrow-products-right-hoover.svg);
+	background-color: #FFFFFF;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 26px;
+}
+/*-----button-arrow-hover--------*/
+/*-----button-arrow-active--------*/
+.arrow-left:active {
+	position: absolute;
+	left: 0;
+	background-image: url(../assets/icon/arrow-products-left-active.svg);
+	background-color: #FFFFFF;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 26px;
+}
+
+.arrow-right:active {
+	position: absolute;
+	right: 0;
+	background-image: url(../assets/icon/arrow-products-right-active.svg);
+	background-color: #FFFFFF;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 26px;
+}
+/*-----button-arrow-active--------*/
+/*-------------button-browsing---------------*/
 /*--------------------------SWITCH-------------------------*/
 
 .footer {

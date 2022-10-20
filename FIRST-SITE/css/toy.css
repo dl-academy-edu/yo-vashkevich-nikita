@@ -70,7 +70,6 @@ h2 {
 .form-parameters {
 	display: flex;
 	margin-top: 42px;
-
 }
 
 legend {
@@ -80,88 +79,86 @@ legend {
 	font-size: 16px;
 	line-height: 22px;
 	color: #1E0606;
-	margin-bottom: 15px;
+	margin-bottom: 9px;
 
 }
 
 /*-------0-500-------------------*/
-/*--обнуление-ползунка---*/
+/*POLZUNOK------------------------------------------------------*/
+
+/*
 input[type=range] {
-	-webkit-appearance: none; /* Скрывает слайдер, чтобы можно было создать свой */
-	width: 100%; /* Указание параметра ширины требуется для Firefox. */
- }
-  
- input[type=range]::-webkit-slider-thumb {
+	height: 10px;
 	-webkit-appearance: none;
+	margin: 10px 0;
+	width: 100%;
  }
-  
  input[type=range]:focus {
-	outline: none; /* Убирает голубую границу у элемента. Хотя, возможно, и стоит создавать некоторое оформления для состояния фокуса в целях обеспечения доступности. */
+	outline: none;
  }
-  
+ input[type=range]::-webkit-slider-runnable-track {
+	width: 100%;
+	height: 4px;
+	cursor: pointer;
+	background: #c29974;
+ }
+ input[type=range]::-webkit-slider-thumb {
+	border: 8px solid #c29974;
+	height: 24px;
+	width: 24px;
+	border-radius: 50px;
+	background: #ffffff;
+	cursor: pointer;
+	margin-top: -6px;
+ }
+ input[type=range]:focus::-webkit-slider-runnable-track {
+	background: #c29974;
+ }
+ input[type=range]::-moz-range-track {
+	width: 100%;
+	height: 10px;
+	cursor: pointer;
+	background: #c29974;
+ }
+ input[type=range]::-moz-range-thumb {
+	border: 8px solid #c29974;
+	height: 24px;
+	width: 24px;
+	border-radius: 50px;
+	cursor: pointer;
+ }
  input[type=range]::-ms-track {
 	width: 100%;
+	height: 10px;
 	cursor: pointer;
-	background: transparent; /* Скрывает слайдер, чтобы можно было добавить собственные стили. */
+	animate: 0.2s;
+	background: transparent;
 	border-color: transparent;
 	color: transparent;
  }
- /*--обнуление-ползунка---*/
-
- input[type=range]  {
-	width: 188px;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	outline: none;
-	overflow: hidden;
-	height: 4px;
+ input[type=range]::-ms-fill-lower {
+	background: #c29974;
+	border-radius: 50px;
  }
-
- input[type=range]::-webkit-slider-runnable-track {
-	height: 4px;
-	background-color: #000000;
-	opacity: 0.5;
+ input[type=range]::-ms-fill-upper {
+	background: #c29974;
+	border-radius: 50px;
  }
-
- input[type=range]::-webkit-slider-thumb {
-	background: #ecf0f1;
-	box-sizing: border-box;
-	cursor: pointer;
-	width: 24px;
+ input[type=range]::-ms-thumb {
+	margin-top: 1px;
+	border: 8px solid #c29974;
 	height: 24px;
-	-webkit-appearance: none;
-	margin-top: -4px;
-	box-shadow: -200px  0 0 200px  #C29974;;
-
- }
-
- input[type=range]::-moz-range-track {
-	height: 4px;
-	  background-color: #000000;
-	  opacity: 0.5;
- }
-
-
-input[type=range]::-moz-range-thumb {
-	background: #ecf0f1;
+	width: 24px;
+	border-radius: 50px;
 	cursor: pointer;
-	height: 4px;
-	border-radius:0px;
-	box-shadow: -200px  0px 0px 200px   #C29974;;
-	padding: 0px;
-	margin: 0px;
  }
-
-.parameters-const {
-	padding: 0;
-	margin-right: 94px;
-}
-
-
-
-
-
+ input[type=range]:focus::-ms-fill-lower {
+	background: #c29974;
+ }
+ input[type=range]:focus::-ms-fill-upper {
+	background: #c29974;
+ }  
+*/
 /*-------0-500-------------------*/
 /*-------colors-------------------*/
 
@@ -169,9 +166,49 @@ input[type=range]::-moz-range-thumb {
 	margin-right: 124px;
 }
 
+.input-colors {
+	position: absolute;
+	width: 19px;
+	height: 19px;
+	z-index: -1;
+	opacity: 0;
+}
+
+.input-colors+.label-colors {
+	display: inline-flex;
+	align-items: center;
+	user-select: none;
+	margin-bottom: 15px;
+ }
+ .input-colors+.label-colors::before {
+	content: '';
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	/*flex-shrink: 0;
+	flex-grow: 0;*/
+	border: 2px solid #C29974;
+	border-radius: 3px;
+	margin-right: 10px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 50% 50%;
+	cursor: pointer;
+ }
+
+
+ .input-colors:checked+.label-colors::before {
+	background-color: #FFFFFF;
+	background-image: url("../assets/icon/chek-checked.svg");
+	background-size: 11.43px 12.5px;
+	background-position: 100% 100%;
+	/*width: 11.43px;
+	height: 12.5px;*/
+ }
+/*
 .input-colors:not(:last-child) {
 	margin-bottom: 15px;
-}
+}*/
 
 .label-colors {
 	font-family: 'Open Sans';
@@ -182,17 +219,57 @@ input[type=range]::-moz-range-thumb {
 	color: #1E0606;
 	margin-left: 0;
 	margin-left: 6px;
+	cursor: pointer;
 }
 
+/*--------hover-active-label-----*/
+.input-colors:checked ~ label {
+	text-decoration: underline;
+}
+
+.input-colors:hover ~ label {
+	text-decoration: underline;
+}
+
+.input-colors:active ~ label.label-colors {
+	text-decoration: underline;
+	opacity: 0.2;
+}
+
+.input-colors:disabled ~ label {
+	opacity: 0.2;
+}
+
+/*отдельно label при повторной клике*/
+.label-colors:checked {
+	text-decoration: underline;
+}
+
+.label-colors:hover {
+	text-decoration: underline;
+}
+
+.label-colors:active {
+	text-decoration: underline;
+	opacity: 0.2;
+}
+
+.label-colors:disabled {
+	opacity: 0.2;
+}
+/*--------hover-active-label-----*/
+
 /*-------colors-------------------*/
-/*-------delivery-------------------*/
+/*-------delivery------------------------------------------------------------------*/
 
 .parameters-delivery {
 	margin-right: 69.02px;
 }
 
 .radio {
+	display: block;
 	margin-bottom: 10px;
+	align-content: center;
 }
 
 .label-delivery {
@@ -203,9 +280,115 @@ input[type=range]::-moz-range-thumb {
 	line-height: 22px;
 	color: #1E0606;
 	margin-left: 6px;
+	display: inline-flex;
+	cursor: pointer;
 }
 
-/*-------delivery-------------------*/
+
+.input-delivery {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+
+	
+.input-delivery ~ label.label-delivery {
+	display: inline-flex;
+	align-items: center;
+	user-select: none;
+}
+
+/*--------hover-active-label-----*/
+.input-delivery:checked ~ label.label-delivery {
+	text-decoration: underline;
+}
+
+.input-delivery:hover ~ label.label-delivery {
+	text-decoration: underline;
+}
+
+.input-delivery:active ~ label.label-delivery {
+	text-decoration: underline;
+	opacity: 0.2;
+}
+
+/*отдельно label при повторной клике*/
+.label-delivery:checked {
+	text-decoration: underline;
+}
+
+.label-delivery:hover {
+	text-decoration: underline;
+}
+
+.label-delivery:active {
+	text-decoration: underline;
+	opacity: 0.2;
+}
+
+.label-delivery:disabled {
+	opacity: 0.2;
+}
+/*--------hover-active-label-----*/
+	
+
+.input-delivery ~ label.label-delivery::before {
+	content: '';
+	display: inline-block;
+	width: 1.3em;
+	height: 1.3em;
+	flex-shrink: 0;
+	flex-grow: 0;
+	border: 2px solid #C29974;
+	border-radius: 50%;
+	margin-right: 0.5em;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 50% 50%;
+}
+	
+/* стили при наведении курсора на радио */
+.input-delivery:not(:disabled):not(:checked) ~ label:hover::before {
+	border-color: #C29974;
+	text-decoration-line: underline;
+ }
+ /* стили для активной радиокнопки (при нажатии на неё) */
+ .input-delivery:not(:disabled):active ~ label::before {
+	/*---*/
+ }
+ /* стили для радиокнопки, находящейся в фокусе */
+ .input-delivery:focus ~ label::before {
+	/*--*/
+ }
+ /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+ .input-delivery:focus:not(:checked) ~ label::before {
+	/*---*/
+}
+ 
+/* стили для радиокнопки, находящейся в состоянии checked */
+.input-delivery:checked ~ label::before {
+	border-color: #C29974;
+	background: rgba(125, 151, 218, 0.0);
+	background-image: url(../assets/icon/radio-checked.svg);
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+ /* стили для радиокнопки, находящейся в состоянии disabled */
+ .input-delivery:disabled ~ label::before {
+	border: 2px solid #E1CDBA;
+	background-color: #e9ecef;
+ }
+
+
+
+
+
+
+
+/*--------------------------------*/
+/*-------delivery--------------------------------------------------------------------*/
 /*-------amount-------------------*/
 
 .parameters-amount {
@@ -271,18 +454,83 @@ input[type=range]::-moz-range-thumb {
 }
 
 .block {
+	position: relative;
 	width: 380px;
 	height: 497px;
 }
 
-/*
-.block:hover ::after {
-	content: "Learn more";
+/*--------LEARN--MORE------*/
+
+.link-lern {
+	display: block;
+	position: relative;
+	z-index: 15;
+}
+
+.learn-more {
 	position: absolute;
 	display: flex;
+	top: 89.02px;
+	left: 87px; 
+	width: 207px;
+	height: 207px;
+	background: #E5EAF8;
 	justify-content: center;
+	align-items: center;
+	opacity: 0.9;
+	/*display:none;*/
+}
+
+.learn-link {
+	display: flex;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 29px;
+	/* identical to box height */
+	
 	text-align: center;
+	text-transform: uppercase;
+	/* Black */
+	
+	color: #1E0606;
+	
+	text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+}
+
+
+/*.block:hover .learn-more {
+	display: flex;
 }*/
+
+
+
+
+.block .link-learn {
+	display: none;
+}
+
+
+
+.block:hover a.link-learn {
+	display: block;
+	
+}
+
+
+.block:active a.link-learn {
+	display: block;
+	opacity: 0.67;
+}
+
+
+
+
+
+
+
+/*--------BLOCK--HOVER------*/
 
 .signature {
 	font-family: 'Open Sans';
@@ -318,6 +566,8 @@ input[type=range]::-moz-range-thumb {
 	align-content: center;
 }
 
+/*-------------button-browsing---------------*/
+/*-----button-number-----*/
 .button-prod {
 	font-family: 'Montserrat';
 	font-style: normal;
@@ -334,13 +584,14 @@ input[type=range]::-moz-range-thumb {
 }
 
 .button-prod:hover {
-	color: #AAAAAA;
-}
-
-.button-prod:active {
 	color: #C29974;
 }
 
+.button-prod:active {
+	color: #AAAAAA;
+}
+/*-----button-number-----*/
+/*-----button-arrow--------*/
 .arrow {
 	display: block;
 	width: 13px;
@@ -350,7 +601,7 @@ input[type=range]::-moz-range-thumb {
 .arrow-left {
 	position: absolute;
 	left: 0;
-	background-image: url(../assets/icon/arrow-products-left.svg);
+	background-image: url(../assets/icon/arrow-products-left-opacity.svg);
 	background-color: #FFFFFF;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -361,13 +612,61 @@ input[type=range]::-moz-range-thumb {
 .arrow-right {
 	position: absolute;
 	right: 0;
-	background-image: url(../assets/icon/arrow-products-right.svg);
+	background-image: url(../assets/icon/arrow-products-right-opacity.svg);
 	background-color: #FFFFFF;
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 16px;
 	height: 26px;
 }
+/*-----button-arrow--------*/
+/*-----button-arrow-hover--------*/
+.arrow-left:hover {
+	position: absolute;
+	left: 0;
+	background-image: url(../assets/icon/arrow-products-left-hoover.svg);
+	background-color: #FFFFFF;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 26px;
+}
+
+.arrow-right:hover {
+	position: absolute;
+	right: 0;
+	background-image: url(../assets/icon/arrow-products-right-hoover.svg);
+	background-color: #FFFFFF;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 26px;
+}
+/*-----button-arrow-hover--------*/
+/*-----button-arrow-active--------*/
+.arrow-left:active {
+	position: absolute;
+	left: 0;
+	background-image: url(../assets/icon/arrow-products-left-active.svg);
+	background-color: #FFFFFF;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 26px;
+}
+
+.arrow-right:active {
+	position: absolute;
+	right: 0;
+	background-image: url(../assets/icon/arrow-products-right-active.svg);
+	background-color: #FFFFFF;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 26px;
+}
+/*-----button-arrow-active--------*/
+/*-------------button-browsing---------------*/
 /*-------------PRODUCTS-------------------------------------------------*/
 
 .footer {

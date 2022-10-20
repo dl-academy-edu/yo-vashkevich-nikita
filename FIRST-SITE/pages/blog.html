@@ -30,7 +30,6 @@
 					</nav>
 				<div class="search-contact-us">
 					<div class="search">
-						<!--<input type="text" class="search-field" placeholder="Введите поисковой запрос">--> 
 						<img src="../assets/icon/search.svg" alt="search-image" class="search-icon">
 					</div>
 					<a href="../pages/contact-us.html" class="link link__contact-us">contact us</a>
@@ -41,7 +40,7 @@
 			<section class="section section__title-and-breadcrumb"> 
 				<div class="container container__title-and-breadcrumb">
 					<h2 class="title-category">BLog</h2>
-					<ul class="breadcrumb"> <!--значек-стрелкa-->
+					<ul class="breadcrumb"> 
 						<li class="item-breadcrumb"><a class="link-breadcrumb" href="../index.html">Home</a></li>
 						<li class="item-breadcrumb"><a class="link-breadcrumb" href="../pages/blog.html">Blog</a></li>
 					</ul>
@@ -88,14 +87,14 @@
 						</li>
 					</ul>
 					<div class="switch">
-						<button class="arrow arrow-left" type="button"><!--img src="../assets/icon/arrow-products-left.svg" alt="arrow"--></button>
+						<button class="arrow arrow-left" type="button"></button>
 						<ul class="list-pages-product">
 							<li class="item-prod"><button class="button-prod" type="button">1</button></li>
 							<li class="item-prod"><button class="button-prod" type="button">2</button></li>
 							<li class="item-prod"><button class="button-prod" type="button">3</button></li>
 							<li class="item-prod"><button class="button-prod" type="button">4</button></li>
 						</ul>
-						<button class="arrow arrow-right" type="button"><!--img src="../assets/icon/arrow-products-right.svg" alt="arrow"--></button>
+						<button class="arrow arrow-right" type="button"></button>
 					</div>
 				</div>
 			</section>
@@ -145,29 +144,29 @@
 				<div class="line-allwidth"></div> <!--линия футера отчерчивающая всю ширину контейнера под предыдущим блоком-->
 				<div class="com-cop-des">
 					<div class="company-rating">
-						<p class="text-buttom text__company-rating">Company Rating</p>
-						<div class="rating-area">
-							<div class="rating__items">
-								<input type="radio" id="star-5" name="rating" value="5">
-								<label class="star" for="star-5" title="«5»"></label>	
+						<fieldset class="rating">
+							<div class="rating-wrap">
+								<legend class="rating__caption">Company Rating</legend>
+								<div class="rating__group">
+									<input class="rating__input" type="radio" name="star" id="star-1" value="1">
+									<label class="rating__star" for="star-1" aria-label="1"></label>
+						
+									<input class="rating__input" type="radio" name="star" id="star-2" value="2">
+									<label class="rating__star" for="star-2" aria-label="2"></label>
+						
+									<input class="rating__input" type="radio" name="star" id="star-3" value="3">
+									<label class="rating__star" for="star-3" aria-label="3"></label>
+						
+									<input class="rating__input" type="radio" name="star" id="star-4" value="4">
+									<label class="rating__star" for="star-4" aria-label="4"></label>
+						
+									<input class="rating__input" type="radio" name="star" id="star-5" value="5">
+									<label class="rating__star" for="star-5" aria-label="5"></label>
+						
+									<div class="raiting__focus"></div>
+								</div>
 							</div>
-							<div class="rating__items">
-								<input type="radio" id="star-4" name="rating" value="4">
-								<label class="star" for="star-4" title="«4»"></label> 
-							</div>
-							<div class="rating__items">
-								<input type="radio" id="star-3" name="rating" value="3">
-								<label class="star" for="star-3" title="«3»"></label> 
-							</div>
-							<div class="rating__items">
-								<input type="radio" id="star-2" name="rating" value="2">
-								<label class="star" for="star-2" title="«2»"></label> 
-							</div>
-							<div class="rating__items">
-								<input class="star-one" type="radio" id="star-1" name="rating" value="1">
-								<label class="star" for="star-1" title="«1»"></label>
-							</div>       
-						</div>
+						</fieldset>
 					</div>
 						<p class="text-buttom text__copyright">Copyright © 2018 Dlk • Design Life Kids</p>
 						<a href="#" class="web-design">Web Design — Direct Line Development</a>
