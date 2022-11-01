@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 header {
 	margin-bottom: 60px;
 }
@@ -16,10 +23,12 @@ h2 {
 	line-height: 49px;
 	text-transform: uppercase;
 	color: #1E0606;
-	margin-bottom: 15px;
+	margin-bottom: 14px;
 }
 
 .breadcrumb {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -45,7 +54,7 @@ h2 {
 	content: "";
 	background-image: url(../assets/icon/arrow.svg);
 	width: 8px;
-	height: 12px;
+	height: 13px;
 	
 	/* Black */
 	
@@ -59,13 +68,19 @@ h2 {
 /*--------------------------BRREADCRUMBS--------------------*/
 /*--------------------------FORM--------------------------------------------*/
 
+.section__form {
+	margin-bottom: 62px;
+}
+
 .container__form {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
 .form-page {
 	width: 680px;
-	padding: 40px 42px;
+	padding: 40px 42px 40px 40px;
 	background: #E5EAF8;
 }
 
@@ -74,13 +89,13 @@ label {
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
-	line-height: 19px;
+	line-height: 19.07px;
 	
 	/* Black */
 	
 	color: #1E0606;
 
-	margin-bottom: 3px;
+	margin-bottom: 3.4px;
 }
 
 input {
@@ -97,16 +112,45 @@ input {
 	padding: 14px 0 11px 20px;
 }
 
+.input-name {
+	padding-left: 20px;
+}
+
+.name {
+	margin-top: 2px;
+}
+
+.input-name {
+	width: 600px;
+	height: 50px;
+}
+
+.input-tel,
+.input-email {
+	width: 290px;
+	height: 50px;
+}
+
+
 .name, .tel, .email, .mess {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	margin-bottom: 20px;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	margin-bottom: 21px;
 	width: 100%;
 }
 
 .tel-email {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 .tel {
@@ -118,6 +162,7 @@ input {
 }
 
 .textarea-mess {
+	width: 600px;
 	height: 150px;
 	font-family: 'Open Sans';
 	font-style: normal;
@@ -127,14 +172,16 @@ input {
 	color: #1E0606;
 
 	padding: 14px 0 11px 20px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .check {
-	margin-bottom: 15px;
+	/*margin-bottom: 15px;*/
 }
 
 .input-check {
 	margin-right: 15px;
+	margin-bottom: 17px;
 
 	border: 2px solid #C29974;
 	border-radius: 3px;
@@ -148,6 +195,108 @@ input {
 	line-height: 19px;
 	color: #1E0606;
 }
+
+/*-------checkbox--------*/
+
+.input-check {
+	position: absolute;
+	width: 19px;
+	height: 19px;
+	z-index: -1;
+	opacity: 0;
+}
+
+.input-check+.label-check {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	margin-bottom: 18px;
+ }
+ .input-check+.label-check::before {
+	content: '';
+	display: inline-block;
+	width: 19px;
+	height: 19px;
+	/*flex-shrink: 0;
+	flex-grow: 0;*/
+	border: 2px solid #C29974;
+	border-radius: 3px;
+	margin-right: 10px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 50% 50%;
+	cursor: pointer;
+	margin-right: 15px;
+ }
+
+
+ .input-check:checked+.label-check::before {
+	background-image: url("../assets/icon/chek-checked.svg");
+	background-size: 15px 17px;
+	background-position: 100% 100%;
+	/*width: 11.43px;
+	height: 12.5px;*/
+ }
+
+/*--------hover-active-label-----*/
+.input-check:checked ~ label {
+	
+}
+
+.input-check:hover ~ label {
+
+}
+
+.input-check:active ~ label.label-check {
+	opacity: 0.2;
+}
+
+.input-check:disabled ~ label {
+	opacity: 0.2;
+}
+
+.label-check:active {
+	opacity: 0.2;
+}
+
+.label-check:disabled {
+	opacity: 0.2;
+}
+
+
+
+
+
+
+/*-------checkbox--------*/
+
+/*  ----------  INPUT-CHECK  SUBMIT-DISABLED  ---------  */
+
+.input-check ~ .button-submit {
+	display: none;
+}
+
+.input-check:checked ~ .button-disabled  {
+	display: none;
+}
+
+.input-check:checked ~ .button-submit {
+	display: block;
+}
+
+.button-submit,
+.button-disabled {
+	width: 106px;
+}
+
+/*  ----------  INPUT-CHECK  SUBMIT-DISABLED  ---------  */
 
 
 /*          HOVER/ACTIVE          */
@@ -177,6 +326,7 @@ textarea:disabled {
 
 /*--------------------------FORM--------------------------------------------*/
 /*--------------------------TEXT-RIGHT--------------------------------------------*/
+
 .content-support {
 	width: 380px;
 	margin-left: 120px;
@@ -191,6 +341,14 @@ textarea:disabled {
 	color: #1E0606;
 
 	margin-bottom: 20px;
+}
+
+.text-support-up {
+	margin-bottom: 20px;
+}
+
+.text-support-down {
+	margin-bottom: 19px;
 }
 
 h3 {

@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 header {
 	margin-bottom: 60px;
 }
@@ -5,7 +12,7 @@ header {
 /*--------------------------BRREADCRUMBS--------------------*/
 
 .section__title-and-breadcrumb {
-	margin-bottom: 50.02px;
+	margin-bottom: 49px;
 }
 
 h2 {
@@ -20,11 +27,13 @@ h2 {
 }
 
 .breadcrumb {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
 .item-breadcrumb {
-	margin-right: 20px;
+	margin-right: 24px;
 }
 
 .item-breadcrumb:not(:first-child) {
@@ -45,7 +54,7 @@ h2 {
 	content: "";
 	background-image: url(../assets/icon/arrow.svg);
 	width: 8px;
-	height: 12px;
+	height: 13px;
 	
 	/* Black */
 	
@@ -59,14 +68,20 @@ h2 {
 /*--------------------------BRREADCRUMBS--------------------*/
 /*--------------------------CONTENT-------------------------*/
 .cards-tales{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 .tales {
 	width: 380px;
 	height: 491px;
+	margin-bottom: 20px;
 }
 
 /*.tale-mr {
@@ -97,18 +112,18 @@ h2 {
 	font-size: 24px;
 	line-height: 31px;
 	color: #1E0606;
-
-	margin-bottom: 15px;
 }
 
 .tale-title:hover {
-	text-decoration-line: underline;
+	-webkit-text-decoration-line: underline;
+	        text-decoration-line: underline;
 	color: #1E0606;
 	cursor: pointer;
 }
 
 .tale-title:active {
-	text-decoration-line: underline;
+	-webkit-text-decoration-line: underline;
+	        text-decoration-line: underline;
 	color: #1E0606;
 }
 
@@ -119,22 +134,33 @@ h2 {
 	font-size: 18px;
 	line-height: 25px;
 	color: #1E0606;
+	margin-top: 15px;
 }
 /*--------------------------CONTENT-------------------------*/
 /*--------------------------SWITCH-------------------------*/
 
 
 .switch {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	position: relative;
-	justify-content: center;
-	margin-bottom: 60px;
-	margin-top: 50px;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	margin-bottom: 62px;
+	margin-top: 20px;
+	display: flex;
+	-ms-flex-line-pack: center;
+	    align-content: center;
 }
 
 .list-pages-product {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-content: center;
+	-ms-flex-line-pack: center;
+	    align-content: center;
 }
 
 /*-------------button-browsing---------------*/
@@ -150,8 +176,9 @@ h2 {
 	background-color: #FFFFFF;
 }
 
+
 .item-prod:not(:last-child) {
-	margin-right: 64px
+	margin-right: 67px
 }
 
 .button-prod:hover {
@@ -176,8 +203,8 @@ h2 {
 	background-color: #FFFFFF;
 	background-size: cover;
 	background-repeat: no-repeat;
-	width: 16px;
-	height: 26px;
+	width: 17px;
+	height: 28px;
 }
 
 .arrow-right {
@@ -187,8 +214,8 @@ h2 {
 	background-color: #FFFFFF;
 	background-size: cover;
 	background-repeat: no-repeat;
-	width: 16px;
-	height: 26px;
+	width: 17px;
+	height: 28px;
 }
 /*-----button-arrow--------*/
 /*-----button-arrow-hover--------*/
@@ -199,8 +226,8 @@ h2 {
 	background-color: #FFFFFF;
 	background-size: cover;
 	background-repeat: no-repeat;
-	width: 16px;
-	height: 26px;
+	width: 17px;
+	height: 28px;
 }
 
 .arrow-right:hover {
@@ -210,8 +237,8 @@ h2 {
 	background-color: #FFFFFF;
 	background-size: cover;
 	background-repeat: no-repeat;
-	width: 16px;
-	height: 26px;
+	width: 17px;
+	height: 28px;
 }
 /*-----button-arrow-hover--------*/
 /*-----button-arrow-active--------*/

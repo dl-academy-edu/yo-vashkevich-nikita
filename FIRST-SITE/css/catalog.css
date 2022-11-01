@@ -1,4 +1,11 @@
-.container__header {
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.container-header {
 	margin-bottom: 60px;
 }
 
@@ -19,6 +26,8 @@ h2 {
 }
 
 .breadcrumb {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -44,7 +53,7 @@ h2 {
 	content: "";
 	background-image: url(../assets/icon/arrow.svg);
 	width: 8px;
-	height: 12px;
+	height: 14px;
 	
 	/* Black */
 	
@@ -62,27 +71,34 @@ h2 {
 }
 
 .title-category {
-	width: 454px;
-	height: 47px;
 	font-weight: 700;
-	font-size: 38px;
-	line-height: 46px;
-	margin-bottom: 30px;
+	font-size: 40px;
+	line-height: 48.76px;
+	margin-bottom: 15px;
 }
 
 .category-products {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	
 }
 
 .cards {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	position: relative;
 	width: 280px;
 	height: 270px;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	margin-bottom: 23px;
 }
 
@@ -103,11 +119,13 @@ h2 {
 }
 
 .cards-link:hover {
-	text-decoration-line: underline;
+	-webkit-text-decoration-line: underline;
+	        text-decoration-line: underline;
 }
 
 .cards-link:active {
-	text-decoration-line: underline;
+	-webkit-text-decoration-line: underline;
+	        text-decoration-line: underline;
 }
 
 .card-link-acc {
@@ -157,9 +175,23 @@ h2 {
 	}
 
 	.title-description {
-		margin: 35px 0 25px 200px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 38px;
+		line-height: 46px;
+		margin: 33px 0 25px 200px;
 	}
 	.description {
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 22px;
+		
+		/* Black */
+		
+		color: #1E0606;
 		width: 680px;
 		margin-left: 200px;
 	}

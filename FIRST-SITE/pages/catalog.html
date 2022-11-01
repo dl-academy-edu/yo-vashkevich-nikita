@@ -15,25 +15,24 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
-			<div class="container container__header">
+			<div class="container container-header">
 					<div class="logo">
 						<a href="../index.html">
-							<img class="logo-img" src="../assets/image/LOGO.svg" alt="logo">
+							<img class="logo__img" src="../assets/image/LOGO.svg" width="100.08" height="52" alt="logo">
 						</a>
 					</div>
 					<nav class="nav">
-						<ul class="list list__header">
-							<li class="item item__header"><a href="#" class="link link__header">blog</a></li>
-							<li class="item item__header"><a href="../pages/catalog.html" class="link link__header">catalog</a></li>
-							<li class="item item__header"><a href="#" class="link link__header">about us</a></li>
+						<ul class="list-header">
+							<li class="list-header__item"><a href="../pages/blog.html" class="list-header__link">blog</a></li>
+							<li class="list-header__item"><a href="../pages/catalog.html" class="list-header__link">catalog</a></li>
+							<li class="list-header__item"><a href="#" class="list-header__link">about us</a></li>
 						</ul>
 					</nav>
-				<div class="search-contact-us">
-					<div class="search">
-						<!--<input type="text" class="search-field" placeholder="Введите поисковой запрос">--> 
-						<img src="../assets/icon/search.svg" alt="search-image" class="search-icon">
+				<div class="list-right">
+					<div class="list-right__search">
+						<img class="list-right__icon" src="../assets/icon/search.svg" width="24" height="24" alt="search-image">
 					</div>
-					<a href="../pages/contact-us.html" class="link link__contact-us">contact us</a>
+					<a href="../pages/contact-us.html" class="list-right__link">contact us</a>
 				</div>
 			</div>
 		</header>
@@ -89,76 +88,73 @@
 			</section>
 		</main>
 		<footer class="footer">
-			<div class="container container__footer">
-				<div class="nuv-cus-con">
-					<div class="ft navigation">
-						<p class="text-footer text__navigation">Navigation</p>
-						<div class="line"></div> <!--линия футера отчерчивающая navigation от ссылок ниже-->
-						<ul class="list list__footer-nav">
-							<li class="item item__footer"><a href="#" class="link link__footer">About Us</a></li>
-							<li class="item item__footer"><a href="#" class="link link__footer">Blog</a></li>
-							<li class="item item__footer"><a href="#" class="link link__footer">Design Services</a></li>
-							<li class="item item__footer"><a href="#" class="link link__footer">Featured On</a></li>
-							<li class="item item__footer"><a href="#" class="link link__footer">2018 Holiday Catalog</a></li>
-							<li class="item item__footer"><a href="#" class="link link__footer">Shop By Designer</a></li>
+			<div class="container container-footer">
+				<div class="footer-list">
+					<div class="footer-list__item">
+						<p class="footer-list__text">Navigation</p>
+						<div class="footer-list__line"></div>
+						<ul class="column-list">
+							<li class="column-list__item"><a href="#" class="column-list__link">About Us</a></li>
+							<li class="column-list__item"><a href="#" class="column-list__link">Blog</a></li>
+							<li class="column-list__item"><a href="#" class="column-list__link">Design Services</a></li>
+							<li class="column-list__item"><a href="#" class="column-list__link">Featured On</a></li>
+							<li class="column-list__item"><a href="#" class="column-list__link">2018 Holiday Catalog</a></li>
+							<li class="column-list__item"><a href="#" class="column-list__link">Shop By Designer</a></li>
 						</ul>
 					</div>
-					<div class="ft customer-info">
-						<p class="text-footer text__customer-info">Customer Information</p>
-						<div class="line"></div> <!--линия футера отчерчивающая customer-info от ссылок ниже-->
-						<ul class="list list__footer-cus">
-							<li class="item item__footer"><a href="#" class="link link__footer">Contact Us</a></li>
-							<li class="item item__footer"><a href="#" class="link link__footer">Sale Exclusions</a></li>
-							<li class="item item__footer"><a href="#" class="link link__footer">Shipping & Returns</a></li>
-							<li class="item item__footer"><a href="#" class="link link__footer">Terms & Conditions</a></li>
-							<li class="item item__footer"><a href="#" class="link link__footer">Privacy Policy</a></li>
-							<li class="item item__footer"><a href="#" class="link link__footer">Search</a></li>
+					<div class="footer-list__item">
+						<p class="footer-list__text">Customer Information</p>
+						<div class="footer-list__line"></div>
+						<ul class="column-list">
+							<li class="column-list__item"><a href="#" class="column-list__link">Contact Us</a></li>
+							<li class="column-list__item"><a href="#" class="column-list__link">Sale Exclusions</a></li>
+							<li class="column-list__item"><a href="#" class="column-list__link">Shipping & Returns</a></li>
+							<li class="column-list__item"><a href="#" class="column-list__link">Terms & Conditions</a></li>
+							<li class="column-list__item"><a href="#" class="column-list__link">Privacy Policy</a></li>
+							<li class="column-list__item"><a href="#" class="column-list__link">Search</a></li>
 						</ul>
 					</div>
-					<article class="ft connect">
-						<p class="text-footer text__connect">Connect</p>
-						<div class="line"></div> <!--линия футера отчерчивающая connect от формы поиска-->
+					<article class="footer-list__item">
+						<h2 style="display: none;">Connect</h2>
+						<p class="footer-list__text">Connect</p>
+						<div class="footer-list__line"></div>
 						<form class="form-email" action="#" method="POST">
-							<input class="enter-email" type= "text" name="email" placeholder="Email"> 
-							<input class="button button__join" type="submit" value="Join">
+							<div class="form-email__block">
+								<input class="form-email__input" type= "text" name="email" placeholder="Email"> 
+								<input class="form-email__button button" type="submit" value="Join">
+							</div>
 							</form>
 							<div class="social"> 
-								<a class="social-img" href="#"><img src="../assets/icon/Facebook.svg" alt="facebook"></a>
-								<a class="social-img" href="#"><img src="../assets/icon/Twitter.svg" alt="twitter"></a>
-								<a class="social-img" href="#"><img src="../assets/icon/Pinterest.svg" alt="pinterest"></a>
-								<a class="social-img" href="#"><img src="../assets/icon/Instagram.svg" alt="inst"></a> 
+								<a class="social__img social__img-facebook" href="#"></a>
+								<a class="social__img social__img-twitter" href="#"></a>
+								<a class="social__img social__img-pinterest" href="#"></a>
+								<a class="social__img social__img-instagram" href="#"></a>
 							</div>  
 					</article>
 				</div>
-				<div class="line-allwidth"></div> <!--линия футера отчерчивающая всю ширину контейнера под предыдущим блоком-->
-				<div class="com-cop-des">
-					<div class="company-rating">
-						<fieldset class="rating">
-							<div class="rating-wrap">
-								<legend class="rating__caption">Company Rating</legend>
-								<div class="rating__group">
-									<input class="rating__input" type="radio" name="star" id="star-1" value="1">
-									<label class="rating__star" for="star-1" aria-label="1"></label>
-						
-									<input class="rating__input" type="radio" name="star" id="star-2" value="2">
-									<label class="rating__star" for="star-2" aria-label="2"></label>
-						
-									<input class="rating__input" type="radio" name="star" id="star-3" value="3">
-									<label class="rating__star" for="star-3" aria-label="3"></label>
-						
-									<input class="rating__input" type="radio" name="star" id="star-4" value="4">
-									<label class="rating__star" for="star-4" aria-label="4"></label>
-						
-									<input class="rating__input" type="radio" name="star" id="star-5" value="5">
-									<label class="rating__star" for="star-5" aria-label="5"></label>
-						
-									<div class="raiting__focus"></div>
-								</div>
+				<div class="line-max-width"></div>
+				<div class="footer-bottom">
+					<div class="footer-bottom-rating">
+						<div class="rating-block">
+							<p class="rating-block__txt">Company Rating</p>
+							<div class="rating-mini">
+								<div class="rating-area">
+									<input type="radio" id="star-5" name="rating" value="5">
+									<label class="label-rating" for="star-5" title="Оценка «5»"></label>	
+									<input type="radio" id="star-4" name="rating" value="4">
+									<label class="label-rating" for="star-4" title="Оценка «4»"></label>    
+									<input type="radio" id="star-3" name="rating" value="3">
+									<label class="label-rating" for="star-3" title="Оценка «3»"></label>  
+									<input type="radio" id="star-2" name="rating" value="2">
+									<label class="label-rating" for="star-2" title="Оценка «2»"></label>    
+									<input type="radio" id="star-1" name="rating" value="1">
+									<label class="label-rating" for="star-1" title="Оценка «1»"></label>
+								</div> 
 							</div>
-						</fieldset>
+						</div>
 					</div>
-						<p class="text-buttom text__copyright">Copyright © 2018 Dlk • Design Life Kids</p>
-						<a href="#" class="web-design">Web Design — Direct Line Development</a>
+						<p class="footer-bottom__copyright copyright">Copyright © 2018 Dlk • Design Life Kids</p>
+						<a href="#" class="footer-bottom__web-design">Web Design — Direct Line Development</a>
 				</div>
 			</div>
 		</footer>
