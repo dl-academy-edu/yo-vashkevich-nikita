@@ -1,7 +1,7 @@
 /*       Const 0 500     */
 
 
-const progress = document.querySelector('.input-range');
+const progress = document.querySelector('.cost__input-range');
   
 progress.addEventListener('input', function() {
   const value = this.value;

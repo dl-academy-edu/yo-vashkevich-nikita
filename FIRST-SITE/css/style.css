@@ -5,7 +5,6 @@
 * Browsers: last 4 version
 */
 
-
 /*----------------------------------------BANNER----------------------------------------------------------*/
 
 .section-banner {
@@ -65,16 +64,23 @@ line-height: 34px;
 width: 31px;
 height: 3px;
 background: #D6CAC2;
+-webkit-transition: 0.5s;
+-o-transition: 0.5s;
+transition: 0.5s;
 }
 
 /* Checked */
 .control__btn input[type=radio]:checked + label {
 background: rgba(30, 6, 6, 0.6);
+
 }
  
 /* Hover */
 .control__btn label:hover {
 	color: #666;
+	-webkit-transform: scale(1.3);
+	    -ms-transform: scale(1.3);
+	        transform: scale(1.3);
 }
  
 /* Disabled */
@@ -112,8 +118,16 @@ background: rgba(30, 6, 6, 0.6);
 
 .column__button {
 	margin-bottom: 89px;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
 }
 
+.column__button:hover {
+	-webkit-transform: scale(1.05);
+	    -ms-transform: scale(1.05);
+	        transform: scale(1.05);
+}
 /*-----------------the-ooh-noo-collection---explore-now----------------------------*/
 /*----banner-image---------*/
 .banner-image {
@@ -177,13 +191,22 @@ background: rgba(30, 6, 6, 0.6);
 	display: flex;
 	position: relative;
 	width: 280px;
-	height: 270px;
+	/*height: 270px;*/
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
+			  -webkit-transition: 0.5s;
+			  -o-transition: 0.5s;
+			  transition: 0.5s;
+}
+
+.category__cards:hover {
+	-webkit-transform: scale(1.02);
+	    -ms-transform: scale(1.02);
+	        transform: scale(1.02);
 }
 
 .category__cards-apparel {
@@ -223,9 +246,20 @@ background: rgba(30, 6, 6, 0.6);
 	text-transform: uppercase;
 	text-align: center;
 	width: 129px;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
 }
 
 .category__cards-link:hover {
+	-webkit-text-decoration-line: underline;
+	        text-decoration-line: underline;
+			  -webkit-transform: scale(1.05);
+			      -ms-transform: scale(1.05);
+			          transform: scale(1.05);
+}
+
+.category__cards:hover .category__cards-link {
 	-webkit-text-decoration-line: underline;
 	        text-decoration-line: underline;
 }
@@ -266,6 +300,15 @@ background: rgba(30, 6, 6, 0.6);
 	        align-items: center;
 	padding: 0;
 	margin-right: 6px;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.switch__left-arrow:hover {
+	-webkit-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	        transform: scale(1.1);
 }
 
 .switch__right-arrow {
@@ -280,6 +323,15 @@ background: rgba(30, 6, 6, 0.6);
 	    -ms-flex-align: center;
 	        align-items: center;
 	padding: 0;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.switch__right-arrow:hover {
+	-webkit-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	        transform: scale(1.1);
 }
 
 
@@ -386,7 +438,7 @@ background: rgba(30, 6, 6, 0.6);
 
 .switch__text {
 	width: 580px;
-	height: 44px;
+	/*height: 44px;*/
 	font-family: 'Open Sans';
 	font-weight: 400;
 	font-size: 16px;
@@ -491,9 +543,18 @@ background: rgba(30, 6, 6, 0.6);
 	}
 
 	.button-learn-more{
-		width: 149px;
-		height: 40px;
+		/*width: 149px;
+		height: 40px;*/
 		margin-left: 60px;
+		-webkit-transition: 0.5s;
+		-o-transition: 0.5s;
+		transition: 0.5s;
+	}
+
+	.button-learn-more:hover {
+		-webkit-transform: scale(1.05);
+		    -ms-transform: scale(1.05);
+		        transform: scale(1.05);
 	}
 /*---------delivery-content----------------*/
 /*------------------------------------------------------DELIVERY------------------------------------------------------------------*/
@@ -517,8 +578,17 @@ background: rgba(30, 6, 6, 0.6);
 		        justify-content: space-between;
 	}
 
+	.list-work-with__item {
+		-webkit-transition: 0.5s;
+		-o-transition: 0.5s;
+		transition: 0.5s;
+	}
+
 	.list-work-with__item:hover {
 		opacity: 0.9;
+		-webkit-transform: scale(1.08);
+		    -ms-transform: scale(1.08);
+		        transform: scale(1.08);
 	}
 
 	.list-work-with__item:active {
@@ -546,7 +616,7 @@ background: rgba(30, 6, 6, 0.6);
 /*---------design-life-kids----------------*/
 	.preview {
 		width: 543px;
-		height: 228px;
+		/*height: 228px;*/
 		background: #E1F0F7;
 		margin-right: 57px;
 	}
@@ -585,23 +655,41 @@ background: rgba(30, 6, 6, 0.6);
 	}
 
 	.preview__button {
-		width: 123px;
-		height: 40px;
+		/*width: 123px;
+		height: 40px;*/
 		margin-left: 30px;
 		/*margin-bottom: 27.02px;*/
+		-webkit-transition: 0.5s;
+		-o-transition: 0.5s;
+		transition: 0.5s;
+	}
+
+	.preview__button:hover {
+		-webkit-transform: scale(1.05);
+		    -ms-transform: scale(1.05);
+		        transform: scale(1.05);
 	}
 /*---------design-life-kids----------------*/
 /*---------contacts-map----------------*/
 
 	.contacts {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
 		width: 543px;
 		height: 209px;
 		background: #E1F0F7;
 	}
 
+	/*
+	.contacts__content {
+		position: absolute;
+		margin-top: -22px;
+	}*/
+
 	.contacts__title {
 		width: 217px;
-		height: 47px;
+		/*height: 47px;*/
 		left: 740px;
 		top: 2043px;
 		font-weight: 700;
@@ -612,7 +700,6 @@ background: rgba(30, 6, 6, 0.6);
 
 	.contacts__text {
 		width: 483px;
-		height: 66px;
 		font-family: 'Open Sans';
 		font-weight: 400;
 		font-size: 16px;
@@ -623,6 +710,7 @@ background: rgba(30, 6, 6, 0.6);
 	.contacts__map {
 		margin-left: 30px;
 	}
+
 /*---------contacts-map----------------*/
 
 /*--------------------------------------------------------------------------BUY-NOW-----AND-MAP------------------------------------------------------------------*/
@@ -632,7 +720,8 @@ background: rgba(30, 6, 6, 0.6);
 /*--------------------------FORM--------------------------------------------*/
 
 .section-form {
-	display: none;
+	/*display: none;*/
+	visibility: hidden;
 	width: 100%;
 	min-height: 100%;
 	position: absolute;
@@ -643,7 +732,8 @@ background: rgba(30, 6, 6, 0.6);
 
 /*---for---js---*/
 .open {
-	display: block;
+	visibility: visible;
+	/*display: block;*/
 	position: fixed;
 	
 }
@@ -664,8 +754,17 @@ background: rgba(30, 6, 6, 0.6);
 	width: 680px;
 	padding: 40px 42px;
 	background: #E5EAF8;
+	-webkit-transition: opacity 0.15s ease 0s, -webkit-transform 0.15s ease 0s;
+	transition: opacity 0.15s ease 0s, -webkit-transform 0.15s ease 0s;
+	-o-transition: transform 0.15s ease 0s, opacity 0.15s ease 0s;
+	transition: transform 0.15s ease 0s, opacity 0.15s ease 0s;
+	transition: transform 0.15s ease 0s, opacity 0.15s ease 0s, -webkit-transform 0.15s ease 0s;
+   -webkit-transform: scale(1);
+       -ms-transform: scale(1);
+           transform: scale(1);
 	
 }
+
 
 /*----for-all---*/
 label {
@@ -869,6 +968,20 @@ input {
 	margin-bottom: 4px;
 }
 
+/*---scale-button---*/
+.button-submit{
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.input-check:checked ~ .button-submit:hover {
+	-webkit-transform: scale(1.04);
+	    -ms-transform: scale(1.04);
+	        transform: scale(1.04);
+}
+/*---scale-button---*/
+
 
 
 /*  ----------  INPUT-CHECK  SUBMIT-DISABLED  ---------  */
@@ -925,4 +1038,3 @@ textarea:disabled {
 }
 
 /*--------------------------FORM--------------------------------------------*/
-

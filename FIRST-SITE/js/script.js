@@ -2,8 +2,11 @@ const popup = document.querySelector('.section-form');
 const buttonOpen = document.querySelector('.column__button');
 const buttonClose = document.querySelector('.popup-close');
 
+const emailInput = document.getElementById('name');
+
 buttonOpen.addEventListener('click', function() {
     popup.classList.add('open');
+    emailInput.focus()
 })
 
 buttonClose.addEventListener('click', function() {

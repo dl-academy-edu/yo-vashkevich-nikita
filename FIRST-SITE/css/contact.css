@@ -11,7 +11,7 @@ header {
 
 /*--------------------------BRREADCRUMBS--------------------*/
 
-.section__title-and-breadcrumb {
+.section-title-and-breadcrumb {
 	margin-bottom: 50px;
 }
 
@@ -30,26 +30,45 @@ h2 {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
 }
 
-.item-breadcrumb {
+.breadcrumb:hover {
+	-webkit-transform: scale(1.01);
+	    -ms-transform: scale(1.01);
+	        transform: scale(1.01);
+}
+
+.breadcrumb__item {
 	margin-right: 20px;
 }
 
-.item-breadcrumb:not(:first-child) {
+.breadcrumb__item:not(:first-child) {
 	opacity: 0.5;
 }
 
-.link-breadcrumb {
+.breadcrumb__link {
+	display: inline-block;
 	font-family: 'Crimson Text';
 	font-style: italic; 
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 26px;
 	color: #1E0606;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
 }
 
-.item-breadcrumb:not(:last-child)::after {
+.breadcrumb__link:hover {
+	-webkit-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	        transform: scale(1.1);
+}
+
+.breadcrumb__item:not(:last-child)::after {
 	display: inline-block;
 	content: "";
 	background-image: url(../assets/icon/arrow.svg);
@@ -68,17 +87,17 @@ h2 {
 /*--------------------------BRREADCRUMBS--------------------*/
 /*--------------------------FORM--------------------------------------------*/
 
-.section__form {
+.section-form {
 	margin-bottom: 62px;
 }
 
-.container__form {
+.container-form {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 }
 
-.form-page {
+.form {
 	width: 680px;
 	padding: 40px 42px 40px 40px;
 	background: #E5EAF8;
@@ -112,27 +131,27 @@ input {
 	padding: 14px 0 11px 20px;
 }
 
-.input-name {
+.form__name-input{
 	padding-left: 20px;
 }
 
-.name {
+.form__name {
 	margin-top: 2px;
 }
 
-.input-name {
+.form__name-input {
 	width: 600px;
 	height: 50px;
 }
 
-.input-tel,
-.input-email {
+.form__tel-input,
+.form__email-input {
 	width: 290px;
 	height: 50px;
 }
 
 
-.name, .tel, .email, .mess {
+.form__name, .form__tel, .form__email, .form__mess {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -144,7 +163,7 @@ input {
 	width: 100%;
 }
 
-.tel-email {
+.form__tel-email {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -153,15 +172,15 @@ input {
 	        justify-content: space-between;
 }
 
-.tel {
+.form__tel {
 	margin-right: 10px;
 }
 
-.email {
+.form__email {
 	margin-left: 10px;
 }
 
-.textarea-mess {
+.form__mess-textarea {
 	width: 600px;
 	height: 150px;
 	font-family: 'Open Sans';
@@ -175,11 +194,12 @@ input {
 	border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.check {
-	/*margin-bottom: 15px;*/
-}
+/*
+.form__check {
+	margin-bottom: 15px;
+}*/
 
-.input-check {
+.form__check-input {
 	margin-right: 15px;
 	margin-bottom: 17px;
 
@@ -187,7 +207,7 @@ input {
 	border-radius: 3px;
 }
 
-.label-check {
+.form__check-label {
 	font-family: 'Open Sans';
 	font-style: normal;
 	font-weight: 400;
@@ -198,7 +218,7 @@ input {
 
 /*-------checkbox--------*/
 
-.input-check {
+.form__check-input {
 	position: absolute;
 	width: 19px;
 	height: 19px;
@@ -206,7 +226,7 @@ input {
 	opacity: 0;
 }
 
-.input-check+.label-check {
+.form__check-input+.form__check-label {
 	display: -webkit-inline-box;
 	display: -ms-inline-flexbox;
 	display: inline-flex;
@@ -219,7 +239,7 @@ input {
 	        user-select: none;
 	margin-bottom: 18px;
  }
- .input-check+.label-check::before {
+ .form__check-input+.form__check-label::before {
 	content: '';
 	display: inline-block;
 	width: 19px;
@@ -237,7 +257,7 @@ input {
  }
 
 
- .input-check:checked+.label-check::before {
+ .form__check-input:checked+.form__check-label::before {
 	background-image: url("../assets/icon/chek-checked.svg");
 	background-size: 15px 17px;
 	background-position: 100% 100%;
@@ -246,27 +266,27 @@ input {
  }
 
 /*--------hover-active-label-----*/
-.input-check:checked ~ label {
+.form__check-input:checked ~ label {
 	
 }
 
-.input-check:hover ~ label {
+.form__check-input:hover ~ label {
 
 }
 
-.input-check:active ~ label.label-check {
+.form__check-input:active ~ label.form__check-label {
 	opacity: 0.2;
 }
 
-.input-check:disabled ~ label {
+.form__check-input:disabled ~ label {
 	opacity: 0.2;
 }
 
-.label-check:active {
+.form__check-label:active {
 	opacity: 0.2;
 }
 
-.label-check:disabled {
+.form__check-label:disabled {
 	opacity: 0.2;
 }
 
@@ -279,17 +299,32 @@ input {
 
 /*  ----------  INPUT-CHECK  SUBMIT-DISABLED  ---------  */
 
-.input-check ~ .button-submit {
+.form__check-input ~ .button-submit {
 	display: none;
 }
 
-.input-check:checked ~ .button-disabled  {
+.form__check-input:checked ~ .button-disabled  {
 	display: none;
 }
 
-.input-check:checked ~ .button-submit {
+.form__check-input:checked ~ .button-submit {
 	display: block;
 }
+
+
+/*---scale-button---*/
+.button-submit{
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.form__check-input:checked ~ .button-submit:hover {
+	-webkit-transform: scale(1.04);
+	    -ms-transform: scale(1.04);
+	        transform: scale(1.04);
+}
+/*---scale-button---*/
 
 .button-submit,
 .button-disabled {
@@ -327,12 +362,12 @@ textarea:disabled {
 /*--------------------------FORM--------------------------------------------*/
 /*--------------------------TEXT-RIGHT--------------------------------------------*/
 
-.content-support {
+.content {
 	width: 380px;
 	margin-left: 120px;
 }
 
-.text-support {
+.content__text {
 	font-family: 'Open Sans';
 	font-style: normal;
 	font-weight: 400;
@@ -343,15 +378,15 @@ textarea:disabled {
 	margin-bottom: 20px;
 }
 
-.text-support-up {
+.content__text-up {
 	margin-bottom: 20px;
 }
 
-.text-support-down {
+.content__text-down {
 	margin-bottom: 19px;
 }
 
-h3 {
+.content__title {
 	font-family: 'Montserrat';
 	font-style: normal;
 	font-weight: 600;

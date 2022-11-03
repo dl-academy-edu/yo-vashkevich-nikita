@@ -9,7 +9,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Crimson+Text:ital,wght@1,400;1,700&family=Lato:wght@700&family=Montserrat:wght@200;300;600;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../css/normolize.css">
 	<link rel="stylesheet" href="../css/common.css">
-	<link rel="stylesheet" href="../css/toy.css">
+	<link rel="stylesheet" href="../css/min-toy.css">
 	<title>Toy for kids</title>
 </head>
 <body>
@@ -18,7 +18,7 @@
 			<div class="container container-header">
 					<div class="logo">
 						<a href="../index.html">
-							<img class="logo__img" src="../assets/image/LOGO.svg" width="100.08" height="52" alt="logo">
+							<img class="logo__img" src="../assets/image/LOGO.svg" width="100" height="52" alt="logo">
 						</a>
 					</div>
 					<nav class="nav">
@@ -37,150 +37,149 @@
 			</div>
 		</header>
 		<main>
-			<section class="section section__title-and-breadcrumb"> 
-				<div class="container container__title-and-breadcrumb">
-					<h2 class="title-category">Toy for kids</h2>
+			<section class="section section-title-and-breadcrumb"> 
+				<div class="container container-title-and-breadcrumb">
+					<h2 class="title-toy">Toy for kids</h2>
 					<ul class="breadcrumb">
-						<li class="item-breadcrumb"><a class="link-breadcrumb" href="../index.html">Home</a></li>
-						<li class="item-breadcrumb"><a class="link-breadcrumb" href="../pages/catalog.html">Catalog</a></li>
-						<li class="item-breadcrumb"><a class="link-breadcrumb" href="../pages/toy-for-kids.html">Toys</a></li>
+						<li class="breadcrumb__item"><a class="breadcrumb__link" href="../index.html">Home</a></li>
+						<li class="breadcrumb__item"><a class="breadcrumb__link" href="../pages/catalog.html">Catalog</a></li>
+						<li class="breadcrumb__item"><a class="breadcrumb__link" href="../pages/toy-for-kids.html">Toys</a></li>
 					</ul>
 				</div>
 			</section>
-			<section class="section section__parameters">
-				<div class="container container__parameters">
-					<form class="form-parameters "action="">
-						<fieldset class="parameters-const">
-							<legend class="legend__cost">Cost</legend>
-							<!--<input class="input-const" type="range" value="40" id="const" name="const" min="0" max="500">-->
-							<input type="range" value="40" min="0" max="100" step="1" class="input-range">
-							<div class="const-p">
-								<span class="const-span">0</span>
-								<span class="const-span const-right">500</span>
+			<section class="section section-parameters">
+				<h2 class="visuallyhidden">parameters</h2>
+				<div class="container container-parameters">
+					<form class="form-parameters" action="https://echo.htmlacademy.ru/">
+						<fieldset class="cost">
+							<legend class="cost__legend">Cost</legend>
+							<input type="range" value="40" min="0" max="100" step="1" class="cost__input-range">
+							<div class="cost__p">
+								<span class="cost__span">0</span>
+								<span class="cost__span cost__right">500</span>
 							</div>
 						</fieldset>
-							<fieldset class="parameters-colors">
-								<legend class="legend__color">Color</legend>
+							<fieldset class="color">
+								<legend class="color__legend">Color</legend>
 								<div class="check">
-									<input class="input-colors" type="checkbox" id="black" name="colors">
-									<label class="label-colors" for="black">Black</label>
+									<input class="color__input" type="checkbox" id="black" name="colors">
+									<label class="color__label" for="black">Black</label>
 								</div>
 								<div class="check">
-									<input class="input-colors" type="checkbox" id="blue" name="colors">
-									<label class="label-colors" for="blue">Blue</label>
+									<input class="color__input" type="checkbox" id="blue" name="colors">
+									<label class="color__label" for="blue">Blue</label>
 								</div>
 								<div class="check">
-									<input class="input-colors" type="checkbox" id="green" name="colors">
-									<label class="label-colors" for="green">Green</label>
+									<input class="color__input" type="checkbox" id="green" name="colors">
+									<label class="color__label" for="green">Green</label>
 								</div>
 								<div class="check">
-									<input class="input-colors" type="checkbox" id="white" name="colors">
-									<label class="label-colors" for="white">White</label>
+									<input class="color__input" type="checkbox" id="white" name="colors">
+									<label class="color__label" for="white">White</label>
 								</div>
 							</fieldset>
-							<fieldset class="parameters-delivery">
-								<legend class="legend__delivery">Delivery</legend>
+							<fieldset class="delivery">
+								<legend class="delivery__legend">Delivery</legend>
 								<div class="radio">
-									<input class="input-delivery" type="radio" id="delivery-free" name="shipping">
-									<span class="custom-radio-btn"></span>
-									<label class="label-delivery" for="delivery-free">Free shipping</label>
+									<input class="delivery__input" type="radio" id="delivery-free" name="shipping">
+									<label class="delivery__label" for="delivery-free">Free shipping</label>
 								</div>
 								<div class="radio">
-									<input class="input-delivery" type="radio" id="delivery-fast" name="shipping">
-									<span class="custom-radio-btn"></span>
-									<label class="label-delivery" for="delivery-fast">Fast shipping</label>
+									<input class="delivery__input" type="radio" id="delivery-fast" name="shipping">
+									<label class="delivery__label" for="delivery-fast">Fast shipping</label>
 								</div>
 							</fieldset>
-							<fieldset class="form__amount-group">
-								<legend class="legend__amount">Amount</legend>
-								<div class="form__amount-group-item">
-									<input class="input-amount inp-one" id="radio-1" type="radio" name="radio" value="1" checked>
-									<label class="label-amount" for="radio-1">0-5</label>
+							<fieldset class="amount">
+								<legend class="amount__legend">Amount</legend>
+								<div class="amount__radio">
+									<input class="amount__input inp-one" id="radio-1" type="radio" name="radio" value="1" checked>
+									<label class="amount__label" for="radio-1">0-5</label>
 								</div>
-								<div class="form__amount-group-item">
-									<input class="input-amount inp-two" id="radio-2" type="radio" name="radio" value="2">
-									<label class="label-amount" for="radio-2">10-20</label>
+								<div class="amount__radio">
+									<input class="amount__input inp-two" id="radio-2" type="radio" name="radio" value="2">
+									<label class="amount__label" for="radio-2">10-20</label>
 								</div>
-								<div class="form__amount-group-item">
-									<input class="input-amount inp-tree" id="radio-3" type="radio" name="radio" value="3">
-									<label class="label-amount" for="radio-3">20-50</label>
+								<div class="amount__radio">
+									<input class="amount__input inp-tree" id="radio-3" type="radio" name="radio" value="3">
+									<label class="amount__label" for="radio-3">20-50</label>
 								</div>
 							</fieldset>
-							<button type="button" name="apply" class="button button__apply">Apply</button>
+							<button type="button" name="apply" class="button button-apply">Apply</button>
 					</form>
 				</div>
 			</section>
-			<section class="section section__products">
-				<div class="container container__products">
+			<section class="section section-products">
+				<h2 class="visuallyhidden">products</h2>
+				<div class="container container-products">
 					<div class="products">
 						<div class="block block-sharky">
-							<img class="img-block" src="../assets/image/SHARKY.png" alt="Shark">
+							<img class="block__img" src="../assets/image/SHARKY.png" alt="Shark" width="380" height="385">
 							<a class="link-learn" href="#">
 								<div class="learn-more">
-									<p class="learn-link">Learn more</p>
+									<p class="link-learn__text">Learn more</p>
 								</div>
 							</a>
-							<p class="signature">SHARKY BEAN BAG CHAIR COVER</p>
-							<p class="price">$60.00 USD</p>
+							<p class="block__signature">SHARKY BEAN BAG CHAIR COVER</p>
+							<p class="block__price">$60.00 USD</p>
 						</div>
 						<div class="block block-brass">
-							<img class="img-block" src="../assets/image/BRASS.png" alt="Brass">
+							<img class="block__img" src="../assets/image/BRASS.png" alt="Brass" width="380" height="385">
 							<a class="link-learn" href="#">
 								<div class="learn-more">
-									<p class="learn-link">Learn more</p>
+									<p class="link-learn__text">Learn more</p>
 								</div>
 							</a>
-							<p class="signature">BRASS DECO FRAMES</p>
-							<p class="price">$66.00 USD</p>
+							<p class="block__signature">BRASS DECO FRAMES</p>
+							<p class="block__price">$66.00 USD</p>
 						</div>
 						<div class="block block-cibo">
-								<img class="img-block" src="../assets/image/CIBO.png" alt="Cibo">
+								<img class="block__img" src="../assets/image/CIBO.png" alt="Cibo" width="380" height="385">
 							<a class="link-learn" href="#">
 								<div class="learn-more">
-									<p class="learn-link">Learn more</p>
+									<p class="link-learn__text">Learn more</p>
 								</div>
 							</a>
-							<p class="signature">CIBO FULL APRON</p>
-							<p class="price">$60.00 USD</p>
+							<p class="block__signature">CIBO FULL APRON</p>
+							<p class="block__price">$60.00 USD</p>
 						</div>
 						<div class="block block-gatcha">
-							<img class="img-block" src="../assets/image/GATCHA.png" alt="Gatcha">
+							<img class="block__img" src="../assets/image/GATCHA.png" alt="Gatcha" width="380" height="385">
 							<a class="link-learn" href="#">
 								<div class="learn-more">
-									<p class="learn-link">Learn more</p>
+									<p class="link-learn__text">Learn more</p>
 								</div>
 							</a>
-							<p class="signature">GATCHA GATCHA GUMBALL MACHINE</p>
-							<p class="price">$56.00 USD</p>
+							<p class="block__signature">GATCHA GATCHA GUMBALL MACHINE</p>
+							<p class="block__price">$56.00 USD</p>
 						</div>
 						<div class="block block-candle">
-							<img class="img-block" src="../assets/image/CANDLE.png" alt="Candle">
+							<img class="block__img" src="../assets/image/CANDLE.png" alt="Candle" width="380" height="385">
 							<a class="link-learn" href="#">
 								<div class="learn-more">
-									<p class="learn-link">Learn more</p>
+									<p class="link-learn__text">Learn more</p>
 								</div>
 							</a>
-							<p class="signature">CHRISTMAS ADVENT SCENTED CANDLE</p>
-							<p class="price">$29.00 USD</p>
+							<p class="block__signature">CHRISTMAS ADVENT SCENTED CANDLE</p>
+							<p class="block__price">$29.00 USD</p>
 						</div>
 						<div class="block block-tangle">
-							<img class="img-block" src="../assets/image/TANGLE.png" alt="Tangle">
+							<img class="block__img" src="../assets/image/TANGLE.png" alt="Tangle" width="380" height="385">
 							<a class="link-learn" href="#">
 								<div class="learn-more">
-									<p class="learn-link">Learn more</p>
+									<p class="link-learn__text">Learn more</p>
 								</div>
 							</a>
-							<p class="signature">TANGLE SPINNING TEA LIGHT</p>
-							<p class="price">$56.00 USD</p>
+							<p class="block__signature">TANGLE SPINNING TEA LIGHT</p>
+							<p class="block__price">$56.00 USD</p>
 						</div>
 					</div>
 					<div class="switch">
 						<button class="arrow arrow-left" type="button"></button>
-						<ul class="list-pages-product">
-							<li class="item-prod"><button class="button-prod" type="button">1</button></li>
-							<li class="item-prod"><button class="button-prod" type="button">2</button></li>
-							<li class="item-prod"><button class="button-prod" type="button">3</button></li>
-							<li class="item-prod"><button class="button-prod" type="button">4</button></li>
+						<ul class="list-pages">
+							<li class="list-pages__item"><button class="list-pages__button" type="button">1</button></li>
+							<li class="list-pages__item"><button class="list-pages__button" type="button">2</button></li>
+							<li class="list-pages__item"><button class="list-pages__button" type="button">3</button></li>
+							<li class="list-pages__item"><button class="list-pages__button" type="button">4</button></li>
 						</ul>
 						<button class="arrow arrow-right" type="button"></button>
 					</div>

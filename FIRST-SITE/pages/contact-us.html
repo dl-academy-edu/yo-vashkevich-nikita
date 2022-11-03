@@ -9,7 +9,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Crimson+Text:ital,wght@1,400;1,700&family=Lato:wght@700&family=Montserrat:wght@200;300;600;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../css/common.css">
 	<link rel="stylesheet" href="../css/normolize.css">
-	<link rel="stylesheet" href="../css/contact.css">
+	<link rel="stylesheet" href="../css/min-contact.css">
 	<title>Contact Us</title>
 </head>
 <body>
@@ -18,7 +18,7 @@
 			<div class="container container-header">
 					<div class="logo">
 						<a href="../index.html">
-							<img class="logo__img" src="../assets/image/LOGO.svg" width="100.08" height="52" alt="logo">
+							<img class="logo__img" src="../assets/image/LOGO.svg" width="100" height="52" alt="logo">
 						</a>
 					</div>
 					<nav class="nav">
@@ -37,49 +37,49 @@
 			</div>
 		</header>
 		<main>
-			<section class="section section__title-and-breadcrumb"> 
-				<div class="container container__title-and-breadcrumb">
+			<section class="section section-title-and-breadcrumb"> 
+				<div class="container container-title-and-breadcrumb">
 					<h2 class="title-category">Contact &nbsp;Us</h2>
 					<ul class="breadcrumb">
-						<li class="item-breadcrumb"><a class="link-breadcrumb" href="../index.html">Home</a></li>
-						<li class="item-breadcrumb"><a class="link-breadcrumb" href="../pages/contact-us.html">Contact Us</a></li>
+						<li class="breadcrumb__item"><a class="breadcrumb__link" href="../index.html">Home</a></li>
+						<li class="breadcrumb__item"><a class="breadcrumb__link" href="../pages/contact-us.html">Contact Us</a></li>
 					</ul>
 				</div>
 			</section>
-			<section class="section section__form">
-				<div class="container container__form">
-					<div class="form-page">
-						<form action="#" method="post">
-							<div class="name">
-								<label for="name">Name</label>
-								<input class="input-name" type="text" id="name" name="user-name" placeholder="Ivan Ivanov">
+			<section class="section section-form">
+				<div class="container container-form">
+					<div class="form">
+						<form action="https://echo.htmlacademy.ru/" method="post">
+							<div class="form__name">
+								<label class="form__name-label" for="name">Name</label>
+								<input class="form__name-input" type="text" id="name" name="user-name" placeholder="Ivan Ivanov">
 							</div>
-							<div class="tel-email">
-								<div class="tel">
-									<label class="label-tel" for="phone">Phone</label>
-									<input class="input-tel" type="tel" id="phone" name="user-phone">
+							<div class="form__tel-email">
+								<div class="form__tel">
+									<label class="form__tel-label" for="phone">Phone</label>
+									<input class="form__tel-input" type="tel" id="phone" name="user-phone">
 								</div>
-								<div class="email">
-									<label class="label-email" for="email">Email</label>
-									<input class="input-email" type="email" id="email" name="user-email">
+								<div class="form__email">
+									<label class="form__email-label" for="email">Email</label>
+									<input class="form__email-input" type="email" id="email" name="user-email">
 								</div>
 							</div>
-							<div class="mess">
-								<label class="label-mess" for="message">Message</label>
-								<textarea class="textarea-mess" id="message" name="user-message"></textarea> 
+							<div class="form__mess">
+								<label class="form__mess-label" for="message">Message</label>
+								<textarea class="form__mess-textarea" id="message" name="user-message"></textarea> 
 							</div>
-							<div class="check">
-								<input class="input-check" type="checkbox" id="consent" name="consent">
-								<label class="label-check" for="consent">By clicking on the button, you consent to the processing of your personal data</label>
+							<div class="form__check">
+								<input class="form__check-input" type="checkbox" id="consent" name="consent">
+								<label class="form__check-label" for="consent">By clicking on the button, you consent to the processing of your personal data</label>
 								<button class="button button-submit" type="button">SUBMIT</button>
 								<button disabled="disabled" class="button button-disabled" type="button">SUBMIT</button>
 							</div>
 						</form>
 					</div>
-					<div class="content-support">
-						<p class="text-support text-support-up">Our support team are on-hand to assist with any issues you are experiencing.</p>
-						<p class="text-support text-support-down">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
-						<h3 class="title-support">An expert is waiting to help you!</h3>
+					<div class="content">
+						<p class="content__text content__text-up">Our support team are on-hand to assist with any issues you are experiencing.</p>
+						<p class="content__text content__text-down">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+						<h3 class="content__title">An expert is waiting to help you!</h3>
 					</div>
 				</div>
 			</section>
@@ -112,7 +112,7 @@
 						</ul>
 					</div>
 					<article class="footer-list__item">
-						<h2 style="display: none;">Connect</h2>
+						<h2 class="visuallyhidden">Connect</h2>
 						<p class="footer-list__text">Connect</p>
 						<div class="footer-list__line"></div>
 						<form class="form-email" action="#" method="POST">

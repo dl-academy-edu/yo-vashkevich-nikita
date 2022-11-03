@@ -9,7 +9,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Crimson+Text:ital,wght@1,400;1,700&family=Lato:wght@700&family=Montserrat:wght@200;300;600;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../css/normolize.css">
 	<link rel="stylesheet" href="../css/common.css">
-	<link rel="stylesheet" href="../css/blog.css">
+	<link rel="stylesheet" href="../css/min-blog.css">
 	<title>Blog</title>
 </head>
 <body>
@@ -18,7 +18,7 @@
 			<div class="container container-header">
 					<div class="logo">
 						<a href="../index.html">
-							<img class="logo__img" src="../assets/image/LOGO.svg" width="100.08" height="52" alt="logo">
+							<img class="logo__img" src="../assets/image/LOGO.svg" width="100" height="52" alt="logo">
 						</a>
 					</div>
 					<nav class="nav">
@@ -37,62 +37,75 @@
 			</div>
 		</header>
 		<main>
-			<section class="section section__title-and-breadcrumb"> 
-				<div class="container container__title-and-breadcrumb">
-					<h2 class="title-category">BLog</h2>
+			<section class="section section-title-and-breadcrumb"> 
+				<div class="container container-title-and-breadcrumb">
+					<h2 class="title-blog">BLog</h2>
 					<ul class="breadcrumb"> 
-						<li class="item-breadcrumb"><a class="link-breadcrumb" href="../index.html">Home</a></li>
-						<li class="item-breadcrumb"><a class="link-breadcrumb" href="../pages/blog.html">Blog</a></li>
+						<li class="breadcrumb__item"><a class="breadcrumb__link" href="../index.html">Home</a></li>
+						<li class="breadcrumb__item"><a class="breadcrumb__link" href="../pages/blog.html">Blog</a></li>
 					</ul>
 				</div>
 			</section>
-			<section class="section section__content">
-				<div class="container container__content">
-					<ul class="cards-tales">
-						<li class="tales tale-mr">
-							<img class="tale-img" src="../assets/image/tale1.jpg" alt="Top 5 fastest growing it service companies in philly">
-							<p class="tale-date">23rd August 2018</p>
-							<a href="#" class="tale-title">Top 5 fastest growing it service companies in philly</a>
-							<p class="tale-text">Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.</p>
+			<section class="section section-content">
+				<h2 class="visuallyhidden">content</h2>
+				<div class="container container-content">
+					<ul class="cards-list">
+						<li class="cards-list__item cards-list__item-mr">
+							<a class="link-transform" href="">
+								<img class="cards-list__img" src="../assets/image/tale1.jpg" alt="Top 5 fastest growing it service companies in philly" width="380" height="220">
+							</a>
+							<p class="cards-list__date">23rd August 2018</p>
+							<p class="link-transform"><a href="#" class="cards-list__title">Top 5 fastest growing it service companies in philly</a></p>
+							<p class="cards-list__text">Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.</p>
 						</li>
-						<li class="tales tale-mr">
-							<img class="tale-img" src="../assets/image/tale2.jpg" alt="Best financial">
-							<p class="tale-date">23rd August 2018</p>
-							<a href="#" class="tale-title">Best financial</a>
-							<p class="tale-text">Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p>
+						<li class="cards-list__item cards-list__item-mr">
+							<a class="link-transform" href="">
+								<img class="cards-list__img" src="../assets/image/tale2.jpg" alt="Best financial" width="380" height="220">
+							</a>
+							<p class="cards-list__date">23rd August 2018</p>
+							<p class="link-transform"><a href="#" class="cards-list__title">Best financial</a></p>
+							<p class="cards-list__text">Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p>
 						</li>
-						<li class="tales">
-							<img class="tale-img" src="../assets/image/tale3.jpg" alt="Company logo or brand identity: which one is more important? brand identity">
-							<p class="tale-date">23rd August 2018</p>
-							<a href="#" class="tale-title">Company logo or brand identity: which one is more important? brand identity</a>
-							<p class="tale-text">To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.</p>
+						<li class="cards-list__item">
+							<a class="link-transform" href="">
+								<img class="cards-list__img" src="../assets/image/tale3.jpg" alt="Company logo or brand identity: which one is more important? brand identity" width="380" height="220">
+							</a>
+							<p class="cards-list__date">23rd August 2018</p>
+							<p class="link-transform"><a href="#" class="cards-list__title">Company logo or brand identity: which one is more important? brand identity</a></p>
+							<p class="cards-list__text">To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.</p>
 						</li>
-						<li class="tales tale-mr">
-							<img class="tale-img" src="../assets/image/tale4.jpg" alt="Best financial">
-							<p class="tale-date">23rd August 2018</p>
-							<p class="tale-title">Best financial</p>
-							<p class="tale-text">Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p>
+						<li class="cards-list__item cards-list__item-mr">
+							<a class="link-transform" href="">
+								<img class="cards-list__img" src="../assets/image/tale4.jpg" alt="Best financial" width="380" height="220">
+							</a>
+							<p class="cards-list__date">23rd August 2018</p>
+							<p class="link-transform"><a href="#" class="cards-list__title">Best financial</a></p>
+							<p class="cards-list__text">Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p>
 						</li>
-						<li class="tales tale-mr">
-							<img class="tale-img" src="../assets/image/tale5.jpg" alt="Company logo or brand identity: which one is more important? brand identity">
-							<p class="tale-date">23rd August 2018</p>
-							<a href="#" class="tale-title">Company logo or brand identity: which one is more important? brand identity</a>
-							<p class="tale-text">To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.</p>
+						<li class="cards-list__item cards-list__item-mr">
+							<a class="link-transform" href="">
+								<img class="cards-list__img" src="../assets/image/tale5.jpg" alt="Company logo or brand identity: which one is more important? brand identity" width="380" height="220">
+							</a>
+							<p class="cards-list__date">23rd August 2018</p>
+							<p class="link-transform"><a href="#" class="cards-list__title">Company logo or brand identity: which one is more important? brand identity</a></p>
+							<p class="cards-list__text">To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.</p>
 						</li>
-						<li class="tales">
-							<img class="tale-img" src="../assets/image/tale6.jpg" alt="Top 5 fastest growing it service companies in philly">
-							<p class="tale-date">23rd August 2018</p>
-							<a href="#" class="tale-title">Top 5 fastest growing it service companies in philly</a>
-							<p class="tale-text">Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.</p>
+						<li class="cards-list__item">
+							<a class="link-transform" href="">
+								<img class="cards-list__img" src="../assets/image/tale6.jpg" alt="Top 5 fastest growing it service companies in philly" width="380" height="220">
+							</a>
+							<p class="cards-list__date">23rd August 2018</p>
+							<p class="link-transform"><a href="#" class="cards-list__title">Top 5 fastest growing it service companies in philly</a></p>
+							<p class="cards-list__text">Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.</p>
 						</li>
 					</ul>
 					<div class="switch">
 						<button class="arrow arrow-left" type="button"></button>
-						<ul class="list-pages-product">
-							<li class="item-prod"><button class="button-prod" type="button">1</button></li>
-							<li class="item-prod"><button class="button-prod" type="button">2</button></li>
-							<li class="item-prod"><button class="button-prod" type="button">3</button></li>
-							<li class="item-prod"><button class="button-prod" type="button">4</button></li>
+						<ul class="list-pages">
+							<li class="list-pages__item"><button class="list-pages__button" type="button">1</button></li>
+							<li class="list-pages__item"><button class="list-pages__button" type="button">2</button></li>
+							<li class="list-pages__item"><button class="list-pages__button" type="button">3</button></li>
+							<li class="list-pages__item"><button class="list-pages__button" type="button">4</button></li>
 						</ul>
 						<button class="arrow arrow-right" type="button"></button>
 					</div>
@@ -127,7 +140,7 @@
 						</ul>
 					</div>
 					<article class="footer-list__item">
-						<h2 style="display: none;">Connect</h2>
+						<h2 class="visuallyhidden">Connect</h2>
 						<p class="footer-list__text">Connect</p>
 						<div class="footer-list__line"></div>
 						<form class="form-email" action="#" method="POST">
