@@ -8,78 +8,79 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Crimson+Text:ital,wght@1,400;1,700&family=Lato:wght@700&family=Montserrat:wght@200;300;600;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../css/common.css">
-	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/normolize.css">
+	<link rel="stylesheet" href="../css/min-catalog.css">
 	<title>Catalog</title>
 </head>
 <body>
 	<div class="wrapper">
 		<header class="header">
-			<div class="container container__header">
-				<div class="nav__container">
+			<div class="container container-header">
 					<div class="logo">
-						<a href="../../FIRST-SITE/index.html">
-							<img src="../assets/image/LOGO.png" alt="logo">
+						<a href="../index.html">
+							<img class="logo__img" src="../assets/image/LOGO.svg" width="100" height="52" alt="logo">
 						</a>
 					</div>
 					<nav class="nav">
-						<ul class="list list__header">
-							<li class="item item__header"><a href="#" class="link link__header">blog</a></li>
-							<li class="item item__header"><a href="../pages/catalog.html" class="link link__header">catalog</a></li>
-							<li class="item item__header"><a href="#" class="link link__header">about us</a></li>
+						<ul class="list-header">
+							<li class="list-header__item"><a href="../pages/blog.html" class="list-header__link">blog</a></li>
+							<li class="list-header__item"><a href="../pages/catalog.html" class="list-header__link">catalog</a></li>
+							<li class="list-header__item"><a href="#" class="list-header__link">about us</a></li>
 						</ul>
 					</nav>
-				</div>
-				<div class="search-contact-us">
-					<div class="search">
-						<input type="text" class="search-field" placeholder="Введите поисковой запрос">
-						<button class="search" type="button"><img src="../assets/icon/search.svg" alt="search-image" class="search-icon"></button>
+				<div class="list-right">
+					<div class="list-right__search">
+						<img class="list-right__icon" src="../assets/icon/search.svg" width="24" height="24" alt="search-image">
 					</div>
-					<a href="../pages/contact-us.html" class="link link__contact-us">contact us</a>
+					<a href="../pages/contact-us.html" class="list-right__link">contact us</a>
 				</div>
 			</div>
 		</header>
 		<main>
-			<section class="section section__title-and-breadcrumb"> <!--эта секия на всех страницах кроме главной повторяется-->
-				<div class="container container__title-and-breadcrumb">
+			<section class="section section-title-and-breadcrumb"> 
+				<div class="container container-title-and-breadcrumb">
 					<h2 class="title-category">Category Products</h2>
-					<ul class="breadcrumb"> <!--хлебным крошкам значек-стрелку добавим как псевдоэлемент через css с помощью li::before-->
-						<li><a href="../FIRST-SITE/index.html">Home</a></li>
-						<li><a href="../pages/catalog.html">Catalog</a></li>
+					<ul class="breadcrumb">
+						<li class="breadcrumb__item"><a class="breadcrumb__link" href="../index.html">Home</a></li>
+						<li class="breadcrumb__item"><a class="breadcrumb__link" href="../pages/catalog.html">Catalog</a></li>
 					</ul>
 				</div>
 			</section>
-			<section class="section section__category">
-				<div class="container container__category">
-					<div class="category-products">
-						<div class="cards">
-							<img src="../assets/image/apparel-kids.png" alt="APPAREL KIDS">
-							<a href="#" class="cards-link">APPAREL KIDS</a>
-						</div>
-						<div class="cards">
-							<img src="../assets/image/holiday-shop.png" alt="HOLIDAY SHOP">
-							<a href="#" class="cards-link">HOLIDAY SHOP</a>
-						</div>
-						<div class="cards">
-							<img src="../assets/image/toys.png" alt="TOYS">
-							<a href="#" class="cards-link">TOYS</a>
-						</div>
-						<div class="cards">
-							<img src="../assets/image/accessories.png" alt="ACCESSORIES">
-							<a href="#" class="cards-link">ACCESSORIES</a>
-						</div>
-						<div class="cards">
-							<img src="../assets/image/sale.png" alt="SALE">
-							<a href="#" class="cards-link">SALE</a>
-						</div>
-						<div class="cards">
-							<img src="../assets/image/apparel-adults.png" alt="APPAREL ADULTS">
-							<a href="#" class="cards-link">APPAREL ADULTS</a>
-						</div>
+			<section class="section section-category">
+				<div class="container">
+					<div class="container-category">
+						<h2 class="visuallyhidden">Category-list</h2>
+						<ul class="category">
+							<li class="category__cards category__cards-apparel">
+								<img class="img-apparel" src="../assets/image/apparel-kids.png" alt="APPAREL KIDS">
+								<a href="./toy-for-kids.html" class="category__cards-link">APPAREL KIDS</a>
+							</li>
+							<li class="category__cards category__cards-holiday">
+								<img src="../assets/image/holiday-shop.png" alt="HOLIDAY SHOP">
+								<a href="./toy-for-kids.html" class="category__cards-link">HOLIDAY SHOP</a>
+							</li>
+							<li class="category__cards category__cards-toys">
+								<img src="../assets/image/toys.png" alt="TOYS">
+								<a href="./toy-for-kids.html" class="category__cards-link">TOYS</a>
+							</li>
+							<li class="category__cards category__cards-accessories">
+								<img src="../assets/image/accessories.png" alt="ACCESSORIES">
+								<a href="./toy-for-kids.html" class="category__cards-link category__cards-link-acc">ACCESSORIES</a>
+							</li>
+							<li class="category__cards category__cards-sale">
+								<img class="img-sale" src="../assets/image/sale.png" alt="SALE">
+								<a href="./toy-for-kids.html" class="category__cards-link">SALE</a>
+							</li>
+							<li class="category__cards category__cards-adults">
+								<img class="img-adults" src="../assets/image/apparel-adults.PNG" alt="APPAREL ADULTS">
+								<a href="./toy-for-kids.html" class="category__cards-link">APPAREL ADULTS</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</section>
-			<section class="section section__text">
-				<div class="container container__description">
+			<section class="section section-text">
+				<div class="container container-description">
 					<h2 class="title-description">Product Description</h2>
 					<p class="description">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
 					<p class="description">A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
@@ -88,66 +89,73 @@
 			</section>
 		</main>
 		<footer class="footer">
-			<div class="container container__footer">
-				<div class="nuv-cus-con">
-					<div class="ft navigation">
-						<p class="text-footer text__navigation">Navigation</p>
-						<div class="line"></div> <!--здесь будет линия футера отчерчивающая navigation от ссылок ниже-->
-						<ul class="list list__footer-nav">
-							<li class="item item__footer"><a href="#" class="link link__footer">About Us</a></li>
-							<li class="item item__footer"><a href="#" class="link link__footer">Blog</a></li>
-							<li class="item item__footer"><a href="#" class="link link__footer">Design Services</a></li>
-							<li class="item item__footer"><a href="#" class="link link__footer">Featured On</a></li>
-							<li class="item item__footer"><a href="#" class="link link__footer">2018 Holiday Catalog</a></li>
-							<li class="item item__footer"><a href="#" class="link link__footer">Shop By Designer</a></li>
+			<div class="container container-footer">
+				<div class="footer-list">
+					<div class="footer-list__item">
+						<p class="footer-list__text">Navigation</p>
+						<div class="footer-list__line"></div>
+						<ul class="column-list">
+							<li class="column-list__item"><a href="#" class="column-list__link">About Us</a></li>
+							<li class="column-list__item"><a href="#" class="column-list__link">Blog</a></li>
+							<li class="column-list__item"><a href="#" class="column-list__link">Design Services</a></li>
+							<li class="column-list__item"><a href="#" class="column-list__link">Featured On</a></li>
+							<li class="column-list__item"><a href="#" class="column-list__link">2018 Holiday Catalog</a></li>
+							<li class="column-list__item"><a href="#" class="column-list__link">Shop By Designer</a></li>
 						</ul>
 					</div>
-					<div class="ft customer-info">
-						<p class="text-footer text__customer-info">Customer Information</p>
-						<div class="line"></div> <!--здесь будет линия футера отчерчивающая customer-info от ссылок ниже-->
-						<ul class="list list__footer-cus">
-							<li class="item item__footer"><a href="#" class="link link__footer">Contact Us</a></li>
-							<li class="item item__footer"><a href="#" class="link link__footer">Sale Exclusions</a></li>
-							<li class="item item__footer"><a href="#" class="link link__footer">Shipping & Returns</a></li>
-							<li class="item item__footer"><a href="#" class="link link__footer">Terms & Conditions</a></li>
-							<li class="item item__footer"><a href="#" class="link link__footer">Privacy Policy</a></li>
-							<li class="item item__footer"><a href="#" class="link link__footer">Search</a></li>
+					<div class="footer-list__item">
+						<p class="footer-list__text">Customer Information</p>
+						<div class="footer-list__line"></div>
+						<ul class="column-list">
+							<li class="column-list__item"><a href="#" class="column-list__link">Contact Us</a></li>
+							<li class="column-list__item"><a href="#" class="column-list__link">Sale Exclusions</a></li>
+							<li class="column-list__item"><a href="#" class="column-list__link">Shipping & Returns</a></li>
+							<li class="column-list__item"><a href="#" class="column-list__link">Terms & Conditions</a></li>
+							<li class="column-list__item"><a href="#" class="column-list__link">Privacy Policy</a></li>
+							<li class="column-list__item"><a href="#" class="column-list__link">Search</a></li>
 						</ul>
 					</div>
-					<article class="ft connect">
-						<p class="text-footer text__connect">Connect</p>
-						<div class="line"></div> <!--здесь будет линия футера отчерчивающая connect от формы поиска-->
+					<article class="footer-list__item">
+						<h2 style="display: none;">Connect</h2>
+						<p class="footer-list__text">Connect</p>
+						<div class="footer-list__line"></div>
 						<form class="form-email" action="#" method="POST">
-							<input class="enter-email" type= "text" name="email" placeholder="Email"> 
-							<input class="button button__join" type="submit" value="Join">
-							<div class="social"> <!--так же загрузил бы через стили-->
-								<a href="#"><img src="../assets/icon/Facebook.svg" alt="facebook"></a>
-								<a href="#"><img src="../assets/icon/Twitter.svg" alt="twitter"></a>
-								<a href="#"><img src="../assets/icon/Pinterest.svg" alt="pinterest"></a>
-								<a href="#"><img src="../assets/icon/Instagram.svg" alt="inst"></a> 
+							<div class="form-email__block">
+								<input class="form-email__input" type= "text" name="email" placeholder="Email"> 
+								<input class="form-email__button button" type="submit" value="Join">
 							</div>
-							</form>  
+							</form>
+							<div class="social"> 
+								<a class="social__img social__img-facebook" href="#"></a>
+								<a class="social__img social__img-twitter" href="#"></a>
+								<a class="social__img social__img-pinterest" href="#"></a>
+								<a class="social__img social__img-instagram" href="#"></a>
+							</div>  
 					</article>
 				</div>
-				<div class="line-allwidth"></div> <!--здесь будет линия футера отчерчивающая всю ширину контейнера под предыдущим блоком-->
-				<div class="com-cop-des">
-					<div class="company-rating">
-						<p class="text-buttom text__company-rating">Company Rating</p>
-						<div class="rating-area">
-							<input type="radio" id="star-5" name="rating" value="5">
-							<label for="star-5" title="«5»"></label>	
-							<input type="radio" id="star-4" name="rating" value="4">
-							<label for="star-4" title="«4»"></label>    
-							<input type="radio" id="star-3" name="rating" value="3">
-							<label for="star-3" title="«3»"></label>  
-							<input type="radio" id="star-2" name="rating" value="2">
-							<label for="star-2" title="«2»"></label>    
-							<input type="radio" id="star-1" name="rating" value="1">
-							<label for="star-1" title="«1»"></label>
+				<div class="line-max-width"></div>
+				<div class="footer-bottom">
+					<div class="footer-bottom-rating">
+						<div class="rating-block">
+							<p class="rating-block__txt">Company Rating</p>
+							<div class="rating-mini">
+								<div class="rating-area">
+									<input type="radio" id="star-5" name="rating" value="5">
+									<label class="label-rating" for="star-5" title="Оценка «5»"></label>	
+									<input type="radio" id="star-4" name="rating" value="4">
+									<label class="label-rating" for="star-4" title="Оценка «4»"></label>    
+									<input type="radio" id="star-3" name="rating" value="3">
+									<label class="label-rating" for="star-3" title="Оценка «3»"></label>  
+									<input type="radio" id="star-2" name="rating" value="2">
+									<label class="label-rating" for="star-2" title="Оценка «2»"></label>    
+									<input type="radio" id="star-1" name="rating" value="1">
+									<label class="label-rating" for="star-1" title="Оценка «1»"></label>
+								</div> 
+							</div>
 						</div>
 					</div>
-						<p class="text-buttom text__copyright">Copyright © 2018 Dlk • Design Life Kids</p>
-						<a href="#" class="web-design">Web Design — Direct Line Development</a>
+						<p class="footer-bottom__copyright copyright">Copyright © 2018 Dlk • Design Life Kids</p>
+						<a href="#" class="footer-bottom__web-design">Web Design — Direct Line Development</a>
 				</div>
 			</div>
 		</footer>

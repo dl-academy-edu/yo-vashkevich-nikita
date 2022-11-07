@@ -1,0 +1,248 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+
+.container-header {
+	margin-bottom: 60px;
+}
+
+/*-------------BREADCRUMBS-----------------------------------*/
+.section-title-and-breadcrumb {
+	margin-bottom: 49px;
+}
+
+h2 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 49px;
+	text-transform: uppercase;
+	color: #1E0606;
+	margin-bottom: 15px;
+}
+
+.breadcrumb {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.breadcrumb:hover {
+	-webkit-transform: scale(1.01);
+	    -ms-transform: scale(1.01);
+	        transform: scale(1.01);
+}
+
+.breadcrumb__item {
+	margin-right: 20px;
+}
+
+.breadcrumb__item:not(:first-child) {
+	opacity: 0.5;
+}
+
+.breadcrumb__link {
+	display: inline-block;
+	font-family: 'Crimson Text';
+	font-style: italic; 
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 26px;
+	color: #1E0606;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.breadcrumb__link:hover {
+	-webkit-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	        transform: scale(1.1);
+}
+
+.breadcrumb__item:not(:last-child)::after {
+	display: inline-block;
+	content: "";
+	background-image: url(../assets/icon/arrow.svg);
+	width: 8px;
+	height: 14px;
+	
+	/* Black */
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	margin-left: 20px;
+	margin-right: 2opx;
+}
+
+/*-------------BREADCRUMBS-----------------------------------*/
+/*-------------CARDS-CATEGORY-----------------------------------*/
+.container-category {
+	width: 1080px;
+}
+
+.title-category {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 48.76px;
+	margin-bottom: 15px;
+}
+
+.category {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	
+}
+
+.category__cards {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	position: relative;
+	width: 280px;
+	height: 270px;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	margin-bottom: 23px;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.category__cards:hover {
+	-webkit-transform: scale(1.02);
+	    -ms-transform: scale(1.02);
+	        transform: scale(1.02);
+}
+
+.category__cards:not(:last-child) {
+	margin-right: 20px;
+}
+
+.category__cards-link {
+	position: absolute;
+	color: #FFFFFF;
+	font-family: 'Montserrat';
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 32px;
+	text-transform: uppercase;
+	text-align: center;
+	width: 129px;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.category__cards-link:hover {
+	-webkit-text-decoration-line: underline;
+	        text-decoration-line: underline;
+			  -webkit-transform: scale(1.05);
+			      -ms-transform: scale(1.05);
+			          transform: scale(1.05);
+}
+
+.category__cards:hover .category__cards-link {
+	-webkit-text-decoration-line: underline;
+	        text-decoration-line: underline;
+}
+
+.category__cards-link:active {
+	-webkit-text-decoration-line: underline;
+	        text-decoration-line: underline;
+}
+
+.category__cards-link-acc {
+	width: 192px;
+}
+
+	.category__cards-apparel {
+		background-color: #DBE4DB;
+	}
+
+	.category__cards-holiday {
+		background-color: #EADDD3;
+	}
+
+	.category__cards-toys {
+		background-color: #F8F2DA;
+	}
+
+	.category__cards-accessories {
+		background-color: #D5D4E1;
+		margin-left: 200px;
+	}
+
+	.category__cards-sale {
+		background-color: #F3D0DB;
+	}
+
+	.img-sale {
+		width: 248px;
+		height: 248px;
+	}
+
+	.category__cards-adults {
+		background-color: #E5EAF8;
+	}
+
+	.img-adults {
+		width: 271.16px;
+		height: 204.26px;
+	}
+
+	/*-------------CARDS-CATEGORY-----------------------------------*/
+	/*-------------Product-Description-----------------------------------*/
+
+	.section-text {
+		margin-bottom: 55px;
+	}
+
+	.title-description {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 38px;
+		line-height: 46px;
+		margin: 33px 0 25px 200px;
+	}
+	.description {
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 22px;
+		
+		/* Black */
+		
+		color: #1E0606;
+		width: 680px;
+		margin-left: 200px;
+	}
+
+	.description:not(:last-child) {
+		margin-bottom: 15px;
+	}
+	
+	
+	/*-------------Product-Description-----------------------------------*/
+
+	.footer {
+		margin-top: 0;
+	}
